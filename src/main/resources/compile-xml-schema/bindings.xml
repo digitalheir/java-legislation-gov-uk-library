@@ -1,0 +1,36 @@
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          version="2.1">
+  <bindings schemaLocation="schemaLegislationMetadata.xsd" version="1.0">
+    <!-- Customise the package name -->
+    <!--<schemaBindings>-->
+    <!--<package name="com.example.schema"/>-->
+    <!--</schemaBindings>-->
+
+    <!-- rename the value element -->
+    <bindings node="//xsd:element[@name='UnappliedEffect']">
+      <bindings node="./xsd:complexType/xsd:sequence/xsd:element[@name='AffectingProvisions']">
+        <property name="AffectingProvisionsList"/>
+      </bindings>
+      <bindings node="./xsd:complexType/xsd:sequence/xsd:element[@name='AffectedProvisions']">
+        <property name="AffectedProvisionsList"/>
+      </bindings>
+    </bindings>
+
+
+  </bindings>
+
+  <bindings schemaLocation="../schemaModules/dc.xsd">
+    <!-- Rename the respuesta class to resolve a naming conflict with other Respuesta element already defined-->
+    <bindings node="//xs:element[@name='any']/xs:complexType">
+      <class name="AbstractAny"/>
+    </bindings>
+  </bindings>
+<bindings schemaLocation="../schemaModules/schemaTable-XHTML.xsd" version="1.0"><!-- Customise the package name -->
+<!--<schemaBindings>-->
+<!--<package name="com.example.schema"/>-->
+<!--</schemaBindings>-->
+<!-- -->
+<bindings node=".//xsd:sequence/xsd:choice/xsd:element[@ref='col']"><property name="ColList"/></bindings></bindings></bindings>

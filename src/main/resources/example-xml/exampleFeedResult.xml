@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:leg="http://www.legislation.gov.uk/namespaces/legislation"
+      xmlns:ukm="http://www.legislation.gov.uk/namespaces/metadata"
+      xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/">
+    <id>http://legislation.data.gov.uk/all/data.feed</id>
+    <link rel="self" type="application/atom+xml" href="http://legislation.data.gov.uk/all/data.feed?page=2"/>
+    <updated>3200-01-30T00:00:00</updated>
+    <title>Search Results</title>
+    <openSearch:Query role="request" leg:type="*"></openSearch:Query>
+    <openSearch:itemsPerPage>20</openSearch:itemsPerPage>
+    <openSearch:startIndex>21</openSearch:startIndex>
+    <leg:page>2</leg:page>
+    <leg:morePages>13</leg:morePages>
+    <leg:facets>
+
+        <leg:facetTypes>
+            <leg:facetType type="UnitedKingdomStatutoryInstrument" href="http://legislation.data.gov.uk/uksi/data.feed"
+                           value="75657"/>
+            <leg:facetType type="NorthernIrelandStatutoryRule" href="http://legislation.data.gov.uk/nisr/data.feed"
+                           value="7934"/>
+            <leg:facetType type="ScottishStatutoryInstrument" href="http://legislation.data.gov.uk/ssi/data.feed"
+                           value="6743"/>
+            <leg:facetType type="UnitedKingdomPublicGeneralAct" href="http://legislation.data.gov.uk/ukpga/data.feed"
+                           value="4205"/>
+            <leg:facetType type="WelshStatutoryInstrument" href="http://legislation.data.gov.uk/wsi/data.feed"
+                           value="3679"/>
+            <leg:facetType type="NorthernIrelandOrderInCouncil" href="http://legislation.data.gov.uk/nisi/data.feed"
+                           value="622"/>
+            <leg:facetType type="UnitedKingdomStatutoryRuleOrOrder"
+                           href="http://legislation.data.gov.uk/uksro/data.feed" value="307"/>
+            <leg:facetType type="NorthernIrelandParliamentAct" href="http://legislation.data.gov.uk/apni/data.feed"
+                           value="287"/>
+            <leg:facetType type="UnitedKingdomLocalAct" href="http://legislation.data.gov.uk/ukla/data.feed"
+                           value="259"/>
+            <leg:facetType type="ScottishAct" href="http://legislation.data.gov.uk/asp/data.feed" value="232"/>
+            <leg:facetType type="NorthernIrelandAct" href="http://legislation.data.gov.uk/nia/data.feed" value="142"/>
+            <leg:facetType type="UnitedKingdomChurchMeasure" href="http://legislation.data.gov.uk/ukcm/data.feed"
+                           value="131"/>
+            <leg:facetType type="ScottishOldAct" href="http://legislation.data.gov.uk/aosp/data.feed" value="109"/>
+            <leg:facetType type="EnglandAct" href="http://legislation.data.gov.uk/aep/data.feed" value="78"/>
+            <leg:facetType type="UnitedKingdomChurchInstrument" href="http://legislation.data.gov.uk/ukci/data.feed"
+                           value="59"/>
+            <leg:facetType type="GreatBritainAct" href="http://legislation.data.gov.uk/apgb/data.feed" value="58"/>
+            <leg:facetType type="UnitedKingdomMinisterialOrder" href="http://legislation.data.gov.uk/ukmo/data.feed"
+                           value="28"/>
+            <leg:facetType type="WelshAssemblyMeasure" href="http://legislation.data.gov.uk/mwa/data.feed" value="22"/>
+            <leg:facetType type="WelshNationalAssemblyAct" href="http://legislation.data.gov.uk/anaw/data.feed"
+                           value="20"/>
+            <leg:facetType type="IrelandAct" href="http://legislation.data.gov.uk/aip/data.feed" value="11"/>
+            <leg:facetType type="NorthernIrelandAssemblyMeasure" href="http://legislation.data.gov.uk/mnia/data.feed"
+                           value="2"/>
+        </leg:facetTypes>
+        <leg:facetYears>
+            <leg:facetYear year="2015" href="http://legislation.data.gov.uk/2015/data.feed" total="2230"/>
+            <leg:facetYear year="2014" href="http://legislation.data.gov.uk/2014/data.feed" total="4264"/>
+            <leg:facetYear year="2013" href="http://legislation.data.gov.uk/2013/data.feed" total="4067"/>
+            <leg:facetYear year="2012" href="http://legislation.data.gov.uk/2012/data.feed" total="4194"/>
+            <leg:facetYear year="2011" href="http://legislation.data.gov.uk/2011/data.feed" total="4116"/>
+            <leg:facetYear year="2010" href="http://legislation.data.gov.uk/2010/data.feed" total="3968"/>
+            <leg:facetYear year="2009" href="http://legislation.data.gov.uk/2009/data.feed" total="2861"/>
+            <leg:facetYear year="2008" href="http://legislation.data.gov.uk/2008/data.feed" total="2527"/>
+            <leg:facetYear year="2007" href="http://legislation.data.gov.uk/2007/data.feed" total="2906"/>
+            <leg:facetYear year="2006" href="http://legislation.data.gov.uk/2006/data.feed" total="2718"/>
+            <leg:facetYear year="2005" href="http://legislation.data.gov.uk/2005/data.feed" total="2864"/>
+            <leg:facetYear year="2004" href="http://legislation.data.gov.uk/2004/data.feed" total="2665"/>
+            <leg:facetYear year="2003" href="http://legislation.data.gov.uk/2003/data.feed" total="2782"/>
+            <leg:facetYear year="2002" href="http://legislation.data.gov.uk/2002/data.feed" total="2748"/>
+            <leg:facetYear year="2001" href="http://legislation.data.gov.uk/2001/data.feed" total="3072"/>
+            <leg:facetYear year="2000" href="http://legislation.data.gov.uk/2000/data.feed" total="2501"/>
+            <leg:facetYear year="1999" href="http://legislation.data.gov.uk/1999/data.feed" total="2512"/>
+            <leg:facetYear year="1998" href="http://legislation.data.gov.uk/1998/data.feed" total="2203"/>
+            <leg:facetYear year="1997" href="http://legislation.data.gov.uk/1997/data.feed" total="2342"/>
+            <leg:facetYear year="1996" href="http://legislation.data.gov.uk/1996/data.feed" total="2682"/>
+            <leg:facetYear year="1995" href="http://legislation.data.gov.uk/1995/data.feed" total="1984"/>
+            <leg:facetYear year="1994" href="http://legislation.data.gov.uk/1994/data.feed" total="1955"/>
+            <leg:facetYear year="1993" href="http://legislation.data.gov.uk/1993/data.feed" total="1997"/>
+            <leg:facetYear year="1992" href="http://legislation.data.gov.uk/1992/data.feed" total="2054"/>
+            <leg:facetYear year="1991" href="http://legislation.data.gov.uk/1991/data.feed" total="1905"/>
+            <leg:facetYear year="1990" href="http://legislation.data.gov.uk/1990/data.feed" total="1704"/>
+            <leg:facetYear year="1989" href="http://legislation.data.gov.uk/1989/data.feed" total="1586"/>
+            <leg:facetYear year="1988" href="http://legislation.data.gov.uk/1988/data.feed" total="1621"/>
+            <leg:facetYear year="1987" href="http://legislation.data.gov.uk/1987/data.feed" total="1526"/>
+            <leg:facetYear year="1986" href="http://legislation.data.gov.uk/1986/data.feed" total="1365"/>
+            <leg:facetYear year="1985" href="http://legislation.data.gov.uk/1985/data.feed" total="1293"/>
+            <leg:facetYear year="1984" href="http://legislation.data.gov.uk/1984/data.feed" total="1196"/>
+            <leg:facetYear year="1983" href="http://legislation.data.gov.uk/1983/data.feed" total="1180"/>
+            <leg:facetYear year="1982" href="http://legislation.data.gov.uk/1982/data.feed" total="1154"/>
+            <leg:facetYear year="1981" href="http://legislation.data.gov.uk/1981/data.feed" total="1179"/>
+            <leg:facetYear year="1980" href="http://legislation.data.gov.uk/1980/data.feed" total="1268"/>
+            <leg:facetYear year="1979" href="http://legislation.data.gov.uk/1979/data.feed" total="1033"/>
+            <leg:facetYear year="1978" href="http://legislation.data.gov.uk/1978/data.feed" total="1124"/>
+            <leg:facetYear year="1977" href="http://legislation.data.gov.uk/1977/data.feed" total="1215"/>
+            <leg:facetYear year="1976" href="http://legislation.data.gov.uk/1976/data.feed" total="1208"/>
+            <leg:facetYear year="1975" href="http://legislation.data.gov.uk/1975/data.feed" total="1488"/>
+            <leg:facetYear year="1974" href="http://legislation.data.gov.uk/1974/data.feed" total="1339"/>
+            <leg:facetYear year="1973" href="http://legislation.data.gov.uk/1973/data.feed" total="1323"/>
+            <leg:facetYear year="1972" href="http://legislation.data.gov.uk/1972/data.feed" total="1169"/>
+            <leg:facetYear year="1971" href="http://legislation.data.gov.uk/1971/data.feed" total="259"/>
+            <leg:facetYear year="1970" href="http://legislation.data.gov.uk/1970/data.feed" total="1059"/>
+            <leg:facetYear year="1969" href="http://legislation.data.gov.uk/1969/data.feed" total="151"/>
+            <leg:facetYear year="1968" href="http://legislation.data.gov.uk/1968/data.feed" total="170"/>
+            <leg:facetYear year="1967" href="http://legislation.data.gov.uk/1967/data.feed" total="148"/>
+            <leg:facetYear year="1966" href="http://legislation.data.gov.uk/1966/data.feed" total="117"/>
+            <leg:facetYear year="1965" href="http://legislation.data.gov.uk/1965/data.feed" total="161"/>
+            <leg:facetYear year="1964" href="http://legislation.data.gov.uk/1964/data.feed" total="140"/>
+            <leg:facetYear year="1963" href="http://legislation.data.gov.uk/1963/data.feed" total="107"/>
+            <leg:facetYear year="1962" href="http://legislation.data.gov.uk/1962/data.feed" total="111"/>
+            <leg:facetYear year="1961" href="http://legislation.data.gov.uk/1961/data.feed" total="94"/>
+            <leg:facetYear year="1960" href="http://legislation.data.gov.uk/1960/data.feed" total="84"/>
+            <leg:facetYear year="1959" href="http://legislation.data.gov.uk/1959/data.feed" total="87"/>
+            <leg:facetYear year="1958" href="http://legislation.data.gov.uk/1958/data.feed" total="83"/>
+            <leg:facetYear year="1957" href="http://legislation.data.gov.uk/1957/data.feed" total="58"/>
+            <leg:facetYear year="1956" href="http://legislation.data.gov.uk/1956/data.feed" total="60"/>
+            <leg:facetYear year="1955" href="http://legislation.data.gov.uk/1955/data.feed" total="53"/>
+            <leg:facetYear year="1954" href="http://legislation.data.gov.uk/1954/data.feed" total="70"/>
+            <leg:facetYear year="1953" href="http://legislation.data.gov.uk/1953/data.feed" total="46"/>
+            <leg:facetYear year="1952" href="http://legislation.data.gov.uk/1952/data.feed" total="60"/>
+            <leg:facetYear year="1951" href="http://legislation.data.gov.uk/1951/data.feed" total="57"/>
+            <leg:facetYear year="1950" href="http://legislation.data.gov.uk/1950/data.feed" total="49"/>
+            <leg:facetYear year="1949" href="http://legislation.data.gov.uk/1949/data.feed" total="85"/>
+            <leg:facetYear year="1948" href="http://legislation.data.gov.uk/1948/data.feed" total="80"/>
+            <leg:facetYear year="1947" href="http://legislation.data.gov.uk/1947/data.feed" total="49"/>
+            <leg:facetYear year="1946" href="http://legislation.data.gov.uk/1946/data.feed" total="55"/>
+            <leg:facetYear year="1945" href="http://legislation.data.gov.uk/1945/data.feed" total="48"/>
+            <leg:facetYear year="1944" href="http://legislation.data.gov.uk/1944/data.feed" total="21"/>
+            <leg:facetYear year="1943" href="http://legislation.data.gov.uk/1943/data.feed" total="19"/>
+            <leg:facetYear year="1942" href="http://legislation.data.gov.uk/1942/data.feed" total="12"/>
+            <leg:facetYear year="1941" href="http://legislation.data.gov.uk/1941/data.feed" total="10"/>
+            <leg:facetYear year="1940" href="http://legislation.data.gov.uk/1940/data.feed" total="22"/>
+            <leg:facetYear year="1939" href="http://legislation.data.gov.uk/1939/data.feed" total="42"/>
+            <leg:facetYear year="1938" href="http://legislation.data.gov.uk/1938/data.feed" total="28"/>
+            <leg:facetYear year="1937" href="http://legislation.data.gov.uk/1937/data.feed" total="27"/>
+            <leg:facetYear year="1936" href="http://legislation.data.gov.uk/1936/data.feed" total="22"/>
+            <leg:facetYear year="1935" href="http://legislation.data.gov.uk/1935/data.feed" total="23"/>
+            <leg:facetYear year="1934" href="http://legislation.data.gov.uk/1934/data.feed" total="35"/>
+            <leg:facetYear year="1933" href="http://legislation.data.gov.uk/1933/data.feed" total="36"/>
+            <leg:facetYear year="1932" href="http://legislation.data.gov.uk/1932/data.feed" total="23"/>
+            <leg:facetYear year="1931" href="http://legislation.data.gov.uk/1931/data.feed" total="23"/>
+            <leg:facetYear year="1930" href="http://legislation.data.gov.uk/1930/data.feed" total="24"/>
+            <leg:facetYear year="1929" href="http://legislation.data.gov.uk/1929/data.feed" total="16"/>
+            <leg:facetYear year="1928" href="http://legislation.data.gov.uk/1928/data.feed" total="26"/>
+            <leg:facetYear year="1927" href="http://legislation.data.gov.uk/1927/data.feed" total="16"/>
+            <leg:facetYear year="1926" href="http://legislation.data.gov.uk/1926/data.feed" total="30"/>
+            <leg:facetYear year="1925" href="http://legislation.data.gov.uk/1925/data.feed" total="39"/>
+            <leg:facetYear year="1924" href="http://legislation.data.gov.uk/1924/data.feed" total="11"/>
+            <leg:facetYear year="1923" href="http://legislation.data.gov.uk/1923/data.feed" total="17"/>
+            <leg:facetYear year="1922" href="http://legislation.data.gov.uk/1922/data.feed" total="23"/>
+            <leg:facetYear year="1921" href="http://legislation.data.gov.uk/1921/data.feed" total="19"/>
+            <leg:facetYear year="1920" href="http://legislation.data.gov.uk/1920/data.feed" total="31"/>
+            <leg:facetYear year="1919" href="http://legislation.data.gov.uk/1919/data.feed" total="30"/>
+            <leg:facetYear year="1918" href="http://legislation.data.gov.uk/1918/data.feed" total="14"/>
+            <leg:facetYear year="1917" href="http://legislation.data.gov.uk/1917/data.feed" total="15"/>
+            <leg:facetYear year="1916" href="http://legislation.data.gov.uk/1916/data.feed" total="21"/>
+            <leg:facetYear year="1915" href="http://legislation.data.gov.uk/1915/data.feed" total="15"/>
+            <leg:facetYear year="1914" href="http://legislation.data.gov.uk/1914/data.feed" total="18"/>
+            <leg:facetYear year="1913" href="http://legislation.data.gov.uk/1913/data.feed" total="7"/>
+            <leg:facetYear year="1912" href="http://legislation.data.gov.uk/1912/data.feed" total="6"/>
+            <leg:facetYear year="1911" href="http://legislation.data.gov.uk/1911/data.feed" total="12"/>
+            <leg:facetYear year="1910" href="http://legislation.data.gov.uk/1910/data.feed" total="4"/>
+            <leg:facetYear year="1909" href="http://legislation.data.gov.uk/1909/data.feed" total="9"/>
+            <leg:facetYear year="1908" href="http://legislation.data.gov.uk/1908/data.feed" total="13"/>
+            <leg:facetYear year="1907" href="http://legislation.data.gov.uk/1907/data.feed" total="14"/>
+            <leg:facetYear year="1906" href="http://legislation.data.gov.uk/1906/data.feed" total="19"/>
+            <leg:facetYear year="1905" href="http://legislation.data.gov.uk/1905/data.feed" total="8"/>
+            <leg:facetYear year="1904" href="http://legislation.data.gov.uk/1904/data.feed" total="4"/>
+            <leg:facetYear year="1903" href="http://legislation.data.gov.uk/1903/data.feed" total="7"/>
+            <leg:facetYear year="1902" href="http://legislation.data.gov.uk/1902/data.feed" total="10"/>
+            <leg:facetYear year="1901" href="http://legislation.data.gov.uk/1901/data.feed" total="5"/>
+            <leg:facetYear year="1900" href="http://legislation.data.gov.uk/1900/data.feed" total="8"/>
+            <leg:facetYear year="1899" href="http://legislation.data.gov.uk/1899/data.feed" total="6"/>
+            <leg:facetYear year="1898" href="http://legislation.data.gov.uk/1898/data.feed" total="13"/>
+            <leg:facetYear year="1897" href="http://legislation.data.gov.uk/1897/data.feed" total="14"/>
+            <leg:facetYear year="1896" href="http://legislation.data.gov.uk/1896/data.feed" total="10"/>
+            <leg:facetYear year="1895" href="http://legislation.data.gov.uk/1895/data.feed" total="10"/>
+            <leg:facetYear year="1894" href="http://legislation.data.gov.uk/1894/data.feed" total="16"/>
+            <leg:facetYear year="1893" href="http://legislation.data.gov.uk/1893/data.feed" total="10"/>
+            <leg:facetYear year="1892" href="http://legislation.data.gov.uk/1892/data.feed" total="18"/>
+            <leg:facetYear year="1891" href="http://legislation.data.gov.uk/1891/data.feed" total="17"/>
+            <leg:facetYear year="1890" href="http://legislation.data.gov.uk/1890/data.feed" total="12"/>
+            <leg:facetYear year="1889" href="http://legislation.data.gov.uk/1889/data.feed" total="19"/>
+            <leg:facetYear year="1888" href="http://legislation.data.gov.uk/1888/data.feed" total="10"/>
+            <leg:facetYear year="1887" href="http://legislation.data.gov.uk/1887/data.feed" total="18"/>
+            <leg:facetYear year="1886" href="http://legislation.data.gov.uk/1886/data.feed" total="6"/>
+            <leg:facetYear year="1885" href="http://legislation.data.gov.uk/1885/data.feed" total="10"/>
+            <leg:facetYear year="1884" href="http://legislation.data.gov.uk/1884/data.feed" total="10"/>
+            <leg:facetYear year="1883" href="http://legislation.data.gov.uk/1883/data.feed" total="12"/>
+            <leg:facetYear year="1882" href="http://legislation.data.gov.uk/1882/data.feed" total="19"/>
+            <leg:facetYear year="1881" href="http://legislation.data.gov.uk/1881/data.feed" total="9"/>
+            <leg:facetYear year="1880" href="http://legislation.data.gov.uk/1880/data.feed" total="7"/>
+            <leg:facetYear year="1879" href="http://legislation.data.gov.uk/1879/data.feed" total="12"/>
+            <leg:facetYear year="1878" href="http://legislation.data.gov.uk/1878/data.feed" total="13"/>
+            <leg:facetYear year="1877" href="http://legislation.data.gov.uk/1877/data.feed" total="11"/>
+            <leg:facetYear year="1876" href="http://legislation.data.gov.uk/1876/data.feed" total="13"/>
+            <leg:facetYear year="1875" href="http://legislation.data.gov.uk/1875/data.feed" total="11"/>
+            <leg:facetYear year="1874" href="http://legislation.data.gov.uk/1874/data.feed" total="14"/>
+            <leg:facetYear year="1873" href="http://legislation.data.gov.uk/1873/data.feed" total="10"/>
+            <leg:facetYear year="1872" href="http://legislation.data.gov.uk/1872/data.feed" total="12"/>
+            <leg:facetYear year="1871" href="http://legislation.data.gov.uk/1871/data.feed" total="21"/>
+            <leg:facetYear year="1870" href="http://legislation.data.gov.uk/1870/data.feed" total="12"/>
+            <leg:facetYear year="1869" href="http://legislation.data.gov.uk/1869/data.feed" total="14"/>
+            <leg:facetYear year="1868" href="http://legislation.data.gov.uk/1868/data.feed" total="26"/>
+            <leg:facetYear year="1867" href="http://legislation.data.gov.uk/1867/data.feed" total="16"/>
+            <leg:facetYear year="1866" href="http://legislation.data.gov.uk/1866/data.feed" total="9"/>
+            <leg:facetYear year="1865" href="http://legislation.data.gov.uk/1865/data.feed" total="18"/>
+            <leg:facetYear year="1864" href="http://legislation.data.gov.uk/1864/data.feed" total="10"/>
+            <leg:facetYear year="1863" href="http://legislation.data.gov.uk/1863/data.feed" total="8"/>
+            <leg:facetYear year="1862" href="http://legislation.data.gov.uk/1862/data.feed" total="11"/>
+            <leg:facetYear year="1861" href="http://legislation.data.gov.uk/1861/data.feed" total="12"/>
+            <leg:facetYear year="1860" href="http://legislation.data.gov.uk/1860/data.feed" total="14"/>
+            <leg:facetYear year="1859" href="http://legislation.data.gov.uk/1859/data.feed" total="14"/>
+            <leg:facetYear year="1858" href="http://legislation.data.gov.uk/1858/data.feed" total="11"/>
+            <leg:facetYear year="1857" href="http://legislation.data.gov.uk/1857/data.feed" total="10"/>
+            <leg:facetYear year="1856" href="http://legislation.data.gov.uk/1856/data.feed" total="10"/>
+            <leg:facetYear year="1855" href="http://legislation.data.gov.uk/1855/data.feed" total="15"/>
+            <leg:facetYear year="1854" href="http://legislation.data.gov.uk/1854/data.feed" total="12"/>
+            <leg:facetYear year="1853" href="http://legislation.data.gov.uk/1853/data.feed" total="11"/>
+            <leg:facetYear year="1852" href="http://legislation.data.gov.uk/1852/data.feed" total="9"/>
+            <leg:facetYear year="1851" href="http://legislation.data.gov.uk/1851/data.feed" total="9"/>
+            <leg:facetYear year="1850" href="http://legislation.data.gov.uk/1850/data.feed" total="6"/>
+            <leg:facetYear year="1849" href="http://legislation.data.gov.uk/1849/data.feed" total="9"/>
+            <leg:facetYear year="1848" href="http://legislation.data.gov.uk/1848/data.feed" total="9"/>
+            <leg:facetYear year="1847" href="http://legislation.data.gov.uk/1847/data.feed" total="12"/>
+            <leg:facetYear year="1846" href="http://legislation.data.gov.uk/1846/data.feed" total="7"/>
+            <leg:facetYear year="1845" href="http://legislation.data.gov.uk/1845/data.feed" total="17"/>
+            <leg:facetYear year="1844" href="http://legislation.data.gov.uk/1844/data.feed" total="11"/>
+            <leg:facetYear year="1843" href="http://legislation.data.gov.uk/1843/data.feed" total="9"/>
+            <leg:facetYear year="1842" href="http://legislation.data.gov.uk/1842/data.feed" total="7"/>
+            <leg:facetYear year="1841" href="http://legislation.data.gov.uk/1841/data.feed" total="5"/>
+            <leg:facetYear year="1840" href="http://legislation.data.gov.uk/1840/data.feed" total="11"/>
+            <leg:facetYear year="1839" href="http://legislation.data.gov.uk/1839/data.feed" total="5"/>
+            <leg:facetYear year="1838" href="http://legislation.data.gov.uk/1838/data.feed" total="11"/>
+            <leg:facetYear year="1837" href="http://legislation.data.gov.uk/1837/data.feed" total="7"/>
+            <leg:facetYear year="1836" href="http://legislation.data.gov.uk/1836/data.feed" total="7"/>
+            <leg:facetYear year="1835" href="http://legislation.data.gov.uk/1835/data.feed" total="5"/>
+            <leg:facetYear year="1834" href="http://legislation.data.gov.uk/1834/data.feed" total="2"/>
+            <leg:facetYear year="1833" href="http://legislation.data.gov.uk/1833/data.feed" total="12"/>
+            <leg:facetYear year="1832" href="http://legislation.data.gov.uk/1832/data.feed" total="8"/>
+            <leg:facetYear year="1831" href="http://legislation.data.gov.uk/1831/data.feed" total="4"/>
+            <leg:facetYear year="1830" href="http://legislation.data.gov.uk/1830/data.feed" total="5"/>
+            <leg:facetYear year="1829" href="http://legislation.data.gov.uk/1829/data.feed" total="3"/>
+            <leg:facetYear year="1828" href="http://legislation.data.gov.uk/1828/data.feed" total="7"/>
+            <leg:facetYear year="1827" href="http://legislation.data.gov.uk/1827/data.feed" total="1"/>
+            <leg:facetYear year="1826" href="http://legislation.data.gov.uk/1826/data.feed" total="3"/>
+            <leg:facetYear year="1825" href="http://legislation.data.gov.uk/1825/data.feed" total="5"/>
+            <leg:facetYear year="1824" href="http://legislation.data.gov.uk/1824/data.feed" total="5"/>
+            <leg:facetYear year="1823" href="http://legislation.data.gov.uk/1823/data.feed" total="5"/>
+            <leg:facetYear year="1822" href="http://legislation.data.gov.uk/1822/data.feed" total="2"/>
+            <leg:facetYear year="1821" href="http://legislation.data.gov.uk/1821/data.feed" total="3"/>
+            <leg:facetYear year="1820" href="http://legislation.data.gov.uk/1820/data.feed" total="1"/>
+            <leg:facetYear year="1819" href="http://legislation.data.gov.uk/1819/data.feed" total="6"/>
+            <leg:facetYear year="1818" href="http://legislation.data.gov.uk/1818/data.feed" total="2"/>
+            <leg:facetYear year="1817" href="http://legislation.data.gov.uk/1817/data.feed" total="5"/>
+            <leg:facetYear year="1816" href="http://legislation.data.gov.uk/1816/data.feed" total="5"/>
+            <leg:facetYear year="1815" href="http://legislation.data.gov.uk/1815/data.feed" total="2"/>
+            <leg:facetYear year="1814" href="http://legislation.data.gov.uk/1814/data.feed" total="2"/>
+            <leg:facetYear year="1812" href="http://legislation.data.gov.uk/1812/data.feed" total="1"/>
+            <leg:facetYear year="1811" href="http://legislation.data.gov.uk/1811/data.feed" total="1"/>
+            <leg:facetYear year="1809" href="http://legislation.data.gov.uk/1809/data.feed" total="3"/>
+            <leg:facetYear year="1808" href="http://legislation.data.gov.uk/1808/data.feed" total="7"/>
+            <leg:facetYear year="1806" href="http://legislation.data.gov.uk/1806/data.feed" total="1"/>
+            <leg:facetYear year="1805" href="http://legislation.data.gov.uk/1805/data.feed" total="1"/>
+            <leg:facetYear year="1804" href="http://legislation.data.gov.uk/1804/data.feed" total="2"/>
+            <leg:facetYear year="1803" href="http://legislation.data.gov.uk/1803/data.feed" total="4"/>
+            <leg:facetYear year="1802" href="http://legislation.data.gov.uk/1802/data.feed" total="1"/>
+            <leg:facetYear year="1801" href="http://legislation.data.gov.uk/1801/data.feed" total="4"/>
+            <leg:facetYear year="1800" href="http://legislation.data.gov.uk/1800/data.feed" total="4"/>
+            <leg:facetYear year="1799" href="http://legislation.data.gov.uk/1799/data.feed" total="3"/>
+            <leg:facetYear year="1797" href="http://legislation.data.gov.uk/1797/data.feed" total="2"/>
+            <leg:facetYear year="1795" href="http://legislation.data.gov.uk/1795/data.feed" total="2"/>
+            <leg:facetYear year="1793" href="http://legislation.data.gov.uk/1793/data.feed" total="1"/>
+            <leg:facetYear year="1792" href="http://legislation.data.gov.uk/1792/data.feed" total="2"/>
+            <leg:facetYear year="1790" href="http://legislation.data.gov.uk/1790/data.feed" total="1"/>
+            <leg:facetYear year="1787" href="http://legislation.data.gov.uk/1787/data.feed" total="1"/>
+            <leg:facetYear year="1786" href="http://legislation.data.gov.uk/1786/data.feed" total="1"/>
+            <leg:facetYear year="1782" href="http://legislation.data.gov.uk/1782/data.feed" total="1"/>
+            <leg:facetYear year="1781" href="http://legislation.data.gov.uk/1781/data.feed" total="2"/>
+            <leg:facetYear year="1780" href="http://legislation.data.gov.uk/1780/data.feed" total="1"/>
+            <leg:facetYear year="1779" href="http://legislation.data.gov.uk/1779/data.feed" total="1"/>
+            <leg:facetYear year="1776" href="http://legislation.data.gov.uk/1776/data.feed" total="1"/>
+            <leg:facetYear year="1775" href="http://legislation.data.gov.uk/1775/data.feed" total="1"/>
+            <leg:facetYear year="1774" href="http://legislation.data.gov.uk/1774/data.feed" total="2"/>
+            <leg:facetYear year="1773" href="http://legislation.data.gov.uk/1773/data.feed" total="1"/>
+            <leg:facetYear year="1772" href="http://legislation.data.gov.uk/1772/data.feed" total="3"/>
+            <leg:facetYear year="1771" href="http://legislation.data.gov.uk/1771/data.feed" total="1"/>
+            <leg:facetYear year="1770" href="http://legislation.data.gov.uk/1770/data.feed" total="2"/>
+            <leg:facetYear year="1765" href="http://legislation.data.gov.uk/1765/data.feed" total="1"/>
+            <leg:facetYear year="1751" href="http://legislation.data.gov.uk/1751/data.feed" total="2"/>
+            <leg:facetYear year="1750" href="http://legislation.data.gov.uk/1750/data.feed" total="2"/>
+            <leg:facetYear year="1746" href="http://legislation.data.gov.uk/1746/data.feed" total="2"/>
+            <leg:facetYear year="1744" href="http://legislation.data.gov.uk/1744/data.feed" total="1"/>
+            <leg:facetYear year="1743" href="http://legislation.data.gov.uk/1743/data.feed" total="1"/>
+            <leg:facetYear year="1738" href="http://legislation.data.gov.uk/1738/data.feed" total="1"/>
+            <leg:facetYear year="1737" href="http://legislation.data.gov.uk/1737/data.feed" total="3"/>
+            <leg:facetYear year="1730" href="http://legislation.data.gov.uk/1730/data.feed" total="1"/>
+            <leg:facetYear year="1727" href="http://legislation.data.gov.uk/1727/data.feed" total="1"/>
+            <leg:facetYear year="1721" href="http://legislation.data.gov.uk/1721/data.feed" total="1"/>
+            <leg:facetYear year="1716" href="http://legislation.data.gov.uk/1716/data.feed" total="1"/>
+            <leg:facetYear year="1715" href="http://legislation.data.gov.uk/1715/data.feed" total="1"/>
+            <leg:facetYear year="1714" href="http://legislation.data.gov.uk/1714/data.feed" total="1"/>
+            <leg:facetYear year="1711" href="http://legislation.data.gov.uk/1711/data.feed" total="2"/>
+            <leg:facetYear year="1710" href="http://legislation.data.gov.uk/1710/data.feed" total="1"/>
+            <leg:facetYear year="1709" href="http://legislation.data.gov.uk/1709/data.feed" total="1"/>
+            <leg:facetYear year="1708" href="http://legislation.data.gov.uk/1708/data.feed" total="2"/>
+            <leg:facetYear year="1707" href="http://legislation.data.gov.uk/1707/data.feed" total="7"/>
+            <leg:facetYear year="1706" href="http://legislation.data.gov.uk/1706/data.feed" total="2"/>
+            <leg:facetYear year="1705" href="http://legislation.data.gov.uk/1705/data.feed" total="2"/>
+            <leg:facetYear year="1703" href="http://legislation.data.gov.uk/1703/data.feed" total="1"/>
+            <leg:facetYear year="1702" href="http://legislation.data.gov.uk/1702/data.feed" total="3"/>
+            <leg:facetYear year="1701" href="http://legislation.data.gov.uk/1701/data.feed" total="1"/>
+            <leg:facetYear year="1700" href="http://legislation.data.gov.uk/1700/data.feed" total="1"/>
+            <leg:facetYear year="1698" href="http://legislation.data.gov.uk/1698/data.feed" total="3"/>
+            <leg:facetYear year="1696" href="http://legislation.data.gov.uk/1696/data.feed" total="6"/>
+            <leg:facetYear year="1695" href="http://legislation.data.gov.uk/1695/data.feed" total="5"/>
+            <leg:facetYear year="1694" href="http://legislation.data.gov.uk/1694/data.feed" total="2"/>
+            <leg:facetYear year="1693" href="http://legislation.data.gov.uk/1693/data.feed" total="8"/>
+            <leg:facetYear year="1692" href="http://legislation.data.gov.uk/1692/data.feed" total="1"/>
+            <leg:facetYear year="1690" href="http://legislation.data.gov.uk/1690/data.feed" total="4"/>
+            <leg:facetYear year="1689" href="http://legislation.data.gov.uk/1689/data.feed" total="4"/>
+            <leg:facetYear year="1688" href="http://legislation.data.gov.uk/1688/data.feed" total="6"/>
+            <leg:facetYear year="1686" href="http://legislation.data.gov.uk/1686/data.feed" total="1"/>
+            <leg:facetYear year="1685" href="http://legislation.data.gov.uk/1685/data.feed" total="1"/>
+            <leg:facetYear year="1681" href="http://legislation.data.gov.uk/1681/data.feed" total="4"/>
+            <leg:facetYear year="1679" href="http://legislation.data.gov.uk/1679/data.feed" total="1"/>
+            <leg:facetYear year="1677" href="http://legislation.data.gov.uk/1677/data.feed" total="1"/>
+            <leg:facetYear year="1672" href="http://legislation.data.gov.uk/1672/data.feed" total="6"/>
+            <leg:facetYear year="1669" href="http://legislation.data.gov.uk/1669/data.feed" total="2"/>
+            <leg:facetYear year="1666" href="http://legislation.data.gov.uk/1666/data.feed" total="1"/>
+            <leg:facetYear year="1663" href="http://legislation.data.gov.uk/1663/data.feed" total="1"/>
+            <leg:facetYear year="1662" href="http://legislation.data.gov.uk/1662/data.feed" total="2"/>
+            <leg:facetYear year="1661" href="http://legislation.data.gov.uk/1661/data.feed" total="11"/>
+            <leg:facetYear year="1660" href="http://legislation.data.gov.uk/1660/data.feed" total="1"/>
+            <leg:facetYear year="1639" href="http://legislation.data.gov.uk/1639/data.feed" total="1"/>
+            <leg:facetYear year="1633" href="http://legislation.data.gov.uk/1633/data.feed" total="1"/>
+            <leg:facetYear year="1627" href="http://legislation.data.gov.uk/1627/data.feed" total="1"/>
+            <leg:facetYear year="1623" href="http://legislation.data.gov.uk/1623/data.feed" total="2"/>
+            <leg:facetYear year="1621" href="http://legislation.data.gov.uk/1621/data.feed" total="2"/>
+            <leg:facetYear year="1617" href="http://legislation.data.gov.uk/1617/data.feed" total="3"/>
+            <leg:facetYear year="1609" href="http://legislation.data.gov.uk/1609/data.feed" total="1"/>
+            <leg:facetYear year="1607" href="http://legislation.data.gov.uk/1607/data.feed" total="1"/>
+            <leg:facetYear year="1606" href="http://legislation.data.gov.uk/1606/data.feed" total="1"/>
+            <leg:facetYear year="1603" href="http://legislation.data.gov.uk/1603/data.feed" total="1"/>
+            <leg:facetYear year="1600" href="http://legislation.data.gov.uk/1600/data.feed" total="1"/>
+            <leg:facetYear year="1597" href="http://legislation.data.gov.uk/1597/data.feed" total="3"/>
+            <leg:facetYear year="1594" href="http://legislation.data.gov.uk/1594/data.feed" total="3"/>
+            <leg:facetYear year="1592" href="http://legislation.data.gov.uk/1592/data.feed" total="7"/>
+            <leg:facetYear year="1588" href="http://legislation.data.gov.uk/1588/data.feed" total="1"/>
+            <leg:facetYear year="1587" href="http://legislation.data.gov.uk/1587/data.feed" total="2"/>
+            <leg:facetYear year="1585" href="http://legislation.data.gov.uk/1585/data.feed" total="1"/>
+            <leg:facetYear year="1584" href="http://legislation.data.gov.uk/1584/data.feed" total="4"/>
+            <leg:facetYear year="1581" href="http://legislation.data.gov.uk/1581/data.feed" total="2"/>
+            <leg:facetYear year="1579" href="http://legislation.data.gov.uk/1579/data.feed" total="4"/>
+            <leg:facetYear year="1578" href="http://legislation.data.gov.uk/1578/data.feed" total="1"/>
+            <leg:facetYear year="1575" href="http://legislation.data.gov.uk/1575/data.feed" total="1"/>
+            <leg:facetYear year="1572" href="http://legislation.data.gov.uk/1572/data.feed" total="1"/>
+            <leg:facetYear year="1571" href="http://legislation.data.gov.uk/1571/data.feed" total="3"/>
+            <leg:facetYear year="1567" href="http://legislation.data.gov.uk/1567/data.feed" total="2"/>
+            <leg:facetYear year="1560" href="http://legislation.data.gov.uk/1560/data.feed" total="3"/>
+            <leg:facetYear year="1558" href="http://legislation.data.gov.uk/1558/data.feed" total="1"/>
+            <leg:facetYear year="1555" href="http://legislation.data.gov.uk/1555/data.feed" total="1"/>
+            <leg:facetYear year="1554" href="http://legislation.data.gov.uk/1554/data.feed" total="1"/>
+            <leg:facetYear year="1551" href="http://legislation.data.gov.uk/1551/data.feed" total="1"/>
+            <leg:facetYear year="1547" href="http://legislation.data.gov.uk/1547/data.feed" total="1"/>
+            <leg:facetYear year="1542" href="http://legislation.data.gov.uk/1542/data.feed" total="2"/>
+            <leg:facetYear year="1540" href="http://legislation.data.gov.uk/1540/data.feed" total="3"/>
+            <leg:facetYear year="1539" href="http://legislation.data.gov.uk/1539/data.feed" total="1"/>
+            <leg:facetYear year="1536" href="http://legislation.data.gov.uk/1536/data.feed" total="1"/>
+            <leg:facetYear year="1535" href="http://legislation.data.gov.uk/1535/data.feed" total="2"/>
+            <leg:facetYear year="1534" href="http://legislation.data.gov.uk/1534/data.feed" total="1"/>
+            <leg:facetYear year="1533" href="http://legislation.data.gov.uk/1533/data.feed" total="3"/>
+            <leg:facetYear year="1532" href="http://legislation.data.gov.uk/1532/data.feed" total="1"/>
+            <leg:facetYear year="1514" href="http://legislation.data.gov.uk/1514/data.feed" total="1"/>
+            <leg:facetYear year="1512" href="http://legislation.data.gov.uk/1512/data.feed" total="1"/>
+            <leg:facetYear year="1503" href="http://legislation.data.gov.uk/1503/data.feed" total="1"/>
+            <leg:facetYear year="1495" href="http://legislation.data.gov.uk/1495/data.feed" total="2"/>
+            <leg:facetYear year="1491" href="http://legislation.data.gov.uk/1491/data.feed" total="3"/>
+            <leg:facetYear year="1487" href="http://legislation.data.gov.uk/1487/data.feed" total="1"/>
+            <leg:facetYear year="1474" href="http://legislation.data.gov.uk/1474/data.feed" total="1"/>
+            <leg:facetYear year="1469" href="http://legislation.data.gov.uk/1469/data.feed" total="2"/>
+            <leg:facetYear year="1449" href="http://legislation.data.gov.uk/1449/data.feed" total="1"/>
+            <leg:facetYear year="1429" href="http://legislation.data.gov.uk/1429/data.feed" total="1"/>
+            <leg:facetYear year="1424" href="http://legislation.data.gov.uk/1424/data.feed" total="1"/>
+            <leg:facetYear year="1423" href="http://legislation.data.gov.uk/1423/data.feed" total="1"/>
+            <leg:facetYear year="1416" href="http://legislation.data.gov.uk/1416/data.feed" total="1"/>
+            <leg:facetYear year="1405" href="http://legislation.data.gov.uk/1405/data.feed" total="1"/>
+            <leg:facetYear year="1382" href="http://legislation.data.gov.uk/1382/data.feed" total="1"/>
+            <leg:facetYear year="1368" href="http://legislation.data.gov.uk/1368/data.feed" total="1"/>
+            <leg:facetYear year="1361" href="http://legislation.data.gov.uk/1361/data.feed" total="1"/>
+            <leg:facetYear year="1354" href="http://legislation.data.gov.uk/1354/data.feed" total="1"/>
+            <leg:facetYear year="1351" href="http://legislation.data.gov.uk/1351/data.feed" total="2"/>
+            <leg:facetYear year="1350" href="http://legislation.data.gov.uk/1350/data.feed" total="1"/>
+            <leg:facetYear year="1337" href="http://legislation.data.gov.uk/1337/data.feed" total="1"/>
+            <leg:facetYear year="1322" href="http://legislation.data.gov.uk/1322/data.feed" total="3"/>
+            <leg:facetYear year="1313" href="http://legislation.data.gov.uk/1313/data.feed" total="1"/>
+            <leg:facetYear year="1297" href="http://legislation.data.gov.uk/1297/data.feed" total="3"/>
+            <leg:facetYear year="1290" href="http://legislation.data.gov.uk/1290/data.feed" total="1"/>
+            <leg:facetYear year="1285" href="http://legislation.data.gov.uk/1285/data.feed" total="2"/>
+            <leg:facetYear year="1275" href="http://legislation.data.gov.uk/1275/data.feed" total="1"/>
+            <leg:facetYear year="1267" href="http://legislation.data.gov.uk/1267/data.feed" total="2"/>
+        </leg:facetYears>
+        <leg:facetHundreds/>
+
+    </leg:facets>
+
+    <!-- See http://www.legislation.gov.uk/all/data.feed?page=2 -->
+
+    <link rel="first" type="application/atom+xml" href="http://legislation.data.gov.uk/all/data.feed"/>
+    <link rel="prev" type="application/atom+xml" href="http://legislation.data.gov.uk/all/data.feed"/>
+    <link rel="next" type="application/atom+xml" href="http://legislation.data.gov.uk/all/data.feed?page=3"/>
+    <entry>
+        <id>http://www.legislation.gov.uk/id/ukpga/2015/12</id>
+        <title>International Development (Official Development Assistance Target) Act 2015</title>
+        <link rel="self" href="http://www.legislation.gov.uk/id/ukpga/2015/12"/>
+        <link href="http://www.legislation.gov.uk/ukpga/2015/12/2015-06-01"/>
+        <link rel="alternate" type="application/xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/12/2015-06-01/data.xml" title="XML"/>
+        <link rel="alternate" type="application/rdf+xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/12/2015-06-01/data.rdf" title="RDF/XML"/>
+        <link rel="alternate" type="application/akn+xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/12/2015-06-01/data.akn" title="AKN"/>
+        <link rel="alternate" type="application/xhtml+xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/12/2015-06-01/data.htm" title="HTML snippet"/>
+        <link rel="alternate" type="application/pdf"
+              href="http://legislation.data.gov.uk/ukpga/2015/12/2015-06-01/data.pdf" title="PDF"/>
+        <link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml"
+              href="http://www.legislation.gov.uk/ukpga/2015/12/contents" title="Table of Contents"/>
+        <author>
+            <name/>
+        </author>
+        <updated>2015-04-16T00:59:59+01:00</updated>
+        <published>2015-03-27T09:04:54.14+01:00</published>
+        <ukm:DocumentMainType Value="UnitedKingdomPublicGeneralAct"/>
+        <ukm:Year Value="2015"/>
+        <ukm:Number Value="12"/>
+        <ukm:ISBN Value="9780105400011"/>
+        <ukm:CreationDate Date="2015-03-26"/>
+
+
+        <summary>An Act to make provision about the meeting by the United Kingdom of the target for official development
+            assistance (ODA) to constitute 0.7 per cent of gross national income; to make provision for independent
+            verification that ODA is spent efficiently and effectively; and for connected purposes.
+        </summary>
+    </entry>
+    <entry>
+        <id>http://www.legislation.gov.uk/id/anaw/2015/4</id>
+        <title type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <span xml:lang="en">Planning (Wales) Act 2015</span>
+                /
+                <span xml:lang="cy">Deddf Cynllunio (Cymru) 2015</span>
+            </div>
+        </title>
+        <link rel="self" href="http://www.legislation.gov.uk/id/anaw/2015/4"/>
+        <link href="http://www.legislation.gov.uk/anaw/2015/4/enacted"/>
+        <link rel="alternate" type="application/xml" href="http://legislation.data.gov.uk/anaw/2015/4/enacted/data.xml"
+              title="XML"/>
+        <link rel="alternate" type="application/xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/welsh/data.xml" hreflang="cy"
+              title="XML - Cymru"/>
+        <link rel="alternate" type="application/rdf+xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/data.rdf" title="RDF/XML"/>
+        <link rel="alternate" type="application/rdf+xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/welsh/data.rdf" hreflang="cy"
+              title="RDF/XML - Cymru"/>
+        <link rel="alternate" type="application/akn+xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/data.akn" title="AKN"/>
+        <link rel="alternate" type="application/akn+xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/welsh/data.akn" hreflang="cy"
+              title="AKN - Cymru"/>
+        <link rel="alternate" type="application/xhtml+xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/data.htm" title="HTML snippet"/>
+        <link rel="alternate" type="application/xhtml+xml"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/welsh/data.htm" hreflang="cy"
+              title="HTML snippet - Cymru"/>
+        <link rel="alternate" type="application/pdf" href="http://legislation.data.gov.uk/anaw/2015/4/enacted/data.pdf"
+              title="PDF"/>
+        <link rel="alternate" type="application/pdf"
+              href="http://legislation.data.gov.uk/anaw/2015/4/enacted/welsh/data.pdf" hreflang="cy"
+              title="PDF - Cymru"/>
+        <link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml"
+              href="http://www.legislation.gov.uk/anaw/2015/4/contents/enacted" title="Table of Contents"/>
+        <link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml"
+              href="http://www.legislation.gov.uk/anaw/2015/4/contents/enacted/welsh" hreflang="cy"
+              title="Table of Contents - Cymru"/>
+        <author>
+            <name/>
+        </author>
+        <updated>2015-07-09T00:59:59+01:00</updated>
+        <published>2015-07-07T16:54:09.167+01:00</published>
+        <ukm:DocumentMainType Value="WelshNationalAssemblyAct"/>
+        <ukm:Year Value="2015"/>
+        <ukm:Number Value="4"/>
+        <ukm:ISBN Value="9780348110852"/>
+        <ukm:CreationDate Date="2015-07-06"/>
+
+
+        <summary type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p xml:lang="en">An Act of the National Assembly for Wales to make provision about national, strategic
+                    and local development planning in Wales; to make provision for certain applications for planning
+                    permission and certain other applications to be made to the Welsh Ministers; to make other provision
+                    about development management and applications for planning permission; to make provision about
+                    planning enforcement, appeals and certain other proceedings; to amend the Commons Act 2006; and for
+                    connected purposes.
+                </p>
+                <p xml:lang="cy">Deddf gan Gynulliad Cenedlaethol Cymru i wneud darpariaeth ynghylch cynllunio datblygu
+                    cenedlaethol, strategol a lleol yng Nghymru; i wneud darpariaeth i geisiadau penodol am ganiatâd
+                    cynllunio a cheisiadau penodol eraill gael eu gwneud i Weinidogion Cymru; i wneud darpariaethau
+                    eraill ynghylch rheoli datblygu a cheisiadau am ganiatâd cynllunio; i wneud darpariaeth ynghylch
+                    gorfodi, apelau a gweithdrefnau penodol eraill ym maes cynllunio; i ddiwygio Deddf Tiroedd Comin
+                    2006; ac at ddibenion cysylltiedig.
+                </p>
+            </div>
+        </summary>
+    </entry>
+    <entry>
+        <id>http://www.legislation.gov.uk/id/asp/2015/4</id>
+        <title>Legal Writings (Counterparts and Delivery) (Scotland) Act 2015</title>
+        <link rel="self" href="http://www.legislation.gov.uk/id/asp/2015/4"/>
+        <link href="http://www.legislation.gov.uk/asp/2015/4/2015-04-02"/>
+        <link rel="alternate" type="application/xml"
+              href="http://legislation.data.gov.uk/asp/2015/4/2015-04-02/data.xml" title="XML"/>
+        <link rel="alternate" type="application/rdf+xml"
+              href="http://legislation.data.gov.uk/asp/2015/4/2015-04-02/data.rdf" title="RDF/XML"/>
+        <link rel="alternate" type="application/akn+xml"
+              href="http://legislation.data.gov.uk/asp/2015/4/2015-04-02/data.akn" title="AKN"/>
+        <link rel="alternate" type="application/xhtml+xml"
+              href="http://legislation.data.gov.uk/asp/2015/4/2015-04-02/data.htm" title="HTML snippet"/>
+        <link rel="alternate" type="application/pdf"
+              href="http://legislation.data.gov.uk/asp/2015/4/2015-04-02/data.pdf" title="PDF"/>
+        <link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml"
+              href="http://www.legislation.gov.uk/asp/2015/4/contents" title="Table of Contents"/>
+        <author>
+            <name/>
+        </author>
+        <updated>2015-05-21T00:59:59+01:00</updated>
+        <published>2015-04-08T17:04:38.732+01:00</published>
+        <ukm:DocumentMainType Value="ScottishAct"/>
+        <ukm:Year Value="2015"/>
+        <ukm:Number Value="4"/>
+        <ukm:ISBN Value="9780105902454"/>
+        <ukm:CreationDate Date="2015-04-01"/>
+
+
+        <summary>An Act of the Scottish Parliament to make provision about execution of documents in counterpart and the
+            delivery by electronic means of traditional documents; and for connected purposes.
+        </summary>
+    </entry>
+    <entry>
+        <id>http://www.legislation.gov.uk/id/nia/2015/4</id>
+        <title>Budget Act (Northern Ireland) 2015</title>
+        <link rel="self" href="http://www.legislation.gov.uk/id/nia/2015/4"/>
+        <link href="http://www.legislation.gov.uk/nia/2015/4/2015-03-12"/>
+        <link rel="alternate" type="application/xml"
+              href="http://legislation.data.gov.uk/nia/2015/4/2015-03-12/data.xml" title="XML"/>
+        <link rel="alternate" type="application/rdf+xml"
+              href="http://legislation.data.gov.uk/nia/2015/4/2015-03-12/data.rdf" title="RDF/XML"/>
+        <link rel="alternate" type="application/akn+xml"
+              href="http://legislation.data.gov.uk/nia/2015/4/2015-03-12/data.akn" title="AKN"/>
+        <link rel="alternate" type="application/xhtml+xml"
+              href="http://legislation.data.gov.uk/nia/2015/4/2015-03-12/data.htm" title="HTML snippet"/>
+        <link rel="alternate" type="application/pdf"
+              href="http://legislation.data.gov.uk/nia/2015/4/2015-03-12/data.pdf" title="PDF"/>
+        <link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml"
+              href="http://www.legislation.gov.uk/nia/2015/4/contents" title="Table of Contents"/>
+        <author>
+            <name/>
+        </author>
+        <updated>2015-03-24T00:59:59+01:00</updated>
+        <published>2015-03-12T17:30:46.386+01:00</published>
+        <ukm:DocumentMainType Value="NorthernIrelandAct"/>
+        <ukm:Year Value="2015"/>
+        <ukm:Number Value="4"/>
+        <ukm:ISBN Value="9780105951575"/>
+        <ukm:CreationDate Date="2015-03-12"/>
+
+
+        <summary>An Act to authorise the issue out of the Consolidated Fund of certain sums for the service of the years
+            ending 31st March 2015 and 2016; to appropriate those sums for specified purposes; to authorise the
+            Department of Finance and Personnel to borrow on the credit of the appropriated sums; to authorise the use
+            for the public service of certain resources for the years ending 31st March 2015 and 2016; and to revise the
+            limits on the use of certain accruing resources in the year ending 31st March 2015.
+        </summary>
+    </entry>
+    <entry>
+        <id>http://www.legislation.gov.uk/id/ukpga/2015/4</id>
+        <title>Insurance Act 2015</title>
+        <link rel="self" href="http://www.legislation.gov.uk/id/ukpga/2015/4"/>
+        <link href="http://www.legislation.gov.uk/ukpga/2015/4/2015-04-12"/>
+        <link rel="alternate" type="application/xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/4/2015-04-12/data.xml" title="XML"/>
+        <link rel="alternate" type="application/rdf+xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/4/2015-04-12/data.rdf" title="RDF/XML"/>
+        <link rel="alternate" type="application/akn+xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/4/2015-04-12/data.akn" title="AKN"/>
+        <link rel="alternate" type="application/xhtml+xml"
+              href="http://legislation.data.gov.uk/ukpga/2015/4/2015-04-12/data.htm" title="HTML snippet"/>
+        <link rel="alternate" type="application/pdf"
+              href="http://legislation.data.gov.uk/ukpga/2015/4/2015-04-12/data.pdf" title="PDF"/>
+        <link rel="http://purl.org/dc/terms/tableOfContents" type="application/xml"
+              href="http://www.legislation.gov.uk/ukpga/2015/4/contents" title="Table of Contents"/>
+        <author>
+            <name/>
+        </author>
+        <updated>2015-03-04T00:59:59+01:00</updated>
+        <published>2015-02-13T09:37:33.169+01:00</published>
+        <ukm:DocumentMainType Value="UnitedKingdomPublicGeneralAct"/>
+        <ukm:Year Value="2015"/>
+        <ukm:Number Value="4"/>
+        <ukm:ISBN Value="9780105404156"/>
+        <ukm:CreationDate Date="2015-02-12"/>
+
+
+        <summary>An Act to make new provision about insurance contracts; to amend the Third Parties (Rights against
+            Insurers) Act 2010 in relation to the insured persons to whom that Act applies; and for connected purposes.
+        </summary>
+    </entry>
+</feed>
