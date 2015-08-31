@@ -4,9 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Legislation.gov.uk library</name>
+    <description>Java library for consuming the Legislation.gov.uk API</description>
+    <url>https://github.com/digitalheir/java-legislation-gov-uk-library</url>
+
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://github.com/digitalheir/java-legislation-gov-uk-library/blob/master/LICENSE.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <groupId>org.leibnizcenter</groupId>
     <artifactId>org.leibnizcenter.uk.gov.legislation</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.9</version>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>com.google.code.gson</groupId>

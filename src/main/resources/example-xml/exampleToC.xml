@@ -1,0 +1,1573 @@
+<Legislation xmlns="http://www.legislation.gov.uk/namespaces/legislation"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/enacted/welsh"
+             IdURI="http://www.legislation.gov.uk/id/anaw/2015/4" NumberOfProvisions="260"
+             xsi:schemaLocation="http://www.legislation.gov.uk/namespaces/legislation http://www.legislation.gov.uk/schema/legislation.xsd"
+             SchemaVersion="1.0" xml:lang="cy" xml:base="http://www.legislation.gov.uk/id/anaw/2015/4">
+    <ukm:Metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+                  xmlns:atom="http://www.w3.org/2005/Atom"
+                  xmlns:ukm="http://www.legislation.gov.uk/namespaces/metadata">
+        <dc:identifier>http://www.legislation.gov.uk/anaw/2015/4/contents/enacted/welsh</dc:identifier>
+        <dc:title>Deddf Cynllunio (Cymru) 2015</dc:title>
+        <dc:language>cy</dc:language>
+        <dc:publisher>Queen's Printer of Acts of Parliament</dc:publisher>
+        <dc:modified>2015-07-08</dc:modified>
+
+        <atom:link rel="self" type="application/xml"
+                   href="http://legislation.data.gov.uk/anaw/2015/4/contents/enacted/welsh/data.xml"/>
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/resources"
+                   href="http://www.legislation.gov.uk/anaw/2015/4/resources" title="More Resources"/>
+
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/notes"
+                   href="http://www.legislation.gov.uk/id/anaw/2015/4/notes" title="Explanatory Notes"/>
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/notes/toc"
+                   href="http://www.legislation.gov.uk/anaw/2015/4/notes/contents"
+                   title="Explanatory Notes Table of Contents"/>
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/act"
+                   href="http://www.legislation.gov.uk/anaw/2015/4/enacted/welsh" title="whole act"/>
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/introduction"
+                   href="http://www.legislation.gov.uk/anaw/2015/4/introduction/enacted/welsh" title="introduction"/>
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/body"
+                   href="http://www.legislation.gov.uk/anaw/2015/4/body/enacted/welsh" title="body"/>
+        <atom:link rel="http://www.legislation.gov.uk/def/navigation/schedules"
+                   href="http://www.legislation.gov.uk/anaw/2015/4/schedules/enacted/welsh" title="schedules"/>
+        <atom:link rel="alternate" hreflang="en" href="http://www.legislation.gov.uk/anaw/2015/4/contents/enacted"/>
+        <atom:link rel="alternate" type="application/akn+xml"
+                   href="http://legislation.data.gov.uk/anaw/2015/4/contents/enacted/welsh/data.akn" title="AKN"/>
+        <atom:link rel="alternate" type="application/xhtml+xml"
+                   href="http://legislation.data.gov.uk/anaw/2015/4/contents/enacted/welsh/data.htm"
+                   title="HTML snippet"/>
+        <atom:link rel="alternate" type="application/pdf"
+                   href="http://legislation.data.gov.uk/anaw/2015/4/contents/enacted/welsh/data.pdf" title="PDF"/>
+        <atom:link rel="alternate" type="application/akn+xhtml"
+                   href="http://legislation.data.gov.uk/anaw/2015/4/contents/enacted/welsh/data.html"
+                   title="HTML5 snippet"/>
+
+
+        <ukm:PrimaryMetadata>
+            <ukm:DocumentClassification>
+                <ukm:DocumentCategory Value="primary"/>
+
+                <ukm:DocumentMainType Value="WelshNationalAssemblyAct"/>
+                <ukm:DocumentStatus Value="final"/>
+            </ukm:DocumentClassification>
+            <ukm:Year Value="2015"/>
+            <ukm:Number Value="4"/>
+            <ukm:EnactmentDate Date="2015-07-06"/>
+            <ukm:ISBN Value="9780348110852"/>
+        </ukm:PrimaryMetadata>
+
+
+        <ukm:Notes>
+            <ukm:Note IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/notes"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/notes/contents"/>
+            <ukm:Alternatives>
+                <ukm:Alternative URI="http://www.legislation.gov.uk/anaw/2015/4/pdfs/anawen_20150004_we.pdf"
+                                 Date="2015-07-08" Title="Explanatory Note" Size="368461" Language="Welsh"/>
+                <ukm:Alternative URI="http://www.legislation.gov.uk/anaw/2015/4/pdfs/anawen_20150004_en.pdf"
+                                 Date="2015-07-08" Title="Explanatory Note" Size="381764"/>
+            </ukm:Alternatives>
+        </ukm:Notes>
+        <ukm:Alternatives>
+            <ukm:Alternative URI="http://www.legislation.gov.uk/anaw/2015/4/pdfs/anaw_20150004_mi.pdf" Date="2015-07-08"
+                             Size="3180935" Language="Mixed"/>
+            <ukm:Alternative URI="http://www.legislation.gov.uk/anaw/2015/4/pdfs/anaw_20150004_we.pdf" Date="2015-07-08"
+                             Size="3182166" Language="Welsh"/>
+            <ukm:Alternative URI="http://www.legislation.gov.uk/anaw/2015/4/pdfs/anaw_20150004_en.pdf" Date="2015-07-08"
+                             Size="3183303"/>
+        </ukm:Alternatives>
+
+        <ukm:Statistics>
+            <ukm:TotalParagraphs Value="260"/>
+            <ukm:BodyParagraphs Value="108"/>
+            <ukm:ScheduleParagraphs Value="152"/>
+            <ukm:TotalImages Value="0"/>
+        </ukm:Statistics>
+
+    </ukm:Metadata>
+    <Contents>
+        <ContentsTitle>Deddf Cynllunio (Cymru) 2015</ContentsTitle>
+
+        <ContentsPart ContentRef="part-1" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/1"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/1/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 1</ContentsNumber>
+            <ContentsTitle>CYFLWYNIAD</ContentsTitle>
+            <ContentsItem ContentRef="section-1" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/1"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/1/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>1</ContentsNumber>
+                <ContentsTitle>Trosolwg o’r Ddeddf hon</ContentsTitle>
+            </ContentsItem>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-2" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/2"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/2/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 2</ContentsNumber>
+            <ContentsTitle>DATBLYGU CYNALIADWY</ContentsTitle>
+            <ContentsItem ContentRef="section-2" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/2"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/2/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>2</ContentsNumber>
+                <ContentsTitle>Datblygu cynaliadwy</ContentsTitle>
+            </ContentsItem>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-3" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 3</ContentsNumber>
+            <ContentsTitle>CYNLLUNIO DATBLYGU</ContentsTitle>
+            <ContentsPblock ContentRef="part-3-crossheading-fframwaith-datblygu-cenedlaethol-cymru"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3/crossheading/fframwaith-datblygu-cenedlaethol-cymru"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/crossheading/fframwaith-datblygu-cenedlaethol-cymru/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Fframwaith Datblygu Cenedlaethol Cymru</ContentsTitle>
+                <ContentsItem ContentRef="section-3" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/3"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/3/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>3</ContentsNumber>
+                    <ContentsTitle>Llunio ac adolygu Fframwaith Datblygu Cenedlaethol Cymru</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-3-crossheading-cynllunio-strategol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3/crossheading/cynllunio-strategol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/crossheading/cynllunio-strategol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Cynllunio strategol</ContentsTitle>
+                <ContentsItem ContentRef="section-4" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/4"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/4/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>4</ContentsNumber>
+                    <ContentsTitle>Dynodi ardaloedd cynllunio strategol a sefydlu paneli cynllunio strategol
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-5" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/5"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/5/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>5</ContentsNumber>
+                    <ContentsTitle>Ardaloedd cynllunio strategol: arolwg</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-6" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/6"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/6/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>6</ContentsNumber>
+                    <ContentsTitle>Llunio ac adolygu cynlluniau datblygu strategol</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock
+                    ContentRef="part-3-crossheading-statws-y-fframwaith-datblygu-cenedlaethol-a-chynlluniau-datblygu-strategol"
+                    IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3/crossheading/statws-y-fframwaith-datblygu-cenedlaethol-a-chynlluniau-datblygu-strategol"
+                    DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/crossheading/statws-y-fframwaith-datblygu-cenedlaethol-a-chynlluniau-datblygu-strategol/enacted/welsh"
+                    RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Statws y Fframwaith Datblygu Cenedlaethol a chynlluniau datblygu strategol
+                </ContentsTitle>
+                <ContentsItem ContentRef="section-7" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/7"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/7/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>7</ContentsNumber>
+                    <ContentsTitle>Cydymffurfedd cynlluniau penodol â’r Fframwaith Datblygu Cenedlaethol a’r cynllun
+                        datblygu strategol
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-8" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/8"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/8/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>8</ContentsNumber>
+                    <ContentsTitle>Dyletswydd i ystyried pa un ai i adolygu cynllun datblygu lleol</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-9" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/9"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/9/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>9</ContentsNumber>
+                    <ContentsTitle>Y Fframwaith Datblygu Cenedlaethol a’r cynllun datblygu strategol i fod yn rhan o’r
+                        cynllun datblygu
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-3-crossheading-tir-o-dan-falltod"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3/crossheading/tir-o-dan-falltod"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/crossheading/tir-o-dan-falltod/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Tir o dan falltod</ContentsTitle>
+                <ContentsItem ContentRef="section-10" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/10"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/10/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>10</ContentsNumber>
+                    <ContentsTitle>Tir y mae’r Fframwaith Datblygu Cenedlaethol neu’r cynllun datblygu strategol yn
+                        effeithio arno
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-3-crossheading-cynlluniau-datblygu-lleol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3/crossheading/cynlluniau-datblygu-lleol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/crossheading/cynlluniau-datblygu-lleol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Cynlluniau datblygu lleol</ContentsTitle>
+                <ContentsItem ContentRef="section-11" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/11"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/11/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>11</ContentsNumber>
+                    <ContentsTitle>Y Gymraeg</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-12" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/12"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/12/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>12</ContentsNumber>
+                    <ContentsTitle>Y cyfnod y bydd cynllun datblygu lleol yn cael effaith</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-13" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/13"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/13/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>13</ContentsNumber>
+                    <ContentsTitle>Tynnu cynllun datblygu lleol yn ôl</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-14" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/14"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/14/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>14</ContentsNumber>
+                    <ContentsTitle>Pŵer Gweinidogion Cymru i gyfarwyddo bod cynllun datblygu lleol yn cael ei lunio ar y
+                        cyd
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-15" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/15"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/15/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>15</ContentsNumber>
+                    <ContentsTitle>Byrddau cydgynllunio: swyddogaethau sy’n ymwneud ag arolygon a chynlluniau datblygu
+                        lleol
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-3-crossheading-cyffredinol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/3/crossheading/cyffredinol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/3/crossheading/cyffredinol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Cyffredinol</ContentsTitle>
+                <ContentsItem ContentRef="section-16" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/16"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/16/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>16</ContentsNumber>
+                    <ContentsTitle>Cynllunio datblygu: diwygiadau pellach</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-4" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/4"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/4/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 4</ContentsNumber>
+            <ContentsTitle>GWEITHDREFN CYN YMGEISIO</ContentsTitle>
+            <ContentsItem ContentRef="section-17" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/17"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/17/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>17</ContentsNumber>
+                <ContentsTitle>Gofyniad i gynnal ymgynghoriad cyn ymgeisio</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-18" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/18"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/18/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>18</ContentsNumber>
+                <ContentsTitle>Gofyniad i ddarparu gwasanaethau cyn ymgeisio</ContentsTitle>
+            </ContentsItem>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-5" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/5"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/5/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 5</ContentsNumber>
+            <ContentsTitle>CEISIADAU I WEINIDOGION CYMRU</ContentsTitle>
+            <ContentsPblock ContentRef="part-5-crossheading-datblygiadau-o-arwyddocd-cenedlaethol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/5/crossheading/datblygiadau-o-arwyddocd-cenedlaethol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/5/crossheading/datblygiadau-o-arwyddocd-cenedlaethol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Datblygiadau o arwyddocâd cenedlaethol</ContentsTitle>
+                <ContentsItem ContentRef="section-19" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/19"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/19/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>19</ContentsNumber>
+                    <ContentsTitle>Datblygiadau o arwyddocâd cenedlaethol: ceisiadau am ganiatâd cynllunio
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-20" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/20"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/20/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>20</ContentsNumber>
+                    <ContentsTitle>Datblygiadau o arwyddocâd cenedlaethol: cydsyniadau eilaidd</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-21" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/21"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/21/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>21</ContentsNumber>
+                    <ContentsTitle>Datblygiadau o arwyddocâd cenedlaethol: adroddiadau effaith lleol</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-22" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/22"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/22/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>22</ContentsNumber>
+                    <ContentsTitle>Yr amserlen ar gyfer penderfynu ceisiadau</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-5-crossheading-yr-opsiwn-o-wneud-cais-i-weinidogion-cymru"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/5/crossheading/yr-opsiwn-o-wneud-cais-i-weinidogion-cymru"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/5/crossheading/yr-opsiwn-o-wneud-cais-i-weinidogion-cymru/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Yr opsiwn o wneud cais i Weinidogion Cymru</ContentsTitle>
+                <ContentsItem ContentRef="section-23" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/23"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/23/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>23</ContentsNumber>
+                    <ContentsTitle>Yr opsiwn o wneud cais i Weinidogion Cymru</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-5-crossheading-cyffredinol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/5/crossheading/cyffredinol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/5/crossheading/cyffredinol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Cyffredinol</ContentsTitle>
+                <ContentsItem ContentRef="section-24" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/24"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/24/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>24</ContentsNumber>
+                    <ContentsTitle>Darpariaeth bellach ynghylch ceisiadau a wneir i Weinidogion Cymru</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-25" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/25"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/25/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>25</ContentsNumber>
+                    <ContentsTitle>Pŵer i wneud darpariaeth drwy orchymyn datblygu mewn cysylltiad â cheisiadau i
+                        Weinidogion Cymru
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-26" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/26"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/26/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>26</ContentsNumber>
+                    <ContentsTitle>Datblygiadau o arwyddocâd cenedlaethol a cheisiadau a wneir i Weinidogion Cymru:
+                        arfer swyddogaethau gan berson penodedig
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-27" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/27"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/27/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>27</ContentsNumber>
+                    <ContentsTitle>Ceisiadau i Weinidogion Cymru: diwygiadau pellach</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-6" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 6</ContentsNumber>
+            <ContentsTitle>RHEOLI DATBLYGU
+                <Abbreviation Expansion="Et cetera" xml:lang="la">ETC</Abbreviation>
+            </ContentsTitle>
+            <ContentsPblock ContentRef="part-6-crossheading-gofynion-o-ran-ceisiadau-i-awdurdodau-cynllunio-lleol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/gofynion-o-ran-ceisiadau-i-awdurdodau-cynllunio-lleol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/gofynion-o-ran-ceisiadau-i-awdurdodau-cynllunio-lleol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Gofynion o ran ceisiadau i awdurdodau cynllunio lleol</ContentsTitle>
+                <ContentsItem ContentRef="section-28" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/28"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/28/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>28</ContentsNumber>
+                    <ContentsTitle>Pŵer awdurdod cynllunio lleol i’w gwneud yn ofynnol i wybodaeth gael ei rhoi gyda
+                        chais
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-29" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/29"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/29/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>29</ContentsNumber>
+                    <ContentsTitle>Ceisiadau annilys: hysbysu ac apelio</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-30" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/30"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/30/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>30</ContentsNumber>
+                    <ContentsTitle>Dirymu arbed Rheoliadau Cynllunio Gwlad a Thref (Ceisiadau) 1988</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-6-crossheading-penderfynu-ar-geisiadau-am-ganiatd-cynllunio"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/penderfynu-ar-geisiadau-am-ganiatd-cynllunio"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/penderfynu-ar-geisiadau-am-ganiatd-cynllunio/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Penderfynu ar geisiadau am ganiatâd cynllunio</ContentsTitle>
+                <ContentsItem ContentRef="section-31" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/31"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/31/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>31</ContentsNumber>
+                    <ContentsTitle>Y Gymraeg</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-32" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/32"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/32/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>32</ContentsNumber>
+                    <ContentsTitle>Pŵer i wrthod penderfynu ar ôl-gais</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-6-crossheading-hysbysiadau-penderfynu-a-hysbysu-am-ddatblygiad"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/hysbysiadau-penderfynu-a-hysbysu-am-ddatblygiad"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/hysbysiadau-penderfynu-a-hysbysu-am-ddatblygiad/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Hysbysiadau penderfynu a hysbysu am ddatblygiad</ContentsTitle>
+                <ContentsItem ContentRef="section-33" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/33"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/33/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>33</ContentsNumber>
+                    <ContentsTitle>Hysbysiadau penderfynu</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-34" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/34"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/34/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>34</ContentsNumber>
+                    <ContentsTitle>Hysbysiad am ddatblygiad</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-6-crossheading-cyfnod-para-caniatd-cynllunio"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/cyfnod-para-caniatd-cynllunio"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/cyfnod-para-caniatd-cynllunio/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Cyfnod para caniatâd cynllunio</ContentsTitle>
+                <ContentsItem ContentRef="section-35" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/35"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/35/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>35</ContentsNumber>
+                    <ContentsTitle>Cyfnod para caniatâd cynllunio: cyffredinol</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-36" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/36"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/36/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>36</ContentsNumber>
+                    <ContentsTitle>Cyfnod para caniatâd cynllunio amlinellol</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock
+                    ContentRef="part-6-crossheading-ymgynghori-etc-mewn-cysylltiad-cheisiadau-penodol-syn-ymwneud-chaniatd-cynllunio"
+                    IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/ymgynghori-etc-mewn-cysylltiad-cheisiadau-penodol-syn-ymwneud-chaniatd-cynllunio"
+                    DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/ymgynghori-etc-mewn-cysylltiad-cheisiadau-penodol-syn-ymwneud-chaniatd-cynllunio/enacted/welsh"
+                    RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Ymgynghori
+                    <Abbreviation Expansion="Et cetera" xml:lang="la">etc</Abbreviation>
+                    mewn cysylltiad â cheisiadau penodol sy’n ymwneud â chaniatâd cynllunio
+                </ContentsTitle>
+                <ContentsItem ContentRef="section-37" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/37"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/37/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>37</ContentsNumber>
+                    <ContentsTitle>Ymgynghori etc mewn cysylltiad â cheisiadau penodol sy’n ymwneud â chaniatâd
+                        cynllunio
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-6-crossheading-cau-neu-wyro-llwybrau-cyhoeddus"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/cau-neu-wyro-llwybrau-cyhoeddus"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/cau-neu-wyro-llwybrau-cyhoeddus/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Cau neu wyro llwybrau cyhoeddus</ContentsTitle>
+                <ContentsItem ContentRef="section-38" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/38"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/38/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>38</ContentsNumber>
+                    <ContentsTitle>Cau neu wyro llwybrau cyhoeddus pan wneir cais am ganiatâd cynllunio</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock
+                    ContentRef="part-6-crossheading-arfer-swyddogaethau-awdurdod-cynllunio-lleol-syn-ymwneud-cheisiadau"
+                    IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/arfer-swyddogaethau-awdurdod-cynllunio-lleol-syn-ymwneud-cheisiadau"
+                    DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/arfer-swyddogaethau-awdurdod-cynllunio-lleol-syn-ymwneud-cheisiadau/enacted/welsh"
+                    RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Arfer swyddogaethau awdurdod cynllunio lleol sy’n ymwneud â cheisiadau</ContentsTitle>
+                <ContentsItem ContentRef="section-39" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/39"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/39/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>39</ContentsNumber>
+                    <ContentsTitle>Arfer swyddogaethau awdurdod cynllunio lleol sy’n ymwneud â cheisiadau
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-6-crossheading-byrddau-cydgynllunio-a-pharciau-cenedlaethol"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/6/crossheading/byrddau-cydgynllunio-a-pharciau-cenedlaethol"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/6/crossheading/byrddau-cydgynllunio-a-pharciau-cenedlaethol/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Byrddau cydgynllunio a Pharciau Cenedlaethol</ContentsTitle>
+                <ContentsItem ContentRef="section-40" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/40"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/40/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>40</ContentsNumber>
+                    <ContentsTitle>Byrddau cydgynllunio i fod yn awdurdodau sylweddau peryglus</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-41" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/41"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/41/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>41</ContentsNumber>
+                    <ContentsTitle>Pŵer i wneud darpariaeth sy’n galluogi byrddau cydgynllunio i arfer swyddogaethau
+                        rheoli datblygu mewn Parciau Cenedlaethol
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-42" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/42"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/42/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>42</ContentsNumber>
+                    <ContentsTitle>Byrddau cydgynllunio: pŵer i wneud darpariaeth ganlyniadol ac atodol</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-7" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/7"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/7/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 7</ContentsNumber>
+            <ContentsTitle>GORFODI, APELAU ETC</ContentsTitle>
+            <ContentsPblock ContentRef="part-7-crossheading-gorfodi"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/7/crossheading/gorfodi"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/7/crossheading/gorfodi/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Gorfodi</ContentsTitle>
+                <ContentsItem ContentRef="section-43" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/43"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/43/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>43</ContentsNumber>
+                    <ContentsTitle>Torri rheolaeth gynllunio: hysbysiad rhybudd gorfodi</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-44" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/44"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/44/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>44</ContentsNumber>
+                    <ContentsTitle>Apelio yn erbyn hysbysiad gorfodi: cais tybiedig am ganiatâd cynllunio
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-7-crossheading-apelau"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/7/crossheading/apelau"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/7/crossheading/apelau/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Apelau</ContentsTitle>
+                <ContentsItem ContentRef="section-45" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/45"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/45/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>45</ContentsNumber>
+                    <ContentsTitle>Cyfyngiadau ar hawl i apelio yn erbyn penderfyniadau cynllunio</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-46" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/46"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/46/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>46</ContentsNumber>
+                    <ContentsTitle>Cyfyngiadau ar hawl i apelio yn erbyn hysbysiad gorfodi</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-47" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/47"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/47/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>47</ContentsNumber>
+                    <ContentsTitle>Dim amrywio ar gais ar ôl cyflwyno hysbysiad am apêl yn erbyn penderfyniad cynllunio
+                        etc
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-48" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/48"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/48/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>48</ContentsNumber>
+                    <ContentsTitle>Apelio yn erbyn hysbysiad mewn cysylltiad â thir sy’n cael effaith andwyol ar
+                        amwynder
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+            <ContentsPblock ContentRef="part-7-crossheading-apelau-etc-y-costau-ar-weithdrefn"
+                            IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/7/crossheading/apelau-etc-y-costau-ar-weithdrefn"
+                            DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/7/crossheading/apelau-etc-y-costau-ar-weithdrefn/enacted/welsh"
+                            RestrictExtent="E+W+S+N.I.">
+                <ContentsTitle>Apelau etc: y costau a’r weithdrefn</ContentsTitle>
+                <ContentsItem ContentRef="section-49" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/49"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/49/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>49</ContentsNumber>
+                    <ContentsTitle>Costau ceisiadau, apelau a chyfeiriadau</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-50" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/50"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/50/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>50</ContentsNumber>
+                    <ContentsTitle>Y weithdrefn ar gyfer achosion penodol</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="section-51" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/51"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/51/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>51</ContentsNumber>
+                    <ContentsTitle>Costau a’r weithdrefn wrth apelio etc: diwygiadau pellach</ContentsTitle>
+                </ContentsItem>
+            </ContentsPblock>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-8" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/8"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/8/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 8</ContentsNumber>
+            <ContentsTitle>MEYSYDD TREF A PHENTREF</ContentsTitle>
+            <ContentsItem ContentRef="section-52" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/52"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/52/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>52</ContentsNumber>
+                <ContentsTitle>Datganiad gan berchennog i ddod â diwedd i ddefnyddio tir drwy hawl</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-53" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/53"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/53/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>53</ContentsNumber>
+                <ContentsTitle>Eithrio o’r hawl i wneud cais am gofrestru</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-54" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/54"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/54/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>54</ContentsNumber>
+                <ContentsTitle>Ceisiadau i ddiwygio cofrestrau: pŵer i wneud darpariaeth ynghylch ffioedd
+                </ContentsTitle>
+            </ContentsItem>
+        </ContentsPart>
+        <ContentsPart ContentRef="part-9" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/part/9"
+                      DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/part/9/enacted/welsh"
+                      RestrictExtent="E+W+S+N.I.">
+            <ContentsNumber>RHAN 9</ContentsNumber>
+            <ContentsTitle>DARPARIAETHAU CYFFREDINOL</ContentsTitle>
+            <ContentsItem ContentRef="section-55" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/55"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/55/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>55</ContentsNumber>
+                <ContentsTitle>Rheoliadau a gorchmynion a wneir gan Weinidogion Cymru</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-56" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/56"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/56/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>56</ContentsNumber>
+                <ContentsTitle>Dehongli</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-57" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/57"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/57/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>57</ContentsNumber>
+                <ContentsTitle>Pŵer i wneud darpariaeth ganlyniadol etc</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-58" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/58"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/58/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>58</ContentsNumber>
+                <ContentsTitle>Dod i rym</ContentsTitle>
+            </ContentsItem>
+            <ContentsItem ContentRef="section-59" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/section/59"
+                          DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/section/59/enacted/welsh"
+                          RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>59</ContentsNumber>
+                <ContentsTitle>Enw byr</ContentsTitle>
+            </ContentsItem>
+        </ContentsPart>
+
+        <ContentsSchedules>
+            <ContentsSchedule ContentRef="schedule-1" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 1</ContentsNumber>
+                <ContentsTitle>PANELI CYNLLUNIO STRATEGOL</ContentsTitle>
+                <ContentsPart ContentRef="schedule-1-part-1"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/part/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/part/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>RHAN 1</ContentsNumber>
+                    <ContentsTitle>CYFANSODDIAD A THREFNIADAU ARIANNOL PANELI</ContentsTitle>
+                    <ContentsItem ContentRef="schedule-1-paragraph-1"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/1"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/1/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>1</ContentsNumber>
+                        <ContentsTitle Generated="true">Yn DCPhG 2004, ar ôl Atodlen 2 mewnosoder— SCHEDULE 2A...
+                        </ContentsTitle>
+                    </ContentsItem>
+                </ContentsPart>
+                <ContentsPart ContentRef="schedule-1-part-2"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/part/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/part/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>RHAN 2</ContentsNumber>
+                    <ContentsTitle>DIWYGIADAU PELLACH</ContentsTitle>
+                    <ContentsItem ContentRef="schedule-1-paragraph-2"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/2"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/2/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>2</ContentsNumber>
+                        <ContentsTitle>Deddf Awdurdodau Lleol (Nwyddau a Gwasanaethau) 1970 (p. 39)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-3"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/3"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/3/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>3</ContentsNumber>
+                        <ContentsTitle>Deddf Llywodraeth Leol 1972 (p. 70)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-4"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/4"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/4/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>4</ContentsNumber>
+                        <ContentsTitle>Deddf Llywodraeth Leol 2000 (p. 22)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-5"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/5"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/5/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>5</ContentsNumber>
+                        <ContentsTitle>Deddf Rhyddid Gwybodaeth 2000 (p. 36)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-6"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/6"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/6/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>6</ContentsNumber>
+                        <ContentsTitle>Deddf Ombwdsmon Gwasanaethau Cyhoeddus (Cymru) 2005 (p. 10)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-7"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/7"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/7/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>7</ContentsNumber>
+                        <ContentsTitle>Deddf Cydraddoldeb 2010 (p. 15)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-8"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/8"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/8/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>8</ContentsNumber>
+                        <ContentsTitle>Mesur y Gymraeg (Cymru) 2011 (mccc 1)</ContentsTitle>
+                    </ContentsItem>
+                    <ContentsItem ContentRef="schedule-1-paragraph-9"
+                                  IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/1/paragraph/9"
+                                  DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/1/paragraph/9/enacted/welsh"
+                                  RestrictExtent="E+W+S+N.I.">
+                        <ContentsNumber>9</ContentsNumber>
+                        <ContentsTitle>Mesur Llywodraeth Leol (Cymru) 2011 (mccc 4)</ContentsTitle>
+                    </ContentsItem>
+                </ContentsPart>
+            </ContentsSchedule>
+            <ContentsSchedule ContentRef="schedule-2" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 2</ContentsNumber>
+                <ContentsTitle>CYNLLUNIO DATBLYGU: DIWYGIADAU PELLACH</ContentsTitle>
+                <ContentsItem ContentRef="schedule-2-paragraph-1"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>1</ContentsNumber>
+                    <ContentsTitle>Deddf Awdurdod Datblygu Cymru 1975 (p. 70)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-2"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>2</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 21A (pwerau caffael tir), yn is-adran (5)—</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-3"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/3"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/3/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>3</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 21C (pwerau i gynghori ar faterion tir), yn...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-4"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/4"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/4/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>4</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae Atodlen 4 (caffael tir) wedi ei diwygio fel...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-5"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/5"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/5/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>5</ContentsNumber>
+                    <ContentsTitle>Deddf Bywyd Gwyllt a Chefn Gwlad 1981 (p. 69)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-6"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/6"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/6/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>6</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 27AA (safleoedd o ddiddordeb gwyddonol arbennig a...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-7"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/7"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/7/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>7</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 37A (hysbysu ynghylch dynodi safleoedd Ramsar), ar ôl...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-8"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/8"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/8/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>8</ContentsNumber>
+                    <ContentsTitle>Deddf Cynllunio Gwlad a Thref 1990 (p. 8)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-9"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/9"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/9/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>9</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 293A (datblygiad brys y Goron: cymhwyso), yn is-adran...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-10"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/10"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/10/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>10</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 303A (cyfrifoldeb awdurdodau cynllunio lleol am
+                        gostau...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-11"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/11"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/11/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>11</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 306 (cyfraniadau gan awdurdodau lleol ac ymgymerwyr
+                        statudol),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-12"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/12"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/12/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>12</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 324 (hawliau mynediad), ar ôl is-adran (1A)
+                        mewnosoder—...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-13"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/13"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/13/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>13</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 336 (dehongli), yn is-adran (1), ar ôl y...</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-14"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/14"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/14/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>14</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 4A (gorchmynion datblygu lleol: gweithdrefn), ym
+                        mharagraff 5(1),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-15"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/15"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/15/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>15</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 13 (tir o dan falltod), ym mharagraff 1B,...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-16"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/16"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/16/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>16</ContentsNumber>
+                    <ContentsTitle>Deddf Adnoddau Dŵr 1991 (p. 57)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-17"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/17"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/17/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>17</ContentsNumber>
+                    <ContentsTitle>Deddf y Diwydiant Glo 1994 (p. 21)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-18"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/18"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/18/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>18</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 39 (hawl i dynnu cymorth ar gyfer tir...</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-19"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/19"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/19/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>19</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 41 (dirymu hawl i dynnu cynhaliaeth yn ôl),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-20"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/20"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/20/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>20</ContentsNumber>
+                    <ContentsTitle>Deddf yr Amgylchedd 1995 (p. 25)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-21"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/21"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/21/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>21</ContentsNumber>
+                    <ContentsTitle>Deddf Cefn Gwlad a Hawliau Tramwy 2000 (p. 37)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-22"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/22"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/22/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>22</ContentsNumber>
+                    <ContentsTitle>Deddf Cyllid 2003 (p. 14)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-23"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/23"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/23/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>23</ContentsNumber>
+                    <ContentsTitle>Deddf Cynllunio a Phrynu Gorfodol 2004 (p. 5)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-24"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/24"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/24/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>24</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 19 (llunio dogfennau datblygu lleol yn Lloegr), yn...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-25"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/25"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/25/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>25</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 62 (cynllun datblygu lleol), yn is-adran (5) (materion...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-26"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/26"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/26/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>26</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 74 (corfforaethau datblygu trefol), yn lle “section
+                        60”...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-27"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/27"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/27/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>27</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 113 (dilysrwydd strategaethau, cynlluniau a dogfennau)
+                        wedi...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-28"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/28"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/28/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>28</ContentsNumber>
+                    <ContentsTitle>Deddf yr Amgylchedd Naturiol a Chymunedau Gwledig 2006 (p. 16)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-29"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/29"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/29/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>29</ContentsNumber>
+                    <ContentsTitle>Deddf Llywodraeth Cymru 2006 (p. 32)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-30"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/30"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/30/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>30</ContentsNumber>
+                    <ContentsTitle>Deddf Cynllunio ac Ynni 2008 (p. 21)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-31"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/31"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/31/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>31</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 1 (polisïau ynni) wedi ei diwygio fel...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-32"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/32"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/32/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>32</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 2 (dehongli), ar y diwedd mewnosoder— “strategic
+                        planning...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-33"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/33"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/33/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>33</ContentsNumber>
+                    <ContentsTitle>Deddf y Môr a Mynediad i’r Arfordir 2009 (p. 23)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-34"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/34"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/34/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>34</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae paragraff 1 (awdurdod cynllun morol i hysbysu’r
+                        awdurdodau...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-35"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/35"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/35/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>35</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae paragraff 3 (cynlluniau morol i fod yn gydnaws...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-2-paragraph-36"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/2/paragraph/36"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/2/paragraph/36/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>36</ContentsNumber>
+                    <ContentsTitle Generated="true">Ym mharagraff 9 (materion y mae awdurdod cynllun morol i...
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsSchedule>
+            <ContentsSchedule ContentRef="schedule-3" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/3"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/3/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 3</ContentsNumber>
+                <ContentsTitle>DATBLYGIADAU O ARWYDDOCÂD CENEDLAETHOL A CHEISIADAU A WNEIR I WEINIDOGION CYMRU: ARFER
+                    SWYDDOGAETHAU GAN BERSON PENODEDIG
+                </ContentsTitle>
+                <ContentsItem ContentRef="schedule-3-paragraph-1"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/3/paragraph/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/3/paragraph/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>1</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn DCGTh 1990, ar ôl Atodlen 4C mewnosoder— SCHEDULE 4D...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-3-paragraph-2"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/3/paragraph/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/3/paragraph/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>2</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 59 o DCPhG 2004 (cywiro gwallau: atodol), ar...
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsSchedule>
+            <ContentsSchedule ContentRef="schedule-4" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 4</ContentsNumber>
+                <ContentsTitle>CEISIADAU I WEINIDOGION CYMRU: DIWYGIADAU PELLACH</ContentsTitle>
+                <ContentsItem ContentRef="schedule-4-paragraph-1"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>1</ContentsNumber>
+                    <ContentsTitle Generated="true">Mae DCGTh 1990 wedi ei diwygio fel a ganlyn.</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-2"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>2</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 58 (rhoi caniatâd cynllunio: cyffredinol), yn is-adran
+                        (1)(b)—...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-3"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/3"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/3/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>3</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 59 (gorchmynion datblygu: cyffredinol), yn is-adran
+                        (2)(b)—
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-4"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/4"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/4/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>4</ContentsNumber>
+                    <ContentsTitle Generated="true">Cyn adran 62A mewnosoder— England: option to make application
+                        directly...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-5"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/5"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/5/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>5</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 70 (penderfynu ar geisiadau), yn is-adran (1)(a), ar...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-6"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/6"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/6/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>6</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 70A (pŵer i wrthod penderfynu ar gais), fel...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-7"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/7"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/7/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>7</ContentsNumber>
+                    <ContentsTitle Generated="true">Ar ôl adran 75 mewnosoder— Applications made to the Welsh...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-8"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/8"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/8/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>8</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 87 (eithrio tir penodol neu ddisgrifiadau o
+                        ddatblygiad...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-9"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/9"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/9/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>9</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 88 (caniatâd cynllunio ar gyfer datblygiad mewn
+                        ardaloedd...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-10"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/10"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/10/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>10</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 92 (caniatâd cynllunio amlinellol), yn is-adran (1),
+                        ar...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-11"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/11"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/11/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>11</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 93 (darpariaethau sy’n atodol i adrannau 91 a...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-12"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/12"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/12/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>12</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 99 (gweithdrefn ar gyfer gorchmynion sy’n dirymu neu’n...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-13"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/13"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/13/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>13</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 253 (gweithdrefn wrth ddisgwyl cael caniatâd cynllunio),
+                        yn...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-14"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/14"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/14/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>14</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 257 (llwybrau troed etc y mae datblygiad arall...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-15"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/15"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/15/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>15</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 284 (camau na chaniateir eu cwestiynu mewn...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-16"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/16"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/16/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>16</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 288 (gweithdrefnau ar gyfer cwestiynu dilysrwydd
+                        gorchmynion...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-17"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/17"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/17/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>17</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 293A (datblygiad brys y Goron: cymhwyso) wedi...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-18"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/18"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/18/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>18</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 303 (ffioedd ar gyfer ceisiadau cynllunio, etc), ar...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-19"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/19"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/19/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>19</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 316 (tir awdurdodau cynllunio a chanddynt
+                        fuddiant...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-20"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/20"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/20/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>20</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 319B (pennu’r weithdrefn ar gyfer achosion
+                        penodol)...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-21"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/21"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/21/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>21</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 324 (hawliau mynediad), yn is-adran (1), ar ôl...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-22"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/22"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/22/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>22</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 1A (dosbarthiad swyddogaethau awdurdodau cynllunio lleol:
+                        Cymru), ym...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-4-paragraph-23"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/4/paragraph/23"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/4/paragraph/23/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>23</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Yn Atodlen 16, mae Rhan 1 (darpariaethau y caniateir...
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsSchedule>
+            <ContentsSchedule ContentRef="schedule-5" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 5</ContentsNumber>
+                <ContentsTitle>COSTAU A’R WEITHDREFN WRTH APELIO ETC: DIWYGIADAU PELLACH</ContentsTitle>
+                <ContentsItem ContentRef="schedule-5-paragraph-1"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>1</ContentsNumber>
+                    <ContentsTitle>Deddf Priffyrdd 1980 (p. 66)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-2"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>2</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 121 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-3"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/3"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/3/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>3</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 6, ym mharagraff 2B— (a) yn is-baragraff (1),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-4"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/4"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/4/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>4</ContentsNumber>
+                    <ContentsTitle>Deddf Bywyd Gwyllt a Chefn Gwlad 1981 (p. 69)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-5"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/5"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/5/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>5</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 28F, ar ôl is-adran (11) mewnosoder—</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-6"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/6"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/6/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>6</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 28L, ar ôl is-adran (13) mewnosoder—</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-7"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/7"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/7/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>7</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 15, ym mharagraff 10A— (a) yn is-baragraff (1),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-8"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/8"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/8/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>8</ContentsNumber>
+                    <ContentsTitle>Deddf Cynllunio Gwlad a Thref 1990 (p. 8)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-9"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/9"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/9/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>9</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 175, yn is-adran (7), ar ôl “any proceedings”...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-10"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/10"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/10/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>10</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 196, yn is-adran (8), ar ôl “any proceedings”...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-11"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/11"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/11/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>11</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 208, hepgorer is-adran (11).</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-12"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/12"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/12/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>12</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 320 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-13"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/13"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/13/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>13</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 322 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-14"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/14"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/14/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>14</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 322A wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-15"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/15"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/15/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>15</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 323 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-16"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/16"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/16/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>16</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae Atodlen 6 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-17"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/17"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/17/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>17</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 7, ym mharagraff 8— (a) yn is-baragraff (6),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-18"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/18"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/18/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>18</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 8, ym mharagraff 5— (a) yn is-baragraff (3),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-19"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/19"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/19/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>19</ContentsNumber>
+                    <ContentsTitle>Deddf Cynllunio (Adeiladau Rhestredig ac Ardaloedd Cadwraeth) 1990 (p. 9)
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-20"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/20"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/20/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>20</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 41, yn is-adran (8), ar ôl “any proceedings”...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-21"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/21"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/21/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>21</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 89 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-22"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/22"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/22/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>22</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 3, ym mharagraff 6— (a) yn is-baragraff (4),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-23"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/23"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/23/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>23</ContentsNumber>
+                    <ContentsTitle>Deddf Cynllunio (Sylweddau Peryglus) 1990 (p. 10)</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-24"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/24"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/24/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>24</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 25, yn is-adran (5), ar ôl “any proceedings”...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-25"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/25"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/25/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>25</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 37 wedi ei diwygio fel a ganlyn....</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-26"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/26"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/26/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>26</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn yr Atodlen, ym mharagraff 6— (a) yn is-baragraff (4),...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-5-paragraph-27"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/5/paragraph/27"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/5/paragraph/27/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>27</ContentsNumber>
+                    <ContentsTitle>Deddf Tribiwnlysoedd ac Ymchwiliadau 1992 (p. 53)</ContentsTitle>
+                </ContentsItem>
+            </ContentsSchedule>
+            <ContentsSchedule ContentRef="schedule-6" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/6"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/6/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 6</ContentsNumber>
+                <ContentsTitle>MEYSYDD TREF A PHENTREF: ATODLEN 1B NEWYDD I DDEDDF TIROEDD COMIN 2006</ContentsTitle>
+            </ContentsSchedule>
+            <ContentsSchedule ContentRef="schedule-7" IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                <ContentsNumber>ATODLEN 7</ContentsNumber>
+                <ContentsTitle>RHEOLIADAU A GORCHMYNION A WNEIR GAN WEINIDOGION CYMRU</ContentsTitle>
+                <ContentsItem ContentRef="schedule-7-paragraph-1"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/1"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/1/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>1</ContentsNumber>
+                    <ContentsTitle>Rheoliadau o dan
+                        <Abbreviation Expansion="Deddf Cynllunio a Phrynu Gorfodol 2004 p. 5">DCPhG 2004</Abbreviation>
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-2"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/2"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/2/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>2</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn Atodlen 11 i Ddeddf Llywodraeth Cymru 2006 (p. 32)...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-3"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/3"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/3/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>3</ContentsNumber>
+                    <ContentsTitle>Rheoliadau o dan
+                        <Abbreviation Expansion="Deddf Cynllunio Gwlad a Thref 1990 p. 8">DCGTh 1990</Abbreviation>
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-4"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/4"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/4/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>4</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae DCGTh 1990 wedi ei diwygio ymhellach fel a...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-5"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/5"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/5/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>5</ContentsNumber>
+                    <ContentsTitle>Gorchmynion o dan DCGTh 1990</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-6"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/6"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/6/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>6</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae adran 333 o DCGTh 1990 wedi ei diwygio...</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-7"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/7"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/7/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>7</ContentsNumber>
+                    <ContentsTitle Generated="true">(1) Mae DCGTh 1990 wedi ei diwygio ymhellach fel a...
+                    </ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-8"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/8"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/8/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>8</ContentsNumber>
+                    <ContentsTitle>Rheoliadau a gorchmynion o dan Ddeddf Tiroedd Comin 2006</ContentsTitle>
+                </ContentsItem>
+                <ContentsItem ContentRef="schedule-7-paragraph-9"
+                              IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/schedule/7/paragraph/9"
+                              DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/schedule/7/paragraph/9/enacted/welsh"
+                              RestrictExtent="E+W+S+N.I.">
+                    <ContentsNumber>9</ContentsNumber>
+                    <ContentsTitle Generated="true">Yn adran 61(1) o’r Ddeddf honno (dehongli), yn y diffiniad...
+                    </ContentsTitle>
+                </ContentsItem>
+            </ContentsSchedule>
+        </ContentsSchedules>
+    </Contents>
+    <Primary>
+        <PrimaryPrelims DocumentURI="http://www.legislation.gov.uk/anaw/2015/4/introduction/enacted/welsh"
+                        IdURI="http://www.legislation.gov.uk/id/anaw/2015/4/introduction">
+            <Title>Deddf Cynllunio (Cymru) 2015</Title>
+            <Number>2015 dccc 4</Number>
+            <LongTitle>Deddf gan Gynulliad Cenedlaethol Cymru i wneud darpariaeth ynghylch cynllunio datblygu
+                cenedlaethol, strategol a lleol yng Nghymru; i wneud darpariaeth i geisiadau penodol am ganiatâd
+                cynllunio a cheisiadau penodol eraill gael eu gwneud i Weinidogion Cymru; i wneud darpariaethau eraill
+                ynghylch rheoli datblygu a cheisiadau am ganiatâd cynllunio; i wneud darpariaeth ynghylch gorfodi,
+                apelau a gweithdrefnau penodol eraill ym maes cynllunio; i ddiwygio Deddf Tiroedd Comin 2006; ac at
+                ddibenion cysylltiedig.
+            </LongTitle>
+            <DateOfEnactment>
+                <DateText>[6 Gorffennaf 2015]</DateText>
+            </DateOfEnactment>
+            <PrimaryPreamble>
+                <IntroductoryText>
+                    <P>
+                        <Text>
+                            <Strong>Gan ei fod wedi ei basio gan Gynulliad Cenedlaethol Cymru ac wedi derbyn cydsyniad
+                                Ei Mawrhydi, deddfir fel a ganlyn:
+                            </Strong>
+                        </Text>
+                    </P>
+                </IntroductoryText>
+                <EnactingTextOmitted/>
+            </PrimaryPreamble>
+        </PrimaryPrelims>
+    </Primary>
+</Legislation>

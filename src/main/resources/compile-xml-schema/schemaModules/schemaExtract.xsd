@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.legislation.gov.uk/namespaces/legislation" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.legislation.gov.uk/namespaces/legislation" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0" id="SchemaExtract">
+	<xsd:annotation>
+		<xsd:appinfo xmlns:dcq="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<dc:title>Extracts of text Schema</dc:title>
+			<dc:description>Defines extracts of text</dc:description>
+			<dc:contributor>Paul Appleby, Peter Lazar</dc:contributor>
+			<dc:creator>TSO</dc:creator>
+			<dc:identifier>SchemaExtract</dc:identifier>
+			<dc:language>en</dc:language>
+			<dc:publisher>The Stationery Office</dc:publisher>
+			<dc:rights>Crown Copyright 2003</dc:rights>
+			<dc:date>
+				<dcq:created>2003-10-20</dcq:created>
+			</dc:date>
+			<dc:date>
+				<dcq:modified>Put modified date here (format 2003-10-20)</dcq:modified>
+			</dc:date>
+			<xsd:documentation>
+			Modification information
+			Version	Name				Modification
+			1.1			Put name here	Put modification text here
+			1.0			Paul Appleby		Created
+			</xsd:documentation>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:element name="BlockExtract" type="BlockExtractStructure"/>
+	<xsd:element name="InlineExtract" type="InlineExtractStructure"/>
+</xsd:schema>
