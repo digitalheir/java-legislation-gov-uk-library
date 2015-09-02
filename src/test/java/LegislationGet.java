@@ -16,7 +16,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Test fetching a single legislation
+ * Sample fetching a single legislation
  * <p>
  * Created by maarten on 31-8-15.
  */
@@ -24,7 +24,7 @@ import static org.junit.Assert.assertEquals;
 public class LegislationGet {
 
     /**
-     * Test to list the first 10 pages of legislation
+     * Sample to list the first 10 pages of legislation
      */
     @Test
     public void parseMetadata() {
@@ -59,7 +59,7 @@ public class LegislationGet {
 
 
     /**
-     * Test to list a page in the feed yields no results
+     * Sample to list a page in the feed yields no results
      */
     @Test
     public void parsePageOutOfScope() {

@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Test class
+ * Sample class
  * <p>
  * Created by maarten on 5-8-15.
  */
@@ -21,7 +21,7 @@ import static org.junit.Assert.assertTrue;
 public class LegislationFeed {
 
     /**
-     * Test to list the first 10 pages of legislation
+     * Sample to list the first 10 pages of legislation
      */
     @Test
     public void parseFirstTenPages() {
@@ -45,7 +45,7 @@ public class LegislationFeed {
 
 
     /**
-     * Test to list a page in the feed yields no results
+     * Sample to list a page in the feed yields no results
      */
     @Test
     public void parsePageOutOfScope() {

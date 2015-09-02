@@ -41,7 +41,7 @@ public class LegislationGovUkInterface {
      * @param request The HTTP request for the feed, initialized with a correct URL
      * @return The feed resulting from this request
      */
-    private static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException {
+    public static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException {
         OkHttpClient httpClient = new OkHttpClient();
         httpClient.setFollowRedirects(false);
         Response response = httpClient.newCall(request).execute();
