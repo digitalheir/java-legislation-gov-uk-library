@@ -1,7 +1,6 @@
 # Legislation.gov.uk library
 [![GitHub version](https://badge.fury.io/gh/digitalheir%2Fjava-legislation-gov-uk-library.svg)](http://badge.fury.io/gh/digitalheir%2Fjava-legislation-gov-uk-library)
 [![Build Status](https://travis-ci.org/digitalheir/java-legislation-gov-uk-library.svg?branch=master)](https://travis-ci.org/digitalheir/java-legislation-gov-uk-library)
-[![Build With](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 A Java interface to Legislation.gov.uk.
 
