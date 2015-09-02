@@ -43,4 +43,4 @@ public class Sample {
 
 ## More
 For more information about the API, see http://www.legislation.gov.uk/developer or [a
-report about legislation.gov.uk](http://leibniz-internship-report.herokuapp.com/eu-legal-data-survey/uk#section-legislation-gov-uk) for more information.
+report about legislation.gov.uk](http://leibniz-internship-report.herokuapp.com/eu-legal-data-survey/uk#section-legislation-gov-uk).
