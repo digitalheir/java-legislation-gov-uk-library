@@ -1,25 +1,24 @@
-package org.leibnizcenter.uk.legislation;
+package org.leibnizcenter.uk.legislation.uri;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Object containing different kinds of URIs for the same object.
- * <p/>
- * >NOTE< This is meant only for top level items. Eg. 'ukla/1998/3', not for 'ukla/1998/3/enacted/...'.
- * <p/>
+ * <p>
+ * >NOTE< This is meant only for top level items, corresponding to the work of a law.
+ * Eg. 'ukla/1998/3', not for 'ukla/1998/3/enacted/...'.
+ * <p>
  * Created by Maarten on 11-3-2015.
  */
-public class UkUriObject {
+public class StructuralUri {
+    public static final Pattern uriMatcher = Pattern.compile("http[s]?://www\\.legislation\\.gov\\.uk/(id/)?([^/]*)/([^/]*)/([^/]*)(/.*)?");
     public final String type;
     public final String year;
     public final String number;
-
     //   Example: http://www.legislation.gov.uk/ukpga/1985/67-67/data.feed
     public final String feedURL;
     public final String focusedUri;
-
-    public static final Pattern uriMatcher = Pattern.compile("http[s]?://www\\.legislation\\.gov\\.uk/(id/)?([^/]*)/([^/]*)/([^/]*)(/.*)?");
     public final String relativeUrl;
     public final String dataXml;
     public final String idUri;
@@ -28,14 +27,14 @@ public class UkUriObject {
     /**
      * @param representationUri Legislation.gov.uk URI starting with 'http://www.legislation.gov.uk/'
      */
-    public UkUriObject(String representationUri) {
+    public StructuralUri(String representationUri) {
         Matcher m = uriMatcher.matcher(representationUri);
         if (m.find()) {
             this.type = m.group(2);
             this.year = m.group(3);
             this.number = m.group(4);
 
-            relativeUrl = UkUriObject.getRelativeIdFromURI(representationUri);
+            relativeUrl = StructuralUri.getRelativeIdFromURI(representationUri);
             idUri = "http://www.legislation.gov.uk/" + relativeUrl;
             dataXml = "http://www.legislation.gov.uk/" + relativeUrl + "/data.xml";
             feedURL = "http://www.legislation.gov.uk/" + type + "/" + year + "/" + number + "-" + number + "/data.feed";

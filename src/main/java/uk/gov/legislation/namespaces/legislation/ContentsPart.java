@@ -8,21 +8,15 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.leibnizcenter.uk.legislation.TableOfContentsElement;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -59,7 +53,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "contentsChaptersAndContentsPblocksAndContentsItems"
 })
 @XmlRootElement(name = "ContentsPart")
-public class ContentsPart {
+public class ContentsPart implements TableOfContentsElement {
 
     @XmlElement(name = "ContentsNumber")
     protected InlineRestrictedStructure contentsNumber;
@@ -183,7 +177,7 @@ public class ContentsPart {
      */
     public List<ContentsTitle> getContentsTitles() {
         if (contentsTitles == null) {
-            contentsTitles = new ArrayList<ContentsTitle>();
+            contentsTitles = new ArrayList<>();
         }
         return this.contentsTitles;
     }
@@ -214,7 +208,7 @@ public class ContentsPart {
      */
     public List<Object> getContentsChaptersAndContentsPblocksAndContentsItems() {
         if (contentsChaptersAndContentsPblocksAndContentsItems == null) {
-            contentsChaptersAndContentsPblocksAndContentsItems = new ArrayList<Object>();
+            contentsChaptersAndContentsPblocksAndContentsItems = new ArrayList<>();
         }
         return this.contentsChaptersAndContentsPblocksAndContentsItems;
     }
@@ -771,9 +765,13 @@ public class ContentsPart {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }
 
+    @Override
+    public List<TableOfContentsElement> getToCChildren() {
+        return TableOfContentsElement.Helper.castToTableOfContentsElement(contentsChaptersAndContentsPblocksAndContentsItems);
+    }
 }

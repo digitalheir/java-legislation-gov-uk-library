@@ -8,21 +8,15 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.leibnizcenter.uk.legislation.TableOfContentsElement;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -58,7 +52,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "contentsPsubBlocksAndContentsItems"
 })
 @XmlRootElement(name = "ContentsPblock")
-public class ContentsPblock {
+public class ContentsPblock implements TableOfContentsElement {
 
     @XmlElement(name = "ContentsNumber")
     protected InlineRestrictedStructure contentsNumber;
@@ -181,7 +175,7 @@ public class ContentsPblock {
      */
     public List<ContentsTitle> getContentsTitles() {
         if (contentsTitles == null) {
-            contentsTitles = new ArrayList<ContentsTitle>();
+            contentsTitles = new ArrayList<>();
         }
         return this.contentsTitles;
     }
@@ -211,7 +205,7 @@ public class ContentsPblock {
      */
     public List<Object> getContentsPsubBlocksAndContentsItems() {
         if (contentsPsubBlocksAndContentsItems == null) {
-            contentsPsubBlocksAndContentsItems = new ArrayList<Object>();
+            contentsPsubBlocksAndContentsItems = new ArrayList<>();
         }
         return this.contentsPsubBlocksAndContentsItems;
     }
@@ -336,7 +330,7 @@ public class ContentsPblock {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }
@@ -773,4 +767,8 @@ public class ContentsPblock {
         this.numberOfProvisions = value;
     }
 
+    @Override
+    public List<TableOfContentsElement> getToCChildren() {
+        return TableOfContentsElement.Helper.castToTableOfContentsElement(contentsPsubBlocksAndContentsItems);
+    }
 }

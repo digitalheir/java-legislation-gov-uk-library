@@ -9,11 +9,17 @@
 package org.w3._2005.atom;
 
 
-import org.leibnizcenter.uk.legislation.UkUriObject;
+import org.leibnizcenter.uk.legislation.LegislationGovUkInterface;
+import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
+import org.xml.sax.SAXException;
+import uk.gov.legislation.namespaces.legislation.Legislation;
 
+import javax.xml.bind.JAXBException;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -73,16 +79,13 @@ public class Entry {
 //    })
 //    protected List<Object> authorsAndCategoriesAndContents;
 
+    @XmlElement(required = true, name = "link")
+    public final Collection<Link> links = new HashSet<>();
     // Start custom definition (overriding generated codes)
     @XmlElement(required = true)
     public String id;
-
     @XmlElement(required = true)
     public String title;
-
-    @XmlElement(required = true, name = "link")
-    public final Collection<Link> links = new HashSet<>();
-
     @XmlElement(required = true)
     public String updated;
     @XmlElement(required = true)
@@ -92,6 +95,21 @@ public class Entry {
 
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "DocumentMainType")
     public String documentMainType;
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Year")
+    public String year;
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Number")
+    public String number;
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "CreationDate")
+    public String creationDate;
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "isbn")
+    public String isbn;
+    @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlSchemaType(name = "anyURI")
+    protected String base;
+    @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlSchemaType(name = "language")
+    protected String lang;
 
     public String getId() {
         return id;
@@ -169,6 +187,8 @@ public class Entry {
         this.creationDate = creationDate;
     }
 
+    // End custom definition (overriding generated codes)
+
     public String getIsbn() {
         return isbn;
     }
@@ -177,18 +197,7 @@ public class Entry {
         this.isbn = isbn;
     }
 
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Year")
-    public String year;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Number")
-    public String number;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "CreationDate")
-    public String creationDate;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "isbn")
-    public String isbn;
-
-    // End custom definition (overriding generated codes)
-
-    public UkUriObject getUriObject() {
+    public TopLevelUri getUriObject() {
         String backupLink = null;
         for (Link link : links) {
             backupLink = link.href;
@@ -196,17 +205,8 @@ public class Entry {
                 break;
             }
         }
-        return new UkUriObject(backupLink);
+        return new TopLevelUri(backupLink);
     }
-
-
-    @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")
-    @XmlSchemaType(name = "anyURI")
-    protected String base;
-    @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "language")
-    protected String lang;
 
 //    /**
 //     * Gets the value of the authorsAndCategoriesAndContents property.
@@ -294,7 +294,7 @@ public class Entry {
         return getLinksForRel("alternate");
     }
 
-    public List<Link> getLinksForRel(String rel){
+    public List<Link> getLinksForRel(String rel) {
         List<Link> links = new ArrayList<>(getLinks().size() / 2);
         for (Link l : getLinks()) {
             if (rel.equals(l.getRel()) && l.getHreflang() != null) {
@@ -302,5 +302,47 @@ public class Entry {
             }
         }
         return links;
+    }
+
+    /**
+     * @return Legislation that represents the English table of contents (as opposed to Welsh)
+     * @throws ParserConfigurationException
+     * @throws JAXBException
+     * @throws SAXException
+     * @throws IOException
+     */
+    public Legislation getEnglishTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
+        for (Link link : getTableOfContentsLinks()) {
+            String lang = link.getHreflang() == null ? "en" : link.getHreflang(); //Default language is English
+            if ("en".equals(lang)) {
+                return LegislationGovUkInterface.parseLegislationDoc(link.getHref() + "/data.xml");
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @return Legislation that represents the Welsh table of contents (as opposed to English)
+     * @throws ParserConfigurationException
+     * @throws JAXBException
+     * @throws SAXException
+     * @throws IOException
+     */
+    public Legislation getWelshTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
+        for (Link link : getTableOfContentsLinks()) {
+            if ("cy".equals(link.getHreflang())) {
+                return LegislationGovUkInterface.parseLegislationDoc(link.getHref() + "/data.xml");
+            }
+        }
+        return null;
+    }
+
+    public List<Legislation> getAllTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
+        List<Legislation> contents = new ArrayList<>(getTableOfContentsLinks().size());
+        for (Link l : getTableOfContentsLinks()) {
+            Legislation leg = LegislationGovUkInterface.parseLegislationDoc(l.getHref() + "/data.xml");
+            contents.add(leg);
+        }
+        return contents;
     }
 }

@@ -18,7 +18,7 @@ import static org.junit.Assert.assertTrue;
  * Created by maarten on 5-8-15.
  */
 
-public class LegislationInterface {
+public class LegislationFeed {
 
     /**
      * Test to list the first 10 pages of legislation

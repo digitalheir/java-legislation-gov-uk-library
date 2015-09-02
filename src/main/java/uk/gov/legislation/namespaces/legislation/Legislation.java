@@ -8,28 +8,22 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import uk.gov.legislation.namespaces.metadata.Metadata;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
-import uk.gov.legislation.namespaces.metadata.Metadata;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -76,25 +70,22 @@ import uk.gov.legislation.namespaces.metadata.Metadata;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "metadata",
-    "contents",
-    "secondary",
-    "primary",
-    "footnotes",
-    "marginNotes",
-    "versions",
-    "resources",
-    "commentaries",
-    "citationLists"
+        "metadata",
+        "contents",
+        "secondary",
+        "primary",
+        "footnotes",
+        "marginNotes",
+        "versions",
+        "resources",
+        "commentaries",
+        "citationLists"
 })
 @XmlRootElement(name = "Legislation")
 public class Legislation {
-
     @XmlElement(name = "Metadata", namespace = "http://www.legislation.gov.uk/namespaces/metadata")
     protected Metadata metadata;
     @XmlElement(name = "Contents")
@@ -183,11 +174,9 @@ public class Legislation {
 
     /**
      * Gets the value of the metadata property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Metadata }
-     *     
+     *
+     * @return possible object is
+     * {@link Metadata }
      */
     public Metadata getMetadata() {
         return metadata;
@@ -195,11 +184,9 @@ public class Legislation {
 
     /**
      * Sets the value of the metadata property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Metadata }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Metadata }
      */
     public void setMetadata(Metadata value) {
         this.metadata = value;
@@ -207,11 +194,9 @@ public class Legislation {
 
     /**
      * Gets the value of the contents property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Contents }
-     *     
+     *
+     * @return possible object is
+     * {@link Contents }
      */
     public Contents getContents() {
         return contents;
@@ -219,11 +204,9 @@ public class Legislation {
 
     /**
      * Sets the value of the contents property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Contents }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Contents }
      */
     public void setContents(Contents value) {
         this.contents = value;
@@ -231,11 +214,9 @@ public class Legislation {
 
     /**
      * Gets the value of the secondary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Secondary }
-     *     
+     *
+     * @return possible object is
+     * {@link Secondary }
      */
     public Secondary getSecondary() {
         return secondary;
@@ -243,11 +224,9 @@ public class Legislation {
 
     /**
      * Sets the value of the secondary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Secondary }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Secondary }
      */
     public void setSecondary(Secondary value) {
         this.secondary = value;
@@ -255,11 +234,9 @@ public class Legislation {
 
     /**
      * Gets the value of the primary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Primary }
-     *     
+     *
+     * @return possible object is
+     * {@link Primary }
      */
     public Primary getPrimary() {
         return primary;
@@ -267,11 +244,9 @@ public class Legislation {
 
     /**
      * Sets the value of the primary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Primary }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Primary }
      */
     public void setPrimary(Primary value) {
         this.primary = value;
@@ -279,11 +254,9 @@ public class Legislation {
 
     /**
      * Gets the value of the footnotes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Footnotes }
-     *     
+     *
+     * @return possible object is
+     * {@link Footnotes }
      */
     public Footnotes getFootnotes() {
         return footnotes;
@@ -291,11 +264,9 @@ public class Legislation {
 
     /**
      * Sets the value of the footnotes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Footnotes }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Footnotes }
      */
     public void setFootnotes(Footnotes value) {
         this.footnotes = value;
@@ -303,11 +274,9 @@ public class Legislation {
 
     /**
      * Gets the value of the marginNotes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MarginNotes }
-     *     
+     *
+     * @return possible object is
+     * {@link MarginNotes }
      */
     public MarginNotes getMarginNotes() {
         return marginNotes;
@@ -315,11 +284,9 @@ public class Legislation {
 
     /**
      * Sets the value of the marginNotes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MarginNotes }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link MarginNotes }
      */
     public void setMarginNotes(MarginNotes value) {
         this.marginNotes = value;
@@ -327,11 +294,9 @@ public class Legislation {
 
     /**
      * Gets the value of the versions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Versions }
-     *     
+     *
+     * @return possible object is
+     * {@link Versions }
      */
     public Versions getVersions() {
         return versions;
@@ -339,11 +304,9 @@ public class Legislation {
 
     /**
      * Sets the value of the versions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Versions }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Versions }
      */
     public void setVersions(Versions value) {
         this.versions = value;
@@ -351,11 +314,9 @@ public class Legislation {
 
     /**
      * Gets the value of the resources property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Resources }
-     *     
+     *
+     * @return possible object is
+     * {@link Resources }
      */
     public Resources getResources() {
         return resources;
@@ -363,11 +324,9 @@ public class Legislation {
 
     /**
      * Sets the value of the resources property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Resources }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Resources }
      */
     public void setResources(Resources value) {
         this.resources = value;
@@ -375,11 +334,9 @@ public class Legislation {
 
     /**
      * Gets the value of the commentaries property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Commentaries }
-     *     
+     *
+     * @return possible object is
+     * {@link Commentaries }
      */
     public Commentaries getCommentaries() {
         return commentaries;
@@ -387,11 +344,9 @@ public class Legislation {
 
     /**
      * Sets the value of the commentaries property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Commentaries }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Commentaries }
      */
     public void setCommentaries(Commentaries value) {
         this.commentaries = value;
@@ -399,11 +354,9 @@ public class Legislation {
 
     /**
      * Gets the value of the citationLists property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CitationLists }
-     *     
+     *
+     * @return possible object is
+     * {@link CitationLists }
      */
     public CitationLists getCitationLists() {
         return citationLists;
@@ -411,11 +364,9 @@ public class Legislation {
 
     /**
      * Sets the value of the citationLists property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CitationLists }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link CitationLists }
      */
     public void setCitationLists(CitationLists value) {
         this.citationLists = value;
@@ -423,11 +374,9 @@ public class Legislation {
 
     /**
      * Gets the value of the schemaVersion property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSchemaVersion() {
         if (schemaVersion == null) {
@@ -439,11 +388,9 @@ public class Legislation {
 
     /**
      * Sets the value of the schemaVersion property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSchemaVersion(String value) {
         this.schemaVersion = value;
@@ -451,11 +398,9 @@ public class Legislation {
 
     /**
      * Gets the value of the documentURI property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDocumentURI() {
         return documentURI;
@@ -463,11 +408,9 @@ public class Legislation {
 
     /**
      * Sets the value of the documentURI property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDocumentURI(String value) {
         this.documentURI = value;
@@ -475,11 +418,9 @@ public class Legislation {
 
     /**
      * Gets the value of the idURI property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIdURI() {
         return idURI;
@@ -487,11 +428,9 @@ public class Legislation {
 
     /**
      * Sets the value of the idURI property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIdURI(String value) {
         this.idURI = value;
@@ -499,11 +438,9 @@ public class Legislation {
 
     /**
      * Gets the value of the date property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getDate() {
         return date;
@@ -511,11 +448,9 @@ public class Legislation {
 
     /**
      * Sets the value of the date property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setDate(XMLGregorianCalendar value) {
         this.date = value;
@@ -523,11 +458,9 @@ public class Legislation {
 
     /**
      * Gets the value of the time property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getTime() {
         return time;
@@ -535,11 +468,9 @@ public class Legislation {
 
     /**
      * Sets the value of the time property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setTime(XMLGregorianCalendar value) {
         this.time = value;
@@ -547,11 +478,9 @@ public class Legislation {
 
     /**
      * Gets the value of the fragmentId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFragmentId() {
         return fragmentId;
@@ -559,11 +488,9 @@ public class Legislation {
 
     /**
      * Sets the value of the fragmentId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFragmentId(String value) {
         this.fragmentId = value;
@@ -571,11 +498,9 @@ public class Legislation {
 
     /**
      * Gets the value of the version property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is
+     * {@link BigInteger }
      */
     public BigInteger getVersion() {
         return version;
@@ -583,11 +508,9 @@ public class Legislation {
 
     /**
      * Sets the value of the version property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigInteger }
      */
     public void setVersion(BigInteger value) {
         this.version = value;
@@ -595,11 +518,9 @@ public class Legislation {
 
     /**
      * Gets the value of the restrictExtent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getRestrictExtent() {
         return restrictExtent;
@@ -607,11 +528,9 @@ public class Legislation {
 
     /**
      * Sets the value of the restrictExtent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setRestrictExtent(String value) {
         this.restrictExtent = value;
@@ -619,11 +538,9 @@ public class Legislation {
 
     /**
      * Gets the value of the restrictStartDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getRestrictStartDate() {
         return restrictStartDate;
@@ -631,11 +548,9 @@ public class Legislation {
 
     /**
      * Sets the value of the restrictStartDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setRestrictStartDate(XMLGregorianCalendar value) {
         this.restrictStartDate = value;
@@ -643,11 +558,9 @@ public class Legislation {
 
     /**
      * Gets the value of the restrictEndDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getRestrictEndDate() {
         return restrictEndDate;
@@ -655,11 +568,9 @@ public class Legislation {
 
     /**
      * Sets the value of the restrictEndDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setRestrictEndDate(XMLGregorianCalendar value) {
         this.restrictEndDate = value;
@@ -667,11 +578,9 @@ public class Legislation {
 
     /**
      * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getStatus() {
         return status;
@@ -679,11 +588,9 @@ public class Legislation {
 
     /**
      * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setStatus(String value) {
         this.status = value;
@@ -691,11 +598,9 @@ public class Legislation {
 
     /**
      * Gets the value of the confersPower property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isConfersPower() {
         if (confersPower == null) {
@@ -707,11 +612,9 @@ public class Legislation {
 
     /**
      * Sets the value of the confersPower property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setConfersPower(Boolean value) {
         this.confersPower = value;
@@ -719,11 +622,9 @@ public class Legislation {
 
     /**
      * Gets the value of the blanketAmendment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isBlanketAmendment() {
         if (blanketAmendment == null) {
@@ -735,11 +636,9 @@ public class Legislation {
 
     /**
      * Sets the value of the blanketAmendment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setBlanketAmendment(Boolean value) {
         this.blanketAmendment = value;
@@ -747,11 +646,9 @@ public class Legislation {
 
     /**
      * Gets the value of the concurrent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isConcurrent() {
         if (concurrent == null) {
@@ -763,11 +660,9 @@ public class Legislation {
 
     /**
      * Sets the value of the concurrent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setConcurrent(Boolean value) {
         this.concurrent = value;
@@ -775,11 +670,9 @@ public class Legislation {
 
     /**
      * Gets the value of the match property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isMatch() {
         if (match == null) {
@@ -791,11 +684,9 @@ public class Legislation {
 
     /**
      * Sets the value of the match property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setMatch(Boolean value) {
         this.match = value;
@@ -803,11 +694,9 @@ public class Legislation {
 
     /**
      * Gets the value of the altDates property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAltDates() {
         return altDates;
@@ -815,11 +704,9 @@ public class Legislation {
 
     /**
      * Sets the value of the altDates property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAltDates(String value) {
         this.altDates = value;
@@ -827,11 +714,9 @@ public class Legislation {
 
     /**
      * Gets the value of the numberOfProvisions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is
+     * {@link BigInteger }
      */
     public BigInteger getNumberOfProvisions() {
         return numberOfProvisions;
@@ -839,11 +724,9 @@ public class Legislation {
 
     /**
      * Sets the value of the numberOfProvisions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigInteger }
      */
     public void setNumberOfProvisions(BigInteger value) {
         this.numberOfProvisions = value;
@@ -851,11 +734,9 @@ public class Legislation {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getId() {
         return id;
@@ -863,11 +744,9 @@ public class Legislation {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
@@ -875,11 +754,9 @@ public class Legislation {
 
     /**
      * Gets the value of the lang property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLang() {
         return lang;
@@ -887,11 +764,9 @@ public class Legislation {
 
     /**
      * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLang(String value) {
         this.lang = value;
@@ -899,11 +774,9 @@ public class Legislation {
 
     /**
      * Gets the value of the space property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSpace() {
         return space;
@@ -911,11 +784,9 @@ public class Legislation {
 
     /**
      * Sets the value of the space property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSpace(String value) {
         this.space = value;
@@ -923,11 +794,9 @@ public class Legislation {
 
     /**
      * Gets the value of the base property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBase() {
         return base;
@@ -935,11 +804,9 @@ public class Legislation {
 
     /**
      * Sets the value of the base property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBase(String value) {
         this.base = value;
@@ -947,29 +814,27 @@ public class Legislation {
 
     /**
      * Gets the value of the altVersionRefs property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the altVersionRefs property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAltVersionRefs().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Object }
-     * 
-     * 
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

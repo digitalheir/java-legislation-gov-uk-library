@@ -1,5 +1,6 @@
 package org.leibnizcenter.uk.legislation;
 
+import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.w3._2005.atom.Entry;
 import org.w3._2005.atom.Link;
 import org.xml.sax.SAXException;
@@ -11,13 +12,15 @@ import java.io.IOException;
 import java.util.List;
 
 /**
+ * test class
+ *
  * Created by maarten on 9-8-15.
  */
 public class Test {
 
     public static void main(String[] args) {
         try {
-            UkUriObject uri = new UkUriObject("http://www.legislation.gov.uk/anaw/2015/4");
+            TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/anaw/2015/4");
             Entry e = LegislationGovUkInterface.getSingleEntryFromFeed(uri);
 
             for (Link l : e.getTableOfContentsLinks()) {

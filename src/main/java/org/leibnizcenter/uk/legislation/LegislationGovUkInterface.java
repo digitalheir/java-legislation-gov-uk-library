@@ -3,9 +3,9 @@ package org.leibnizcenter.uk.legislation;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.w3._2005.atom.Entry;
 import org.w3._2005.atom.Feed;
-import org.w3._2005.atom.Link;
 import org.xml.sax.SAXException;
 import uk.gov.legislation.namespaces.legislation.Legislation;
 
@@ -59,7 +59,7 @@ public class LegislationGovUkInterface {
      * manifestations that do not exist in actuality. For example;
      * <a href="http://www.legislation.gov.uk/uksi/1986/1628/made/data.xml">uksi/1986/1628</a>.
      */
-    public static Entry getSingleEntryFromFeed(UkUriObject uri) throws ParserConfigurationException, SAXException, IOException, JAXBException {
+    public static Entry getSingleEntryFromFeed(TopLevelUri uri) throws ParserConfigurationException, SAXException, IOException, JAXBException {
         List<Entry> feed = getSearchFeed(new Request.Builder().url(uri.feedURL).build()).getEntries();
 
         if (feed.size() != 1) {
@@ -68,30 +68,30 @@ public class LegislationGovUkInterface {
         return feed.get(0);
     }
 
-    /**
-     * TODO
-     * <p/>
-     * Created by Maarten on 2-3-2015.
-     */
-    public static String getReaderDoc(String representationUri) throws ParserConfigurationException, JAXBException, SAXException, IOException {
-        Entry entry = getSingleEntryFromFeed(new UkUriObject(representationUri));
-        for (Link link : entry.getLinks()) {
-            switch (link.getRel()) {
-                case "alternate":
-                    String lang = link.getHreflang() == null ? "en" : link.getHreflang(); //Default language is English
-                    switch (link.getType()) {
-                        case "application/xml":
-//                            link.href;
-                            break;
-                        case "application/xhtml+xml":
-//                            link.href;
-                            break;
-                    }
-            }
-        }
-
-        return null;
-    }
+//    /**
+//     * TODO
+//     * <p/>
+//     * Created by Maarten on 2-3-2015.
+//     */
+//    public static String getReaderDoc(String representationUri) throws ParserConfigurationException, JAXBException, SAXException, IOException {
+//        Entry entry = getSingleEntryFromFeed(new TopLevelUri(representationUri));
+//        for (Link link : entry.getLinks()) {
+//            switch (link.getRel()) {
+//                case "alternate":
+//                    String lang = link.getHreflang() == null ? "en" : link.getHreflang(); //Default language is English
+//                    switch (link.getType()) {
+//                        case "application/xml":
+////                            link.href;
+//                            break;
+//                        case "application/xhtml+xml":
+////                            link.href;
+//                            break;
+//                    }
+//            }
+//        }
+//
+//        return null;
+//    }
 
     public static Legislation parseLegislationDoc(String url) throws IOException, JAXBException {
         return parseLegislationDoc(new Request.Builder().url(url).build());
@@ -110,6 +110,7 @@ public class LegislationGovUkInterface {
             return null;
         }
     }
+
 
 //    public static LegislationDataXmlParser.Metadata getMetadata(InputStream response) throws IOException, SAXException, ParserConfigurationException {
 //        LegislationDataXmlParser p = new LegislationDataXmlParser();

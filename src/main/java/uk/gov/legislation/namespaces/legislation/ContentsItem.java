@@ -8,27 +8,22 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.leibnizcenter.uk.legislation.TableOfContentsElement;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -46,17 +41,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "contentsNumber",
-    "contentsTitle",
-    "contentsSubItems"
+        "contentsNumber",
+        "contentsTitle",
+        "contentsSubItems"
 })
 @XmlRootElement(name = "ContentsItem")
-public class ContentsItem {
+public class ContentsItem implements TableOfContentsElement {
 
     @XmlElement(name = "ContentsNumber", required = true)
     protected InlineRestrictedStructure contentsNumber;
@@ -130,11 +123,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the contentsNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InlineRestrictedStructure }
-     *     
+     *
+     * @return possible object is
+     * {@link InlineRestrictedStructure }
      */
     public InlineRestrictedStructure getContentsNumber() {
         return contentsNumber;
@@ -142,11 +133,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the contentsNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InlineRestrictedStructure }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link InlineRestrictedStructure }
      */
     public void setContentsNumber(InlineRestrictedStructure value) {
         this.contentsNumber = value;
@@ -154,11 +143,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the contentsTitle property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ContentsTitle }
-     *     
+     *
+     * @return possible object is
+     * {@link ContentsTitle }
      */
     public ContentsTitle getContentsTitle() {
         return contentsTitle;
@@ -166,11 +153,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the contentsTitle property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ContentsTitle }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link ContentsTitle }
      */
     public void setContentsTitle(ContentsTitle value) {
         this.contentsTitle = value;
@@ -178,40 +163,36 @@ public class ContentsItem {
 
     /**
      * Gets the value of the contentsSubItems property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the contentsSubItems property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContentsSubItems().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ContentsSubItem }
-     * 
-     * 
      */
     public List<ContentsSubItem> getContentsSubItems() {
         if (contentsSubItems == null) {
-            contentsSubItems = new ArrayList<ContentsSubItem>();
+            contentsSubItems = new ArrayList<>();
         }
         return this.contentsSubItems;
     }
 
     /**
      * Gets the value of the contentRef property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getContentRef() {
         return contentRef;
@@ -219,11 +200,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the contentRef property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setContentRef(String value) {
         this.contentRef = value;
@@ -231,11 +210,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the documentURI property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDocumentURI() {
         return documentURI;
@@ -243,11 +220,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the documentURI property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDocumentURI(String value) {
         this.documentURI = value;
@@ -255,11 +230,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the idURI property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIdURI() {
         return idURI;
@@ -267,11 +240,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the idURI property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIdURI(String value) {
         this.idURI = value;
@@ -279,11 +250,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the matchText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isMatchText() {
         if (matchText == null) {
@@ -295,11 +264,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the matchText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setMatchText(Boolean value) {
         this.matchText = value;
@@ -307,11 +274,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the matchExtent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isMatchExtent() {
         if (matchExtent == null) {
@@ -323,11 +288,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the matchExtent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setMatchExtent(Boolean value) {
         this.matchExtent = value;
@@ -335,11 +298,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the fragmentId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFragmentId() {
         return fragmentId;
@@ -347,11 +308,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the fragmentId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFragmentId(String value) {
         this.fragmentId = value;
@@ -359,11 +318,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the version property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is
+     * {@link BigInteger }
      */
     public BigInteger getVersion() {
         return version;
@@ -371,11 +328,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the version property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigInteger }
      */
     public void setVersion(BigInteger value) {
         this.version = value;
@@ -383,11 +338,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the restrictExtent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getRestrictExtent() {
         return restrictExtent;
@@ -395,11 +348,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the restrictExtent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setRestrictExtent(String value) {
         this.restrictExtent = value;
@@ -407,11 +358,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the restrictStartDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getRestrictStartDate() {
         return restrictStartDate;
@@ -419,11 +368,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the restrictStartDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setRestrictStartDate(XMLGregorianCalendar value) {
         this.restrictStartDate = value;
@@ -431,11 +378,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the restrictEndDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getRestrictEndDate() {
         return restrictEndDate;
@@ -443,11 +388,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the restrictEndDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setRestrictEndDate(XMLGregorianCalendar value) {
         this.restrictEndDate = value;
@@ -455,11 +398,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getStatus() {
         return status;
@@ -467,11 +408,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setStatus(String value) {
         this.status = value;
@@ -479,11 +418,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the confersPower property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isConfersPower() {
         if (confersPower == null) {
@@ -495,11 +432,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the confersPower property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setConfersPower(Boolean value) {
         this.confersPower = value;
@@ -507,11 +442,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the blanketAmendment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isBlanketAmendment() {
         if (blanketAmendment == null) {
@@ -523,11 +456,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the blanketAmendment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setBlanketAmendment(Boolean value) {
         this.blanketAmendment = value;
@@ -535,11 +466,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the concurrent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isConcurrent() {
         if (concurrent == null) {
@@ -551,11 +480,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the concurrent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setConcurrent(Boolean value) {
         this.concurrent = value;
@@ -563,11 +490,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the match property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public boolean isMatch() {
         if (match == null) {
@@ -579,11 +504,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the match property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setMatch(Boolean value) {
         this.match = value;
@@ -591,11 +514,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the altDates property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAltDates() {
         return altDates;
@@ -603,11 +524,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the altDates property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAltDates(String value) {
         this.altDates = value;
@@ -615,11 +534,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the numberOfProvisions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is
+     * {@link BigInteger }
      */
     public BigInteger getNumberOfProvisions() {
         return numberOfProvisions;
@@ -627,11 +544,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the numberOfProvisions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link BigInteger }
      */
     public void setNumberOfProvisions(BigInteger value) {
         this.numberOfProvisions = value;
@@ -639,11 +554,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getId() {
         return id;
@@ -651,11 +564,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
@@ -663,11 +574,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the lang property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLang() {
         return lang;
@@ -675,11 +584,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLang(String value) {
         this.lang = value;
@@ -687,11 +594,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the space property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSpace() {
         return space;
@@ -699,11 +604,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the space property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSpace(String value) {
         this.space = value;
@@ -711,11 +614,9 @@ public class ContentsItem {
 
     /**
      * Gets the value of the base property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBase() {
         return base;
@@ -723,11 +624,9 @@ public class ContentsItem {
 
     /**
      * Sets the value of the base property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBase(String value) {
         this.base = value;
@@ -735,31 +634,33 @@ public class ContentsItem {
 
     /**
      * Gets the value of the altVersionRefs property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the altVersionRefs property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAltVersionRefs().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Object }
-     * 
-     * 
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }
 
+    @Override
+    public List<TableOfContentsElement> getToCChildren() {
+        return contentsSubItems == null ? new ArrayList<TableOfContentsElement>(0) : new ArrayList<TableOfContentsElement>(contentsSubItems);
+    }
 }

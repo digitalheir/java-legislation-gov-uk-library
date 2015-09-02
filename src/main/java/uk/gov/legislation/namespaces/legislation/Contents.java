@@ -8,26 +8,20 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.leibnizcenter.uk.legislation.TableOfContentsElement;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -51,27 +45,26 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "contentsTitle",
-    "contentsGroupsAndContentsPartsAndContentsChapters",
-    "contentsAppendixes",
-    "contentsSchedules"
+        "contentsTitle",
+        "contentsGroupsAndContentsPartsAndContentsChapters",
+        "contentsAppendixes",
+        "contentsSchedules"
 })
 @XmlRootElement(name = "Contents")
-public class Contents {
+public class Contents implements TableOfContentsElement {
+
 
     @XmlElement(name = "ContentsTitle")
     protected ContentsTitle contentsTitle;
     @XmlElements({
-        @XmlElement(name = "ContentsGroup", type = ContentsGroup.class),
-        @XmlElement(name = "ContentsPart", type = ContentsPart.class),
-        @XmlElement(name = "ContentsChapter", type = ContentsChapter.class),
-        @XmlElement(name = "ContentsPblock", type = ContentsPblock.class),
-        @XmlElement(name = "ContentsItem", type = ContentsItem.class)
+            @XmlElement(name = "ContentsGroup", type = ContentsGroup.class),
+            @XmlElement(name = "ContentsPart", type = ContentsPart.class),
+            @XmlElement(name = "ContentsChapter", type = ContentsChapter.class),
+            @XmlElement(name = "ContentsPblock", type = ContentsPblock.class),
+            @XmlElement(name = "ContentsItem", type = ContentsItem.class)
     })
     protected List<Object> contentsGroupsAndContentsPartsAndContentsChapters;
     @XmlElement(name = "ContentsAppendix")
@@ -102,11 +95,9 @@ public class Contents {
 
     /**
      * Gets the value of the contentsTitle property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ContentsTitle }
-     *     
+     *
+     * @return possible object is
+     * {@link ContentsTitle }
      */
     public ContentsTitle getContentsTitle() {
         return contentsTitle;
@@ -114,11 +105,9 @@ public class Contents {
 
     /**
      * Sets the value of the contentsTitle property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ContentsTitle }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link ContentsTitle }
      */
     public void setContentsTitle(ContentsTitle value) {
         this.contentsTitle = value;
@@ -126,20 +115,20 @@ public class Contents {
 
     /**
      * Gets the value of the contentsGroupsAndContentsPartsAndContentsChapters property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the contentsGroupsAndContentsPartsAndContentsChapters property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContentsGroupsAndContentsPartsAndContentsChapters().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ContentsGroup }
@@ -147,52 +136,46 @@ public class Contents {
      * {@link ContentsChapter }
      * {@link ContentsPblock }
      * {@link ContentsItem }
-     * 
-     * 
      */
     public List<Object> getContentsGroupsAndContentsPartsAndContentsChapters() {
         if (contentsGroupsAndContentsPartsAndContentsChapters == null) {
-            contentsGroupsAndContentsPartsAndContentsChapters = new ArrayList<Object>();
+            contentsGroupsAndContentsPartsAndContentsChapters = new ArrayList<>();
         }
         return this.contentsGroupsAndContentsPartsAndContentsChapters;
     }
 
     /**
      * Gets the value of the contentsAppendixes property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the contentsAppendixes property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContentsAppendixes().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ContentsAppendix }
-     * 
-     * 
      */
     public List<ContentsAppendix> getContentsAppendixes() {
         if (contentsAppendixes == null) {
-            contentsAppendixes = new ArrayList<ContentsAppendix>();
+            contentsAppendixes = new ArrayList<>();
         }
         return this.contentsAppendixes;
     }
 
     /**
      * Gets the value of the contentsSchedules property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ContentsSchedules }
-     *     
+     *
+     * @return possible object is
+     * {@link ContentsSchedules }
      */
     public ContentsSchedules getContentsSchedules() {
         return contentsSchedules;
@@ -200,11 +183,9 @@ public class Contents {
 
     /**
      * Sets the value of the contentsSchedules property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ContentsSchedules }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link ContentsSchedules }
      */
     public void setContentsSchedules(ContentsSchedules value) {
         this.contentsSchedules = value;
@@ -212,11 +193,9 @@ public class Contents {
 
     /**
      * Gets the value of the matchExtentEntries property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMatchExtentEntries() {
         return matchExtentEntries;
@@ -224,11 +203,9 @@ public class Contents {
 
     /**
      * Sets the value of the matchExtentEntries property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMatchExtentEntries(String value) {
         this.matchExtentEntries = value;
@@ -236,11 +213,9 @@ public class Contents {
 
     /**
      * Gets the value of the matchTextEntries property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMatchTextEntries() {
         return matchTextEntries;
@@ -248,11 +223,9 @@ public class Contents {
 
     /**
      * Sets the value of the matchTextEntries property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMatchTextEntries(String value) {
         this.matchTextEntries = value;
@@ -260,11 +233,9 @@ public class Contents {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getId() {
         return id;
@@ -272,11 +243,9 @@ public class Contents {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
@@ -284,11 +253,9 @@ public class Contents {
 
     /**
      * Gets the value of the lang property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLang() {
         return lang;
@@ -296,11 +263,9 @@ public class Contents {
 
     /**
      * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLang(String value) {
         this.lang = value;
@@ -308,11 +273,9 @@ public class Contents {
 
     /**
      * Gets the value of the space property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSpace() {
         return space;
@@ -320,11 +283,9 @@ public class Contents {
 
     /**
      * Sets the value of the space property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSpace(String value) {
         this.space = value;
@@ -332,11 +293,9 @@ public class Contents {
 
     /**
      * Gets the value of the base property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBase() {
         return base;
@@ -344,11 +303,9 @@ public class Contents {
 
     /**
      * Sets the value of the base property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBase(String value) {
         this.base = value;
@@ -356,31 +313,36 @@ public class Contents {
 
     /**
      * Gets the value of the altVersionRefs property.
-     * 
+     * <p>
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the altVersionRefs property.
-     * 
+     * <p>
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAltVersionRefs().add(newItem);
      * </pre>
-     * 
-     * 
+     * <p>
+     * <p>
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Object }
-     * 
-     * 
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }
 
+    /**
+     * Cast all members in contentsGroupsAndContentsPartsAndContentsChapters to TableOfContentsElement
+     */
+    @Override
+    public List<TableOfContentsElement> getToCChildren() {
+        return TableOfContentsElement.Helper.castToTableOfContentsElement(contentsGroupsAndContentsPartsAndContentsChapters);
+    }
 }
