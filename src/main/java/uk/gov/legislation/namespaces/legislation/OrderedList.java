@@ -8,19 +8,12 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
@@ -29,41 +22,41 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ListItem" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *       &lt;attribute name="Type" use="required">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="arabic"/>
- *             &lt;enumeration value="roman"/>
- *             &lt;enumeration value="romanUpper"/>
- *             &lt;enumeration value="alpha"/>
- *             &lt;enumeration value="alphaUpper"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="Decoration" use="required">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN">
- *             &lt;enumeration value="none"/>
- *             &lt;enumeration value="parens"/>
- *             &lt;enumeration value="parenRight"/>
- *             &lt;enumeration value="brackets"/>
- *             &lt;enumeration value="bracketRight"/>
- *             &lt;enumeration value="period"/>
- *             &lt;enumeration value="colon"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="Start" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ListItem" maxOccurs="unbounded"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *       &lt;attribute name="Type" use="required"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN"&gt;
+ *             &lt;enumeration value="arabic"/&gt;
+ *             &lt;enumeration value="roman"/&gt;
+ *             &lt;enumeration value="romanUpper"/&gt;
+ *             &lt;enumeration value="alpha"/&gt;
+ *             &lt;enumeration value="alphaUpper"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="Decoration" use="required"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NMTOKEN"&gt;
+ *             &lt;enumeration value="none"/&gt;
+ *             &lt;enumeration value="parens"/&gt;
+ *             &lt;enumeration value="parenRight"/&gt;
+ *             &lt;enumeration value="brackets"/&gt;
+ *             &lt;enumeration value="bracketRight"/&gt;
+ *             &lt;enumeration value="period"/&gt;
+ *             &lt;enumeration value="colon"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="Start" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -128,7 +121,7 @@ public class OrderedList {
      */
     public List<ListItem> getListItems() {
         if (listItems == null) {
-            listItems = new ArrayList<ListItem>();
+            listItems = new ArrayList<>();
         }
         return this.listItems;
     }
@@ -325,7 +318,7 @@ public class OrderedList {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

@@ -8,24 +8,14 @@
 
 package org.w3._1998.math.mathml;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAnyAttribute;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.namespace.QName;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -34,14 +24,14 @@ import javax.xml.namespace.QName;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="uplimit.type">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;group ref="{http://www.w3.org/1998/Math/MathML}uplimit.content" maxOccurs="unbounded"/>
- *       &lt;attGroup ref="{http://www.w3.org/1998/Math/MathML}uplimit.attlist"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="uplimit.type"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;group ref="{http://www.w3.org/1998/Math/MathML}uplimit.content" maxOccurs="unbounded"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1998/Math/MathML}uplimit.attlist"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -245,7 +235,7 @@ public class Uplimit {
     @XmlSchemaType(name = "anyURI")
     protected String definitionURL;
     @XmlAnyAttribute
-    private Map<QName, String> otherAttributes = new HashMap<QName, String>();
+    private Map<QName, String> otherAttributes = new HashMap<>();
 
     /**
      * Gets the value of the cnsAndCisAndCsymbols property.
@@ -436,7 +426,7 @@ public class Uplimit {
      */
     public java.util.List<Object> getCnsAndCisAndCsymbols() {
         if (cnsAndCisAndCsymbols == null) {
-            cnsAndCisAndCsymbols = new ArrayList<Object>();
+            cnsAndCisAndCsymbols = new ArrayList<>();
         }
         return this.cnsAndCisAndCsymbols;
     }
@@ -465,7 +455,7 @@ public class Uplimit {
      */
     public java.util.List<String> getClazzs() {
         if (clazzs == null) {
-            clazzs = new ArrayList<String>();
+            clazzs = new ArrayList<>();
         }
         return this.clazzs;
     }

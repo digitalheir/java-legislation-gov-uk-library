@@ -5,8 +5,9 @@ import com.squareup.okhttp.Request;
 
 
 /**
+ * <p>
  * Create request to fetch UK law, for example http://www.legislation.gov.uk/all/data.feed?page=2
- * <p/>
+ * <p>
  * Created by Maarten on 24-1-2015.
  */
 public class SearchRequestBuilder {

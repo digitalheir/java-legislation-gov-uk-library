@@ -8,10 +8,11 @@
 
 package org.purl.dc.terms;
 
+import org.purl.dc.elements._1.SimpleLiteral;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-import org.purl.dc.elements._1.SimpleLiteral;
 
 
 /**
@@ -20,12 +21,12 @@ import org.purl.dc.elements._1.SimpleLiteral;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IMT">
- *   &lt;simpleContent>
- *     &lt;restriction base="&lt;http://purl.org/dc/elements/1.1/>SimpleLiteral">
- *     &lt;/restriction>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="IMT"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;restriction base="&lt;http://purl.org/dc/elements/1.1/&gt;SimpleLiteral"&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

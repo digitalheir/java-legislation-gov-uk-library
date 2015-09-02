@@ -8,20 +8,13 @@
 
 package org.w3._1999.xhtml;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.w3._1999.xsl.format.TableBorderStyleType;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.w3._1999.xsl.format.TableBorderStyleType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -30,23 +23,23 @@ import org.w3._1999.xsl.format.TableBorderStyleType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded">
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}td"/>
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}th"/>
- *       &lt;/choice>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableXMLattributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableID"/>
- *       &lt;attribute name="height" type="{http://www.w3.org/1999/xhtml}TableSimpleLengthType" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded"&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}td"/&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}th"/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableXMLattributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableID"/&gt;
+ *       &lt;attribute name="height" type="{http://www.w3.org/1999/xhtml}TableSimpleLengthType" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -131,7 +124,7 @@ public class Tr {
      */
     public List<Object> getTdsAndThs() {
         if (tdsAndThs == null) {
-            tdsAndThs = new ArrayList<Object>();
+            tdsAndThs = new ArrayList<>();
         }
         return this.tdsAndThs;
     }

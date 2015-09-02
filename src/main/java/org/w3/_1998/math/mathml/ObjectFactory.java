@@ -930,7 +930,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "xor")
     public JAXBElement<LogicType> createXor(LogicType value) {
-        return new JAXBElement<LogicType>(_Xor_QNAME, LogicType.class, null, value);
+        return new JAXBElement<>(_Xor_QNAME, LogicType.class, null, value);
     }
 
     /**
@@ -939,7 +939,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "sec")
     public JAXBElement<ElementaryFunctionsType> createSec(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Sec_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Sec_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -948,7 +948,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "csc")
     public JAXBElement<ElementaryFunctionsType> createCsc(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Csc_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Csc_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -957,7 +957,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "primes")
     public JAXBElement<ConstantType> createPrimes(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Primes_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Primes_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -966,7 +966,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arccosh")
     public JAXBElement<ElementaryFunctionsType> createArccosh(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arccosh_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arccosh_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -975,7 +975,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "gcd")
     public JAXBElement<ArithType> createGcd(ArithType value) {
-        return new JAXBElement<ArithType>(_Gcd_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Gcd_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -984,7 +984,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "equivalent")
     public JAXBElement<RelationsType> createEquivalent(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Equivalent_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Equivalent_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -993,7 +993,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "implies")
     public JAXBElement<LogicType> createImplies(LogicType value) {
-        return new JAXBElement<LogicType>(_Implies_QNAME, LogicType.class, null, value);
+        return new JAXBElement<>(_Implies_QNAME, LogicType.class, null, value);
     }
 
     /**
@@ -1002,7 +1002,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "sum")
     public JAXBElement<ArithType> createSum(ArithType value) {
-        return new JAXBElement<ArithType>(_Sum_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Sum_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1011,7 +1011,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "infinity")
     public JAXBElement<ConstantType> createInfinity(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Infinity_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Infinity_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1020,7 +1020,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arcsech")
     public JAXBElement<ElementaryFunctionsType> createArcsech(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arcsech_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arcsech_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1029,7 +1029,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "approx")
     public JAXBElement<RelationsType> createApprox(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Approx_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Approx_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1038,7 +1038,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "real")
     public JAXBElement<ArithType> createReal(ArithType value) {
-        return new JAXBElement<ArithType>(_Real_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Real_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1047,7 +1047,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "ident")
     public JAXBElement<FunctionsType> createIdent(FunctionsType value) {
-        return new JAXBElement<FunctionsType>(_Ident_QNAME, FunctionsType.class, null, value);
+        return new JAXBElement<>(_Ident_QNAME, FunctionsType.class, null, value);
     }
 
     /**
@@ -1056,7 +1056,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arccoth")
     public JAXBElement<ElementaryFunctionsType> createArccoth(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arccoth_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arccoth_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1065,7 +1065,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "minus")
     public JAXBElement<ArithType> createMinus(ArithType value) {
-        return new JAXBElement<ArithType>(_Minus_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Minus_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1074,7 +1074,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "csch")
     public JAXBElement<ElementaryFunctionsType> createCsch(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Csch_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Csch_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1083,7 +1083,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "geq")
     public JAXBElement<RelationsType> createGeq(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Geq_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Geq_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1092,7 +1092,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "cosh")
     public JAXBElement<ElementaryFunctionsType> createCosh(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Cosh_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Cosh_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1101,7 +1101,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "sinh")
     public JAXBElement<ElementaryFunctionsType> createSinh(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Sinh_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Sinh_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1110,7 +1110,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arccsc")
     public JAXBElement<ElementaryFunctionsType> createArccsc(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arccsc_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arccsc_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1119,7 +1119,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "and")
     public JAXBElement<ElementaryFunctionsType> createAnd(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_And_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_And_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1128,7 +1128,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "exponentiale")
     public JAXBElement<ConstantType> createExponentiale(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Exponentiale_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Exponentiale_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1137,7 +1137,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "factorof")
     public JAXBElement<RelationsType> createFactorof(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Factorof_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Factorof_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1146,7 +1146,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "forall")
     public JAXBElement<LogicType> createForall(LogicType value) {
-        return new JAXBElement<LogicType>(_Forall_QNAME, LogicType.class, null, value);
+        return new JAXBElement<>(_Forall_QNAME, LogicType.class, null, value);
     }
 
     /**
@@ -1155,7 +1155,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "conjugate")
     public JAXBElement<ArithType> createConjugate(ArithType value) {
-        return new JAXBElement<ArithType>(_Conjugate_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Conjugate_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1164,7 +1164,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "exp")
     public JAXBElement<ElementaryFunctionsType> createExp(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Exp_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Exp_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1173,7 +1173,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "rationals")
     public JAXBElement<ConstantType> createRationals(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Rationals_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Rationals_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1182,7 +1182,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "ceiling")
     public JAXBElement<ArithType> createCeiling(ArithType value) {
-        return new JAXBElement<ArithType>(_Ceiling_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Ceiling_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1191,7 +1191,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "integers")
     public JAXBElement<ConstantType> createIntegers(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Integers_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Integers_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1200,7 +1200,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "coth")
     public JAXBElement<ElementaryFunctionsType> createCoth(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Coth_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Coth_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1209,7 +1209,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "complexes")
     public JAXBElement<ConstantType> createComplexes(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Complexes_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Complexes_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1218,7 +1218,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "quotient")
     public JAXBElement<ArithType> createQuotient(ArithType value) {
-        return new JAXBElement<ArithType>(_Quotient_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Quotient_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1227,7 +1227,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arcsinh")
     public JAXBElement<ElementaryFunctionsType> createArcsinh(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arcsinh_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arcsinh_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1236,7 +1236,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "root")
     public JAXBElement<ArithType> createRoot(ArithType value) {
-        return new JAXBElement<ArithType>(_Root_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Root_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1245,7 +1245,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "cos")
     public JAXBElement<ElementaryFunctionsType> createCos(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Cos_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Cos_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1254,7 +1254,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "cot")
     public JAXBElement<ElementaryFunctionsType> createCot(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Cot_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Cot_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1263,7 +1263,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "lcm")
     public JAXBElement<ArithType> createLcm(ArithType value) {
-        return new JAXBElement<ArithType>(_Lcm_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Lcm_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1272,7 +1272,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "tanh")
     public JAXBElement<ElementaryFunctionsType> createTanh(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Tanh_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Tanh_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1281,7 +1281,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arcsec")
     public JAXBElement<ElementaryFunctionsType> createArcsec(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arcsec_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arcsec_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1290,7 +1290,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "power")
     public JAXBElement<ArithType> createPower(ArithType value) {
-        return new JAXBElement<ArithType>(_Power_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Power_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1299,7 +1299,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "eulergamma")
     public JAXBElement<ConstantType> createEulergamma(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Eulergamma_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Eulergamma_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1308,7 +1308,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "max")
     public JAXBElement<ArithType> createMax(ArithType value) {
-        return new JAXBElement<ArithType>(_Max_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Max_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1317,7 +1317,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "min")
     public JAXBElement<ArithType> createMin(ArithType value) {
-        return new JAXBElement<ArithType>(_Min_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Min_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1326,7 +1326,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "leq")
     public JAXBElement<RelationsType> createLeq(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Leq_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Leq_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1335,7 +1335,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arctan")
     public JAXBElement<ElementaryFunctionsType> createArctan(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arctan_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arctan_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1344,7 +1344,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "divide")
     public JAXBElement<ArithType> createDivide(ArithType value) {
-        return new JAXBElement<ArithType>(_Divide_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Divide_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1353,7 +1353,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "true")
     public JAXBElement<ConstantType> createTrue(ConstantType value) {
-        return new JAXBElement<ConstantType>(_True_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_True_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1362,7 +1362,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "product")
     public JAXBElement<ArithType> createProduct(ArithType value) {
-        return new JAXBElement<ArithType>(_Product_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Product_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1371,7 +1371,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arcsin")
     public JAXBElement<ElementaryFunctionsType> createArcsin(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arcsin_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arcsin_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1380,7 +1380,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "sin")
     public JAXBElement<ElementaryFunctionsType> createSin(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Sin_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Sin_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1389,7 +1389,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "factorial")
     public JAXBElement<ArithType> createFactorial(ArithType value) {
-        return new JAXBElement<ArithType>(_Factorial_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Factorial_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1398,7 +1398,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "exists")
     public JAXBElement<LogicType> createExists(LogicType value) {
-        return new JAXBElement<LogicType>(_Exists_QNAME, LogicType.class, null, value);
+        return new JAXBElement<>(_Exists_QNAME, LogicType.class, null, value);
     }
 
     /**
@@ -1407,7 +1407,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "rem")
     public JAXBElement<ArithType> createRem(ArithType value) {
-        return new JAXBElement<ArithType>(_Rem_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Rem_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1416,7 +1416,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "emptyset")
     public JAXBElement<ConstantType> createEmptyset(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Emptyset_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Emptyset_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1425,7 +1425,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "eq")
     public JAXBElement<RelationsType> createEq(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Eq_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Eq_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1434,7 +1434,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "imaginaryi")
     public JAXBElement<ConstantType> createImaginaryi(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Imaginaryi_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Imaginaryi_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1443,7 +1443,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "ln")
     public JAXBElement<ElementaryFunctionsType> createLn(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Ln_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Ln_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1452,7 +1452,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "imaginary")
     public JAXBElement<ArithType> createImaginary(ArithType value) {
-        return new JAXBElement<ArithType>(_Imaginary_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Imaginary_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1461,7 +1461,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "neq")
     public JAXBElement<RelationsType> createNeq(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Neq_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Neq_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1470,7 +1470,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "lt")
     public JAXBElement<RelationsType> createLt(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Lt_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Lt_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1479,7 +1479,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "times")
     public JAXBElement<ArithType> createTimes(ArithType value) {
-        return new JAXBElement<ArithType>(_Times_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Times_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1488,7 +1488,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "domain")
     public JAXBElement<FunctionsType> createDomain(FunctionsType value) {
-        return new JAXBElement<FunctionsType>(_Domain_QNAME, FunctionsType.class, null, value);
+        return new JAXBElement<>(_Domain_QNAME, FunctionsType.class, null, value);
     }
 
     /**
@@ -1497,7 +1497,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "plus")
     public JAXBElement<ArithType> createPlus(ArithType value) {
-        return new JAXBElement<ArithType>(_Plus_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Plus_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1506,7 +1506,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "or")
     public JAXBElement<LogicType> createOr(LogicType value) {
-        return new JAXBElement<LogicType>(_Or_QNAME, LogicType.class, null, value);
+        return new JAXBElement<>(_Or_QNAME, LogicType.class, null, value);
     }
 
     /**
@@ -1515,7 +1515,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arccsch")
     public JAXBElement<ElementaryFunctionsType> createArccsch(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arccsch_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arccsch_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1524,7 +1524,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "sech")
     public JAXBElement<ElementaryFunctionsType> createSech(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Sech_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Sech_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1533,7 +1533,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "image")
     public JAXBElement<FunctionsType> createImage(FunctionsType value) {
-        return new JAXBElement<FunctionsType>(_Image_QNAME, FunctionsType.class, null, value);
+        return new JAXBElement<>(_Image_QNAME, FunctionsType.class, null, value);
     }
 
     /**
@@ -1542,7 +1542,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arctanh")
     public JAXBElement<ElementaryFunctionsType> createArctanh(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arctanh_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arctanh_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1551,7 +1551,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "log")
     public JAXBElement<ElementaryFunctionsType> createLog(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Log_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Log_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1560,7 +1560,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "not")
     public JAXBElement<LogicType> createNot(LogicType value) {
-        return new JAXBElement<LogicType>(_Not_QNAME, LogicType.class, null, value);
+        return new JAXBElement<>(_Not_QNAME, LogicType.class, null, value);
     }
 
     /**
@@ -1569,7 +1569,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "floor")
     public JAXBElement<ArithType> createFloor(ArithType value) {
-        return new JAXBElement<ArithType>(_Floor_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Floor_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1578,7 +1578,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "gt")
     public JAXBElement<RelationsType> createGt(RelationsType value) {
-        return new JAXBElement<RelationsType>(_Gt_QNAME, RelationsType.class, null, value);
+        return new JAXBElement<>(_Gt_QNAME, RelationsType.class, null, value);
     }
 
     /**
@@ -1587,7 +1587,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "tan")
     public JAXBElement<ElementaryFunctionsType> createTan(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Tan_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Tan_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1596,7 +1596,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "pi")
     public JAXBElement<ConstantType> createPi(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Pi_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Pi_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1605,7 +1605,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arccot")
     public JAXBElement<ElementaryFunctionsType> createArccot(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arccot_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arccot_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1614,7 +1614,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arccos")
     public JAXBElement<ElementaryFunctionsType> createArccos(ElementaryFunctionsType value) {
-        return new JAXBElement<ElementaryFunctionsType>(_Arccos_QNAME, ElementaryFunctionsType.class, null, value);
+        return new JAXBElement<>(_Arccos_QNAME, ElementaryFunctionsType.class, null, value);
     }
 
     /**
@@ -1623,7 +1623,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "reals")
     public JAXBElement<ConstantType> createReals(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Reals_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Reals_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1632,7 +1632,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "naturalnumbers")
     public JAXBElement<ConstantType> createNaturalnumbers(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Naturalnumbers_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Naturalnumbers_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1641,7 +1641,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "abs")
     public JAXBElement<ArithType> createAbs(ArithType value) {
-        return new JAXBElement<ArithType>(_Abs_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Abs_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1650,7 +1650,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "arg")
     public JAXBElement<ArithType> createArg(ArithType value) {
-        return new JAXBElement<ArithType>(_Arg_QNAME, ArithType.class, null, value);
+        return new JAXBElement<>(_Arg_QNAME, ArithType.class, null, value);
     }
 
     /**
@@ -1659,7 +1659,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "notanumber")
     public JAXBElement<ConstantType> createNotanumber(ConstantType value) {
-        return new JAXBElement<ConstantType>(_Notanumber_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_Notanumber_QNAME, ConstantType.class, null, value);
     }
 
     /**
@@ -1668,7 +1668,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "codomain")
     public JAXBElement<FunctionsType> createCodomain(FunctionsType value) {
-        return new JAXBElement<FunctionsType>(_Codomain_QNAME, FunctionsType.class, null, value);
+        return new JAXBElement<>(_Codomain_QNAME, FunctionsType.class, null, value);
     }
 
     /**
@@ -1677,7 +1677,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "compose")
     public JAXBElement<FunctionsType> createCompose(FunctionsType value) {
-        return new JAXBElement<FunctionsType>(_Compose_QNAME, FunctionsType.class, null, value);
+        return new JAXBElement<>(_Compose_QNAME, FunctionsType.class, null, value);
     }
 
     /**
@@ -1686,7 +1686,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1998/Math/MathML", name = "false")
     public JAXBElement<ConstantType> createFalse(ConstantType value) {
-        return new JAXBElement<ConstantType>(_False_QNAME, ConstantType.class, null, value);
+        return new JAXBElement<>(_False_QNAME, ConstantType.class, null, value);
     }
 
 }

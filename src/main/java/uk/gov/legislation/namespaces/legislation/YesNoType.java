@@ -19,12 +19,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="YesNoType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="yes"/>
- *     &lt;enumeration value="no"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="YesNoType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="yes"/&gt;
+ *     &lt;enumeration value="no"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -42,10 +42,6 @@ public enum YesNoType {
         value = v;
     }
 
-    public String value() {
-        return value;
-    }
-
     public static YesNoType fromValue(String v) {
         for (YesNoType c: YesNoType.values()) {
             if (c.value.equals(v)) {
@@ -53,6 +49,10 @@ public enum YesNoType {
             }
         }
         throw new IllegalArgumentException(v);
+    }
+
+    public String value() {
+        return value;
     }
 
 }

@@ -8,22 +8,14 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
+import uk.co.tso.assets.namespace.error.ErrorType;
+
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import uk.co.tso.assets.namespace.error.ErrorType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -32,29 +24,29 @@ import uk.co.tso.assets.namespace.error.ErrorType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence maxOccurs="unbounded">
- *         &lt;group ref="{http://www.tso.co.uk/assets/namespace/error}Errors" minOccurs="0"/>
- *         &lt;element name="Subject">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" maxOccurs="unbounded"/>
- *                   &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Subtitle" maxOccurs="unbounded" minOccurs="0"/>
- *                 &lt;/sequence>
- *                 &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence maxOccurs="unbounded"&gt;
+ *         &lt;group ref="{http://www.tso.co.uk/assets/namespace/error}Errors" minOccurs="0"/&gt;
+ *         &lt;element name="Subject"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" maxOccurs="unbounded"/&gt;
+ *                   &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Subtitle" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                 &lt;/sequence&gt;
+ *                 &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -116,7 +108,7 @@ public class SubjectInformation {
      */
     public List<JAXBElement<?>> getErrorsAndSubjectsAndWarnings() {
         if (errorsAndSubjectsAndWarnings == null) {
-            errorsAndSubjectsAndWarnings = new ArrayList<JAXBElement<?>>();
+            errorsAndSubjectsAndWarnings = new ArrayList<>();
         }
         return this.errorsAndSubjectsAndWarnings;
     }
@@ -241,7 +233,7 @@ public class SubjectInformation {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }
@@ -253,17 +245,17 @@ public class SubjectInformation {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" maxOccurs="unbounded"/>
-     *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Subtitle" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" maxOccurs="unbounded"/&gt;
+     *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Subtitle" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -321,7 +313,7 @@ public class SubjectInformation {
          */
         public List<InlineFullStructure> getTitles() {
             if (titles == null) {
-                titles = new ArrayList<InlineFullStructure>();
+                titles = new ArrayList<>();
             }
             return this.titles;
         }
@@ -350,7 +342,7 @@ public class SubjectInformation {
          */
         public List<InlineFullStructure> getSubtitles() {
             if (subtitles == null) {
-                subtitles = new ArrayList<InlineFullStructure>();
+                subtitles = new ArrayList<>();
             }
             return this.subtitles;
         }
@@ -475,7 +467,7 @@ public class SubjectInformation {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }

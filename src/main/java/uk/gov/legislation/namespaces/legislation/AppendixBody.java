@@ -8,21 +8,14 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
+import uk.co.tso.assets.namespace.error.ErrorType;
+
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import uk.co.tso.assets.namespace.error.ErrorType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -31,34 +24,34 @@ import uk.co.tso.assets.namespace.error.ErrorType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded">
- *         &lt;choice>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Group" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Part" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Chapter" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Pblock" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2group" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockAmendment" maxOccurs="unbounded"/>
- *         &lt;/choice>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Tabular"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Figure"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Form"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}IncludedDocument"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Include"/>
- *         &lt;group ref="{http://www.tso.co.uk/assets/namespace/error}Errors"/>
- *       &lt;/choice>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}PelementIDattributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded"&gt;
+ *         &lt;choice&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Group" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Part" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Chapter" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Pblock" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2group" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockAmendment" maxOccurs="unbounded"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Tabular"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Figure"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Form"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}IncludedDocument"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Include"/&gt;
+ *         &lt;group ref="{http://www.tso.co.uk/assets/namespace/error}Errors"/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}PelementIDattributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -160,7 +153,7 @@ public class AppendixBody {
      */
     public List<Object> getGroupsAndPartsAndChapters() {
         if (groupsAndPartsAndChapters == null) {
-            groupsAndPartsAndChapters = new ArrayList<Object>();
+            groupsAndPartsAndChapters = new ArrayList<>();
         }
         return this.groupsAndPartsAndChapters;
     }
@@ -261,7 +254,7 @@ public class AppendixBody {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

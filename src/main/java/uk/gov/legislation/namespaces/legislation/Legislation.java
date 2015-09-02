@@ -25,50 +25,50 @@ import java.util.List;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Metadata" minOccurs="0"/>
- *         &lt;choice minOccurs="0">
- *           &lt;sequence>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Contents"/>
- *             &lt;sequence minOccurs="0">
- *               &lt;choice>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Primary"/>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Secondary"/>
- *               &lt;/choice>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Footnotes" minOccurs="0"/>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MarginNotes" minOccurs="0"/>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Versions" minOccurs="0"/>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Resources" minOccurs="0"/>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Commentaries" minOccurs="0"/>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}CitationLists" minOccurs="0"/>
- *             &lt;/sequence>
- *           &lt;/sequence>
- *           &lt;sequence>
- *             &lt;choice>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Primary"/>
- *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Secondary"/>
- *             &lt;/choice>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Footnotes" minOccurs="0"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MarginNotes" minOccurs="0"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Versions" minOccurs="0"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Resources" minOccurs="0"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Commentaries" minOccurs="0"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}CitationLists" minOccurs="0"/>
- *           &lt;/sequence>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.tso.co.uk/assets/namespace/error}ErrorAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FragmentAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *       &lt;attribute name="SchemaVersion" use="required" type="{http://www.w3.org/2001/XMLSchema}NMTOKEN" fixed="1.0" />
- *       &lt;attribute name="DocumentURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="IdURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Metadata" minOccurs="0"/&gt;
+ *         &lt;choice minOccurs="0"&gt;
+ *           &lt;sequence&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Contents"/&gt;
+ *             &lt;sequence minOccurs="0"&gt;
+ *               &lt;choice&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Primary"/&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Secondary"/&gt;
+ *               &lt;/choice&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Footnotes" minOccurs="0"/&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MarginNotes" minOccurs="0"/&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Versions" minOccurs="0"/&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Resources" minOccurs="0"/&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Commentaries" minOccurs="0"/&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}CitationLists" minOccurs="0"/&gt;
+ *             &lt;/sequence&gt;
+ *           &lt;/sequence&gt;
+ *           &lt;sequence&gt;
+ *             &lt;choice&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Primary"/&gt;
+ *               &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Secondary"/&gt;
+ *             &lt;/choice&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Footnotes" minOccurs="0"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MarginNotes" minOccurs="0"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Versions" minOccurs="0"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Resources" minOccurs="0"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Commentaries" minOccurs="0"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}CitationLists" minOccurs="0"/&gt;
+ *           &lt;/sequence&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.tso.co.uk/assets/namespace/error}ErrorAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FragmentAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *       &lt;attribute name="SchemaVersion" use="required" type="{http://www.w3.org/2001/XMLSchema}NMTOKEN" fixed="1.0" /&gt;
+ *       &lt;attribute name="DocumentURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="IdURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)

@@ -8,12 +8,7 @@
 
 package uk.gov.legislation.namespaces.metadata;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
@@ -23,24 +18,24 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="Date" use="required" type="{http://www.w3.org/2001/XMLSchema}date" />
- *       &lt;attribute name="Time" type="{http://www.w3.org/2001/XMLSchema}time" />
- *       &lt;attribute name="Class" use="required">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="NorthernIrelandAssembly"/>
- *             &lt;enumeration value="ScottishParliament"/>
- *             &lt;enumeration value="UnitedKingdomParliament"/>
- *             &lt;enumeration value="WelshAssembly"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;attribute name="Date" use="required" type="{http://www.w3.org/2001/XMLSchema}date" /&gt;
+ *       &lt;attribute name="Time" type="{http://www.w3.org/2001/XMLSchema}time" /&gt;
+ *       &lt;attribute name="Class" use="required"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="NorthernIrelandAssembly"/&gt;
+ *             &lt;enumeration value="ScottishParliament"/&gt;
+ *             &lt;enumeration value="UnitedKingdomParliament"/&gt;
+ *             &lt;enumeration value="WelshAssembly"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

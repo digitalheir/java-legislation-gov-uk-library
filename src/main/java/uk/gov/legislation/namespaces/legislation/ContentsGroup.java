@@ -25,24 +25,24 @@ import java.util.List;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsNumber" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsTitle" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded" minOccurs="0">
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPart"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsChapter"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPblock"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsItem"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsNumber" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsTitle" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPart"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsChapter"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPblock"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsItem"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

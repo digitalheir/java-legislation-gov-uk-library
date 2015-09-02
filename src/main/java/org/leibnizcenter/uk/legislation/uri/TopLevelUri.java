@@ -4,10 +4,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Object containing different kinds of URIs for the same object.
- * <p/>
- * >NOTE< This is meant only for top level items. Eg. 'ukla/1998/3', not for 'ukla/1998/3/enacted/...'.
- * <p/>
+ * Object containing different kinds of URIs for the same law.
+ * <p>
+ * <em>NOTE</em> This class is meant only for top level items, corresponding to the work of a law.
+ * Eg. 'ukla/1998/3', not for 'ukla/1998/3/enacted/...'.
+ * <p>
+ *
  * Created by Maarten on 11-3-2015.
  */
 public class TopLevelUri {

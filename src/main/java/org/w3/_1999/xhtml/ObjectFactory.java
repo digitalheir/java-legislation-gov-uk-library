@@ -150,7 +150,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/1999/xhtml", name = "div", substitutionHeadNamespace = "http://www.w3.org/2005/Atom", substitutionHeadName = "atomXHTMLTextConstruct")
     public JAXBElement<AtomXHTMLTextConstruct> createDiv(AtomXHTMLTextConstruct value) {
-        return new JAXBElement<AtomXHTMLTextConstruct>(_Div_QNAME, AtomXHTMLTextConstruct.class, null, value);
+        return new JAXBElement<>(_Div_QNAME, AtomXHTMLTextConstruct.class, null, value);
     }
 
 }

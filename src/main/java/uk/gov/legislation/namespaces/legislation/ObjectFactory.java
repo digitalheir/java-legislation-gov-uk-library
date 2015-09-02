@@ -1285,7 +1285,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.Underline.class)
     public JAXBElement<Term.Superior> createTermUnderlineSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Underline.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Underline.class, value);
     }
 
     /**
@@ -1294,7 +1294,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.Underline.class)
     public JAXBElement<Term.Inferior> createTermUnderlineInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Underline.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Underline.class, value);
     }
 
     /**
@@ -1303,7 +1303,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = Term.Underline.class)
     public JAXBElement<Term.SmallCaps> createTermUnderlineSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Underline.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Underline.class, value);
     }
 
     /**
@@ -1312,7 +1312,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = Term.Underline.class)
     public JAXBElement<Term.Emphasis> createTermUnderlineEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Underline.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Underline.class, value);
     }
 
     /**
@@ -1321,7 +1321,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = Term.Underline.class)
     public JAXBElement<Term.Strong> createTermUnderlineStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Underline.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Underline.class, value);
     }
 
     /**
@@ -1330,7 +1330,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "ContentsNumber")
     public JAXBElement<InlineRestrictedStructure> createContentsNumber(InlineRestrictedStructure value) {
-        return new JAXBElement<InlineRestrictedStructure>(_ContentsNumber_QNAME, InlineRestrictedStructure.class, null, value);
+        return new JAXBElement<>(_ContentsNumber_QNAME, InlineRestrictedStructure.class, null, value);
     }
 
     /**
@@ -1339,7 +1339,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Title")
     public JAXBElement<InlineFullStructure> createTitle(InlineFullStructure value) {
-        return new JAXBElement<InlineFullStructure>(_Title_QNAME, InlineFullStructure.class, null, value);
+        return new JAXBElement<>(_Title_QNAME, InlineFullStructure.class, null, value);
     }
 
     /**
@@ -1348,7 +1348,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior")
     public JAXBElement<InlineStructure> createInferior(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_TermUnderlineInferior_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1357,7 +1357,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Span")
     public JAXBElement<InlineStructure> createSpan(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_Span_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_Span_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1366,7 +1366,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Underline")
     public JAXBElement<InlineStructure> createUnderline(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_Underline_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_Underline_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1375,7 +1375,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Key")
     public JAXBElement<InlineFullStructure> createKey(InlineFullStructure value) {
-        return new JAXBElement<InlineFullStructure>(_Key_QNAME, InlineFullStructure.class, null, value);
+        return new JAXBElement<>(_Key_QNAME, InlineFullStructure.class, null, value);
     }
 
     /**
@@ -1384,7 +1384,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "PersonName")
     public JAXBElement<InlineStructure> createPersonName(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_PersonName_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_PersonName_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1393,7 +1393,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Subtitle")
     public JAXBElement<InlineFullStructure> createSubtitle(InlineFullStructure value) {
-        return new JAXBElement<InlineFullStructure>(_Subtitle_QNAME, InlineFullStructure.class, null, value);
+        return new JAXBElement<>(_Subtitle_QNAME, InlineFullStructure.class, null, value);
     }
 
     /**
@@ -1402,7 +1402,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "JobTitle")
     public JAXBElement<InlineStructure> createJobTitle(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_JobTitle_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_JobTitle_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1411,7 +1411,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Approved")
     public JAXBElement<InlineRestrictedStructure> createApproved(InlineRestrictedStructure value) {
-        return new JAXBElement<InlineRestrictedStructure>(_Approved_QNAME, InlineRestrictedStructure.class, null, value);
+        return new JAXBElement<>(_Approved_QNAME, InlineRestrictedStructure.class, null, value);
     }
 
     /**
@@ -1420,7 +1420,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "DateText")
     public JAXBElement<InlineRestrictedStructure> createDateText(InlineRestrictedStructure value) {
-        return new JAXBElement<InlineRestrictedStructure>(_DateText_QNAME, InlineRestrictedStructure.class, null, value);
+        return new JAXBElement<>(_DateText_QNAME, InlineRestrictedStructure.class, null, value);
     }
 
     /**
@@ -1429,7 +1429,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior")
     public JAXBElement<InlineStructure> createSuperior(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_TermUnderlineSuperior_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1438,7 +1438,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Addition")
     public JAXBElement<ChangeType> createAddition(ChangeType value) {
-        return new JAXBElement<ChangeType>(_Addition_QNAME, ChangeType.class, null, value);
+        return new JAXBElement<>(_Addition_QNAME, ChangeType.class, null, value);
     }
 
     /**
@@ -1447,7 +1447,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Department")
     public JAXBElement<InlineStructure> createDepartment(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_Department_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_Department_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1456,7 +1456,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Correction")
     public JAXBElement<ParaBasicStructure> createCorrection(ParaBasicStructure value) {
-        return new JAXBElement<ParaBasicStructure>(_Correction_QNAME, ParaBasicStructure.class, null, value);
+        return new JAXBElement<>(_Correction_QNAME, ParaBasicStructure.class, null, value);
     }
 
     /**
@@ -1465,7 +1465,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Number")
     public JAXBElement<InlineFullStructure> createNumber(InlineFullStructure value) {
-        return new JAXBElement<InlineFullStructure>(_Number_QNAME, InlineFullStructure.class, null, value);
+        return new JAXBElement<>(_Number_QNAME, InlineFullStructure.class, null, value);
     }
 
     /**
@@ -1474,7 +1474,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Reference")
     public JAXBElement<InlineFullStructure> createReference(InlineFullStructure value) {
-        return new JAXBElement<InlineFullStructure>(_Reference_QNAME, InlineFullStructure.class, null, value);
+        return new JAXBElement<>(_Reference_QNAME, InlineFullStructure.class, null, value);
     }
 
     /**
@@ -1483,7 +1483,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Substitution")
     public JAXBElement<ChangeType> createSubstitution(ChangeType value) {
-        return new JAXBElement<ChangeType>(_Substitution_QNAME, ChangeType.class, null, value);
+        return new JAXBElement<>(_Substitution_QNAME, ChangeType.class, null, value);
     }
 
     /**
@@ -1492,7 +1492,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Draft")
     public JAXBElement<ParaBasicStructure> createDraft(ParaBasicStructure value) {
-        return new JAXBElement<ParaBasicStructure>(_Draft_QNAME, ParaBasicStructure.class, null, value);
+        return new JAXBElement<>(_Draft_QNAME, ParaBasicStructure.class, null, value);
     }
 
     /**
@@ -1501,7 +1501,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "LongTitle")
     public JAXBElement<InlineStructure> createLongTitle(InlineStructure value) {
-        return new JAXBElement<InlineStructure>(_LongTitle_QNAME, InlineStructure.class, null, value);
+        return new JAXBElement<>(_LongTitle_QNAME, InlineStructure.class, null, value);
     }
 
     /**
@@ -1510,7 +1510,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.class)
     public JAXBElement<Term.Superior> createTermSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.class, value);
     }
 
     /**
@@ -1519,7 +1519,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.class)
     public JAXBElement<Term.Inferior> createTermInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.class, value);
     }
 
     /**
@@ -1528,7 +1528,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = Term.class)
     public JAXBElement<Term.SmallCaps> createTermSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.class, value);
     }
 
     /**
@@ -1537,7 +1537,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = Term.class)
     public JAXBElement<Term.Emphasis> createTermEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.class, value);
     }
 
     /**
@@ -1546,7 +1546,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Underline", scope = Term.class)
     public JAXBElement<Term.Underline> createTermUnderline(Term.Underline value) {
-        return new JAXBElement<Term.Underline>(_Underline_QNAME, Term.Underline.class, Term.class, value);
+        return new JAXBElement<>(_Underline_QNAME, Term.Underline.class, Term.class, value);
     }
 
     /**
@@ -1555,7 +1555,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = Term.class)
     public JAXBElement<Term.Strong> createTermStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.class, value);
     }
 
     /**
@@ -1564,7 +1564,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Subject", scope = SubjectInformation.class)
     public JAXBElement<SubjectInformation.Subject> createSubjectInformationSubject(SubjectInformation.Subject value) {
-        return new JAXBElement<SubjectInformation.Subject>(_SubjectInformationSubject_QNAME, SubjectInformation.Subject.class, SubjectInformation.class, value);
+        return new JAXBElement<>(_SubjectInformationSubject_QNAME, SubjectInformation.Subject.class, SubjectInformation.class, value);
     }
 
     /**
@@ -1573,7 +1573,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.Emphasis.class)
     public JAXBElement<Term.Superior> createTermEmphasisSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Emphasis.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Emphasis.class, value);
     }
 
     /**
@@ -1582,7 +1582,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.Emphasis.class)
     public JAXBElement<Term.Inferior> createTermEmphasisInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Emphasis.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Emphasis.class, value);
     }
 
     /**
@@ -1591,7 +1591,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = Term.Emphasis.class)
     public JAXBElement<Term.SmallCaps> createTermEmphasisSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Emphasis.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Emphasis.class, value);
     }
 
     /**
@@ -1600,7 +1600,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Underline", scope = Term.Emphasis.class)
     public JAXBElement<Term.Underline> createTermEmphasisUnderline(Term.Underline value) {
-        return new JAXBElement<Term.Underline>(_Underline_QNAME, Term.Underline.class, Term.Emphasis.class, value);
+        return new JAXBElement<>(_Underline_QNAME, Term.Underline.class, Term.Emphasis.class, value);
     }
 
     /**
@@ -1609,7 +1609,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = Term.Emphasis.class)
     public JAXBElement<Term.Strong> createTermEmphasisStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Emphasis.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Emphasis.class, value);
     }
 
     /**
@@ -1618,7 +1618,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.Superior.class)
     public JAXBElement<Term.Superior> createTermSuperiorSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Superior.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Superior.class, value);
     }
 
     /**
@@ -1627,7 +1627,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.Superior.class)
     public JAXBElement<Term.Inferior> createTermSuperiorInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Superior.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Superior.class, value);
     }
 
     /**
@@ -1636,7 +1636,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = Term.Superior.class)
     public JAXBElement<Term.SmallCaps> createTermSuperiorSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Superior.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Superior.class, value);
     }
 
     /**
@@ -1645,7 +1645,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = Term.Superior.class)
     public JAXBElement<Term.Emphasis> createTermSuperiorEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Superior.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Superior.class, value);
     }
 
     /**
@@ -1654,7 +1654,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = Term.Superior.class)
     public JAXBElement<Term.Strong> createTermSuperiorStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Superior.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Superior.class, value);
     }
 
     /**
@@ -1663,7 +1663,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.SmallCaps.class)
     public JAXBElement<Term.Superior> createTermSmallCapsSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.SmallCaps.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.SmallCaps.class, value);
     }
 
     /**
@@ -1672,7 +1672,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.SmallCaps.class)
     public JAXBElement<Term.Inferior> createTermSmallCapsInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.SmallCaps.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.SmallCaps.class, value);
     }
 
     /**
@@ -1681,7 +1681,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = Term.SmallCaps.class)
     public JAXBElement<Term.Emphasis> createTermSmallCapsEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.SmallCaps.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.SmallCaps.class, value);
     }
 
     /**
@@ -1690,7 +1690,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Underline", scope = Term.SmallCaps.class)
     public JAXBElement<Term.Underline> createTermSmallCapsUnderline(Term.Underline value) {
-        return new JAXBElement<Term.Underline>(_Underline_QNAME, Term.Underline.class, Term.SmallCaps.class, value);
+        return new JAXBElement<>(_Underline_QNAME, Term.Underline.class, Term.SmallCaps.class, value);
     }
 
     /**
@@ -1699,7 +1699,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = Term.SmallCaps.class)
     public JAXBElement<Term.Strong> createTermSmallCapsStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.SmallCaps.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.SmallCaps.class, value);
     }
 
     /**
@@ -1708,7 +1708,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.Strong.class)
     public JAXBElement<Term.Superior> createTermStrongSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Strong.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Strong.class, value);
     }
 
     /**
@@ -1717,7 +1717,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.Strong.class)
     public JAXBElement<Term.Inferior> createTermStrongInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Strong.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Strong.class, value);
     }
 
     /**
@@ -1726,7 +1726,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = Term.Strong.class)
     public JAXBElement<Term.SmallCaps> createTermStrongSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Strong.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Strong.class, value);
     }
 
     /**
@@ -1735,7 +1735,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = Term.Strong.class)
     public JAXBElement<Term.Emphasis> createTermStrongEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Strong.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Strong.class, value);
     }
 
     /**
@@ -1744,7 +1744,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Underline", scope = Term.Strong.class)
     public JAXBElement<Term.Underline> createTermStrongUnderline(Term.Underline value) {
-        return new JAXBElement<Term.Underline>(_Underline_QNAME, Term.Underline.class, Term.Strong.class, value);
+        return new JAXBElement<>(_Underline_QNAME, Term.Underline.class, Term.Strong.class, value);
     }
 
     /**
@@ -1753,7 +1753,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = Term.Inferior.class)
     public JAXBElement<Term.Superior> createTermInferiorSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Inferior.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, Term.Inferior.class, value);
     }
 
     /**
@@ -1762,7 +1762,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = Term.Inferior.class)
     public JAXBElement<Term.Inferior> createTermInferiorInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Inferior.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, Term.Inferior.class, value);
     }
 
     /**
@@ -1771,7 +1771,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = Term.Inferior.class)
     public JAXBElement<Term.SmallCaps> createTermInferiorSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Inferior.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, Term.Inferior.class, value);
     }
 
     /**
@@ -1780,7 +1780,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = Term.Inferior.class)
     public JAXBElement<Term.Emphasis> createTermInferiorEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Inferior.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, Term.Inferior.class, value);
     }
 
     /**
@@ -1789,7 +1789,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = Term.Inferior.class)
     public JAXBElement<Term.Strong> createTermInferiorStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Inferior.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, Term.Inferior.class, value);
     }
 
     /**
@@ -1798,7 +1798,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Superior", scope = InlineRestrictedStructure.class)
     public JAXBElement<Term.Superior> createInlineRestrictedStructureSuperior(Term.Superior value) {
-        return new JAXBElement<Term.Superior>(_TermUnderlineSuperior_QNAME, Term.Superior.class, InlineRestrictedStructure.class, value);
+        return new JAXBElement<>(_TermUnderlineSuperior_QNAME, Term.Superior.class, InlineRestrictedStructure.class, value);
     }
 
     /**
@@ -1807,7 +1807,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Inferior", scope = InlineRestrictedStructure.class)
     public JAXBElement<Term.Inferior> createInlineRestrictedStructureInferior(Term.Inferior value) {
-        return new JAXBElement<Term.Inferior>(_TermUnderlineInferior_QNAME, Term.Inferior.class, InlineRestrictedStructure.class, value);
+        return new JAXBElement<>(_TermUnderlineInferior_QNAME, Term.Inferior.class, InlineRestrictedStructure.class, value);
     }
 
     /**
@@ -1816,7 +1816,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "SmallCaps", scope = InlineRestrictedStructure.class)
     public JAXBElement<Term.SmallCaps> createInlineRestrictedStructureSmallCaps(Term.SmallCaps value) {
-        return new JAXBElement<Term.SmallCaps>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, InlineRestrictedStructure.class, value);
+        return new JAXBElement<>(_TermUnderlineSmallCaps_QNAME, Term.SmallCaps.class, InlineRestrictedStructure.class, value);
     }
 
     /**
@@ -1825,7 +1825,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Emphasis", scope = InlineRestrictedStructure.class)
     public JAXBElement<Term.Emphasis> createInlineRestrictedStructureEmphasis(Term.Emphasis value) {
-        return new JAXBElement<Term.Emphasis>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, InlineRestrictedStructure.class, value);
+        return new JAXBElement<>(_TermUnderlineEmphasis_QNAME, Term.Emphasis.class, InlineRestrictedStructure.class, value);
     }
 
     /**
@@ -1834,7 +1834,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Underline", scope = InlineRestrictedStructure.class)
     public JAXBElement<Term.Underline> createInlineRestrictedStructureUnderline(Term.Underline value) {
-        return new JAXBElement<Term.Underline>(_Underline_QNAME, Term.Underline.class, InlineRestrictedStructure.class, value);
+        return new JAXBElement<>(_Underline_QNAME, Term.Underline.class, InlineRestrictedStructure.class, value);
     }
 
     /**
@@ -1843,7 +1843,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/legislation", name = "Strong", scope = InlineRestrictedStructure.class)
     public JAXBElement<Term.Strong> createInlineRestrictedStructureStrong(Term.Strong value) {
-        return new JAXBElement<Term.Strong>(_TermUnderlineStrong_QNAME, Term.Strong.class, InlineRestrictedStructure.class, value);
+        return new JAXBElement<>(_TermUnderlineStrong_QNAME, Term.Strong.class, InlineRestrictedStructure.class, value);
     }
 
 }

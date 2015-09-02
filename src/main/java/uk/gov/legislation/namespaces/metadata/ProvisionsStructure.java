@@ -8,20 +8,12 @@
 
 package uk.gov.legislation.namespaces.metadata;
 
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.*;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlMixed;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
@@ -30,29 +22,29 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ProvisionsStructure">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded" minOccurs="0">
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Section"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}SectionRange"/>
- *         &lt;element name="Citation">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *                 &lt;attribute name="Class" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" />
- *                 &lt;attribute name="Year" type="{http://www.w3.org/2001/XMLSchema}gYear" />
- *                 &lt;attribute name="Number" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *                 &lt;attribute name="Title" type="{http://www.w3.org/2001/XMLSchema}string" />
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ProvisionsStructure"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Section"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}SectionRange"/&gt;
+ *         &lt;element name="Citation"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *                 &lt;attribute name="Class" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" /&gt;
+ *                 &lt;attribute name="Year" type="{http://www.w3.org/2001/XMLSchema}gYear" /&gt;
+ *                 &lt;attribute name="Number" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+ *                 &lt;attribute name="Title" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -98,7 +90,7 @@ public class ProvisionsStructure {
      */
     public List<Object> getContent() {
         if (content == null) {
-            content = new ArrayList<Object>();
+            content = new ArrayList<>();
         }
         return this.content;
     }
@@ -110,17 +102,17 @@ public class ProvisionsStructure {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
-     *       &lt;attribute name="Class" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" />
-     *       &lt;attribute name="Year" type="{http://www.w3.org/2001/XMLSchema}gYear" />
-     *       &lt;attribute name="Number" type="{http://www.w3.org/2001/XMLSchema}integer" />
-     *       &lt;attribute name="Title" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;attribute name="URI" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+     *       &lt;attribute name="Class" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" /&gt;
+     *       &lt;attribute name="Year" type="{http://www.w3.org/2001/XMLSchema}gYear" /&gt;
+     *       &lt;attribute name="Number" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+     *       &lt;attribute name="Title" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 

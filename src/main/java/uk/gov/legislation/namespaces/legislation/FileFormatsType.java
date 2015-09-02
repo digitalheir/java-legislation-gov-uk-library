@@ -19,23 +19,23 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="FileFormatsType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="doc"/>
- *     &lt;enumeration value="eps"/>
- *     &lt;enumeration value="gif"/>
- *     &lt;enumeration value="html"/>
- *     &lt;enumeration value="jpeg"/>
- *     &lt;enumeration value="mpeg"/>
- *     &lt;enumeration value="png"/>
- *     &lt;enumeration value="rtf"/>
- *     &lt;enumeration value="svg"/>
- *     &lt;enumeration value="xml"/>
- *     &lt;enumeration value="pdf"/>
- *     &lt;enumeration value="tiff"/>
- *     &lt;enumeration value="other"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="FileFormatsType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="doc"/&gt;
+ *     &lt;enumeration value="eps"/&gt;
+ *     &lt;enumeration value="gif"/&gt;
+ *     &lt;enumeration value="html"/&gt;
+ *     &lt;enumeration value="jpeg"/&gt;
+ *     &lt;enumeration value="mpeg"/&gt;
+ *     &lt;enumeration value="png"/&gt;
+ *     &lt;enumeration value="rtf"/&gt;
+ *     &lt;enumeration value="svg"/&gt;
+ *     &lt;enumeration value="xml"/&gt;
+ *     &lt;enumeration value="pdf"/&gt;
+ *     &lt;enumeration value="tiff"/&gt;
+ *     &lt;enumeration value="other"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -75,10 +75,6 @@ public enum FileFormatsType {
         value = v;
     }
 
-    public String value() {
-        return value;
-    }
-
     public static FileFormatsType fromValue(String v) {
         for (FileFormatsType c: FileFormatsType.values()) {
             if (c.value.equals(v)) {
@@ -86,6 +82,10 @@ public enum FileFormatsType {
             }
         }
         throw new IllegalArgumentException(v);
+    }
+
+    public String value() {
+        return value;
     }
 
 }

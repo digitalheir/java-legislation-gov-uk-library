@@ -18,34 +18,34 @@ import java.util.List;
 
 /**
  * <p>Java class for anonymous complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice maxOccurs="unbounded" minOccurs="0">
- *           &lt;element ref="{http://www.w3.org/2005/Atom}author"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}category"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}contributor"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}generator"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}icon"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}id"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}link"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}logo"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}rights"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}subtitle"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}title"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}updated"/>
- *         &lt;/choice>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}entry" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.w3.org/2005/Atom}atomCommonAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}author"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}category"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}contributor"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}generator"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}icon"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}id"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}link"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}logo"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}rights"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}subtitle"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}title"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}updated"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}entry" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/2005/Atom}atomCommonAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -82,22 +82,18 @@ public class Feed {
     protected String lang;
 
     /**
+     * <p>
      * Gets the value of the authorsAndCategoriesAndContributors property.
-     * <p/>
-     * <p/>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the authorsAndCategoriesAndContributors property.
-     * <p/>
-     * <p/>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAuthorsAndCategoriesAndContributors().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link AtomTextConstruct }{@code >}
      * {@link JAXBElement }{@code <}{@link AtomPersonConstruct }{@code >}
@@ -114,34 +110,34 @@ public class Feed {
      */
     public List<Object> getAuthorsAndCategoriesAndContributors() {
         if (authorsAndCategoriesAndContributors == null) {
-            authorsAndCategoriesAndContributors = new ArrayList<Object>();
+            authorsAndCategoriesAndContributors = new ArrayList<>();
         }
         return this.authorsAndCategoriesAndContributors;
     }
 
     /**
      * Gets the value of the entries property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the entries property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEntries().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Entry }
      */
     public List<Entry> getEntries() {
         if (entries == null) {
-            entries = new ArrayList<Entry>();
+            entries = new ArrayList<>();
         }
         return this.entries;
     }

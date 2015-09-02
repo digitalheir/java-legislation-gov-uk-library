@@ -8,20 +8,13 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAnyElement;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.w3c.dom.Element;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.w3c.dom.Element;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -30,70 +23,70 @@ import org.w3c.dom.Element;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;any processContents='lax' minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/>
- *       &lt;attribute name="Description" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="id">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}ID">
- *             &lt;pattern value="v[0-9]{5}"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="Class">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="text"/>
- *             &lt;enumeration value="audio"/>
- *             &lt;enumeration value="braille"/>
- *             &lt;enumeration value="graphic"/>
- *             &lt;enumeration value="video"/>
- *             &lt;enumeration value="other"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="Language">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="Arabic"/>
- *             &lt;enumeration value="Bengali"/>
- *             &lt;enumeration value="Chinese"/>
- *             &lt;enumeration value="Danish"/>
- *             &lt;enumeration value="Dutch"/>
- *             &lt;enumeration value="English"/>
- *             &lt;enumeration value="Finnish"/>
- *             &lt;enumeration value="French"/>
- *             &lt;enumeration value="Gaelic"/>
- *             &lt;enumeration value="German"/>
- *             &lt;enumeration value="Greek"/>
- *             &lt;enumeration value="Hindi"/>
- *             &lt;enumeration value="Hungarian"/>
- *             &lt;enumeration value="Icelandic"/>
- *             &lt;enumeration value="Italian"/>
- *             &lt;enumeration value="Latin"/>
- *             &lt;enumeration value="Latvian"/>
- *             &lt;enumeration value="Lithuanian"/>
- *             &lt;enumeration value="Norwegian"/>
- *             &lt;enumeration value="Polish"/>
- *             &lt;enumeration value="Russian"/>
- *             &lt;enumeration value="Slovenian"/>
- *             &lt;enumeration value="Spanish"/>
- *             &lt;enumeration value="Urdu"/>
- *             &lt;enumeration value="Welsh"/>
- *             &lt;enumeration value="notApplicable"/>
- *             &lt;enumeration value="other"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="RestrictOutput" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;any processContents='lax' minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/&gt;
+ *       &lt;attribute name="Description" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="id"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}ID"&gt;
+ *             &lt;pattern value="v[0-9]{5}"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="Class"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="text"/&gt;
+ *             &lt;enumeration value="audio"/&gt;
+ *             &lt;enumeration value="braille"/&gt;
+ *             &lt;enumeration value="graphic"/&gt;
+ *             &lt;enumeration value="video"/&gt;
+ *             &lt;enumeration value="other"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="Language"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="Arabic"/&gt;
+ *             &lt;enumeration value="Bengali"/&gt;
+ *             &lt;enumeration value="Chinese"/&gt;
+ *             &lt;enumeration value="Danish"/&gt;
+ *             &lt;enumeration value="Dutch"/&gt;
+ *             &lt;enumeration value="English"/&gt;
+ *             &lt;enumeration value="Finnish"/&gt;
+ *             &lt;enumeration value="French"/&gt;
+ *             &lt;enumeration value="Gaelic"/&gt;
+ *             &lt;enumeration value="German"/&gt;
+ *             &lt;enumeration value="Greek"/&gt;
+ *             &lt;enumeration value="Hindi"/&gt;
+ *             &lt;enumeration value="Hungarian"/&gt;
+ *             &lt;enumeration value="Icelandic"/&gt;
+ *             &lt;enumeration value="Italian"/&gt;
+ *             &lt;enumeration value="Latin"/&gt;
+ *             &lt;enumeration value="Latvian"/&gt;
+ *             &lt;enumeration value="Lithuanian"/&gt;
+ *             &lt;enumeration value="Norwegian"/&gt;
+ *             &lt;enumeration value="Polish"/&gt;
+ *             &lt;enumeration value="Russian"/&gt;
+ *             &lt;enumeration value="Slovenian"/&gt;
+ *             &lt;enumeration value="Spanish"/&gt;
+ *             &lt;enumeration value="Urdu"/&gt;
+ *             &lt;enumeration value="Welsh"/&gt;
+ *             &lt;enumeration value="notApplicable"/&gt;
+ *             &lt;enumeration value="other"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="RestrictOutput" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -378,7 +371,7 @@ public class Version {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

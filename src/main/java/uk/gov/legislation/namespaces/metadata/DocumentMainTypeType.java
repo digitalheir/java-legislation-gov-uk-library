@@ -19,36 +19,36 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="DocumentMainTypeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="EnglandAct"/>
- *     &lt;enumeration value="GreatBritainAct"/>
- *     &lt;enumeration value="IrelandAct"/>
- *     &lt;enumeration value="NorthernIrelandAct"/>
- *     &lt;enumeration value="NorthernIrelandAssemblyMeasure"/>
- *     &lt;enumeration value="NorthernIrelandParliamentAct"/>
- *     &lt;enumeration value="NorthernIrelandOrderInCouncil"/>
- *     &lt;enumeration value="NorthernIrelandDraftOrderInCouncil"/>
- *     &lt;enumeration value="NorthernIrelandStatutoryRule"/>
- *     &lt;enumeration value="NorthernIrelandDraftStatutoryRule"/>
- *     &lt;enumeration value="ScottishAct"/>
- *     &lt;enumeration value="ScottishOldAct"/>
- *     &lt;enumeration value="ScottishStatutoryInstrument"/>
- *     &lt;enumeration value="ScottishDraftStatutoryInstrument"/>
- *     &lt;enumeration value="UnitedKingdomChurchInstrument"/>
- *     &lt;enumeration value="UnitedKingdomChurchMeasure"/>
- *     &lt;enumeration value="UnitedKingdomPrivateAct"/>
- *     &lt;enumeration value="UnitedKingdomPublicGeneralAct"/>
- *     &lt;enumeration value="UnitedKingdomLocalAct"/>
- *     &lt;enumeration value="UnitedKingdomMinisterialOrder"/>
- *     &lt;enumeration value="UnitedKingdomStatutoryInstrument"/>
- *     &lt;enumeration value="UnitedKingdomDraftStatutoryInstrument"/>
- *     &lt;enumeration value="WelshAssemblyMeasure"/>
- *     &lt;enumeration value="WelshNationalAssemblyAct"/>
- *     &lt;enumeration value="WelshStatutoryInstrument"/>
- *     &lt;enumeration value="WelshDraftStatutoryInstrument"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="DocumentMainTypeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="EnglandAct"/&gt;
+ *     &lt;enumeration value="GreatBritainAct"/&gt;
+ *     &lt;enumeration value="IrelandAct"/&gt;
+ *     &lt;enumeration value="NorthernIrelandAct"/&gt;
+ *     &lt;enumeration value="NorthernIrelandAssemblyMeasure"/&gt;
+ *     &lt;enumeration value="NorthernIrelandParliamentAct"/&gt;
+ *     &lt;enumeration value="NorthernIrelandOrderInCouncil"/&gt;
+ *     &lt;enumeration value="NorthernIrelandDraftOrderInCouncil"/&gt;
+ *     &lt;enumeration value="NorthernIrelandStatutoryRule"/&gt;
+ *     &lt;enumeration value="NorthernIrelandDraftStatutoryRule"/&gt;
+ *     &lt;enumeration value="ScottishAct"/&gt;
+ *     &lt;enumeration value="ScottishOldAct"/&gt;
+ *     &lt;enumeration value="ScottishStatutoryInstrument"/&gt;
+ *     &lt;enumeration value="ScottishDraftStatutoryInstrument"/&gt;
+ *     &lt;enumeration value="UnitedKingdomChurchInstrument"/&gt;
+ *     &lt;enumeration value="UnitedKingdomChurchMeasure"/&gt;
+ *     &lt;enumeration value="UnitedKingdomPrivateAct"/&gt;
+ *     &lt;enumeration value="UnitedKingdomPublicGeneralAct"/&gt;
+ *     &lt;enumeration value="UnitedKingdomLocalAct"/&gt;
+ *     &lt;enumeration value="UnitedKingdomMinisterialOrder"/&gt;
+ *     &lt;enumeration value="UnitedKingdomStatutoryInstrument"/&gt;
+ *     &lt;enumeration value="UnitedKingdomDraftStatutoryInstrument"/&gt;
+ *     &lt;enumeration value="WelshAssemblyMeasure"/&gt;
+ *     &lt;enumeration value="WelshNationalAssemblyAct"/&gt;
+ *     &lt;enumeration value="WelshStatutoryInstrument"/&gt;
+ *     &lt;enumeration value="WelshDraftStatutoryInstrument"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -114,10 +114,6 @@ public enum DocumentMainTypeType {
         value = v;
     }
 
-    public String value() {
-        return value;
-    }
-
     public static DocumentMainTypeType fromValue(String v) {
         for (DocumentMainTypeType c: DocumentMainTypeType.values()) {
             if (c.value.equals(v)) {
@@ -125,6 +121,10 @@ public enum DocumentMainTypeType {
             }
         }
         throw new IllegalArgumentException(v);
+    }
+
+    public String value() {
+        return value;
     }
 
 }

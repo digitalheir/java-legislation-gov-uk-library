@@ -8,19 +8,11 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,41 +21,41 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Number" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Para" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Image" maxOccurs="unbounded"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Notes" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FigureElementIDattributes"/>
- *       &lt;attribute name="Orientation" default="portrait">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="portrait"/>
- *             &lt;enumeration value="landscape"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="ImageLayout" default="vertical">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="vertical"/>
- *             &lt;enumeration value="horizontal"/>
- *             &lt;enumeration value="matrix-2-wide"/>
- *             &lt;enumeration value="matrix-3-wide"/>
- *             &lt;enumeration value="matrix-4-wide"/>
- *             &lt;enumeration value="matrix-5-wide"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Number" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Para" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Image" maxOccurs="unbounded"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Notes" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FigureElementIDattributes"/&gt;
+ *       &lt;attribute name="Orientation" default="portrait"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="portrait"/&gt;
+ *             &lt;enumeration value="landscape"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="ImageLayout" default="vertical"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="vertical"/&gt;
+ *             &lt;enumeration value="horizontal"/&gt;
+ *             &lt;enumeration value="matrix-2-wide"/&gt;
+ *             &lt;enumeration value="matrix-3-wide"/&gt;
+ *             &lt;enumeration value="matrix-4-wide"/&gt;
+ *             &lt;enumeration value="matrix-5-wide"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -184,7 +176,7 @@ public class Figure {
      */
     public List<Para> getParas() {
         if (paras == null) {
-            paras = new ArrayList<Para>();
+            paras = new ArrayList<>();
         }
         return this.paras;
     }
@@ -213,7 +205,7 @@ public class Figure {
      */
     public List<Image> getImages() {
         if (images == null) {
-            images = new ArrayList<Image>();
+            images = new ArrayList<>();
         }
         return this.images;
     }
@@ -394,7 +386,7 @@ public class Figure {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

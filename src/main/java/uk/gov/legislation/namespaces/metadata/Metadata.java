@@ -8,19 +8,13 @@
 
 package uk.gov.legislation.namespaces.metadata;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 import org.purl.dc.elements._1.AbstractAny;
 import org.w3._2005.atom.Link;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,34 +23,34 @@ import org.w3._2005.atom.Link;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice maxOccurs="unbounded" minOccurs="0">
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}title"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}creator"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}subject"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}description"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}publisher"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}contributor"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}date"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}type"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}format"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}identifier"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}source"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}language"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}relation"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}coverage"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}rights"/>
- *           &lt;element ref="{http://purl.org/dc/elements/1.1/}modified"/>
- *           &lt;element ref="{http://www.w3.org/2005/Atom}link"/>
- *         &lt;/choice>
- *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/metadata}TSOmetadata"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}title"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}creator"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}subject"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}description"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}publisher"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}contributor"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}date"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}type"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}format"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}identifier"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}source"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}language"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}relation"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}coverage"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}rights"/&gt;
+ *           &lt;element ref="{http://purl.org/dc/elements/1.1/}modified"/&gt;
+ *           &lt;element ref="{http://www.w3.org/2005/Atom}link"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/metadata}TSOmetadata"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -193,7 +187,7 @@ public class Metadata {
      */
     public List<Object> getTitlesAndCreatorsAndSubjects() {
         if (titlesAndCreatorsAndSubjects == null) {
-            titlesAndCreatorsAndSubjects = new ArrayList<Object>();
+            titlesAndCreatorsAndSubjects = new ArrayList<>();
         }
         return this.titlesAndCreatorsAndSubjects;
     }
@@ -318,7 +312,7 @@ public class Metadata {
      */
     public List<ConfersPower> getConfersPowers() {
         if (confersPowers == null) {
-            confersPowers = new ArrayList<ConfersPower>();
+            confersPowers = new ArrayList<>();
         }
         return this.confersPowers;
     }
@@ -347,7 +341,7 @@ public class Metadata {
      */
     public List<BlanketAmendment> getBlanketAmendments() {
         if (blanketAmendments == null) {
-            blanketAmendments = new ArrayList<BlanketAmendment>();
+            blanketAmendments = new ArrayList<>();
         }
         return this.blanketAmendments;
     }
@@ -383,7 +377,7 @@ public class Metadata {
      */
     public List<Object> getNotesAndAlternativesAndCorrectionSlips() {
         if (notesAndAlternativesAndCorrectionSlips == null) {
-            notesAndAlternativesAndCorrectionSlips = new ArrayList<Object>();
+            notesAndAlternativesAndCorrectionSlips = new ArrayList<>();
         }
         return this.notesAndAlternativesAndCorrectionSlips;
     }

@@ -19,11 +19,11 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="infinity">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="infinity"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="infinity"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="infinity"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -39,10 +39,6 @@ public enum Infinity {
         value = v;
     }
 
-    public String value() {
-        return value;
-    }
-
     public static Infinity fromValue(String v) {
         for (Infinity c: Infinity.values()) {
             if (c.value.equals(v)) {
@@ -50,6 +46,10 @@ public enum Infinity {
             }
         }
         throw new IllegalArgumentException(v);
+    }
+
+    public String value() {
+        return value;
     }
 
 }

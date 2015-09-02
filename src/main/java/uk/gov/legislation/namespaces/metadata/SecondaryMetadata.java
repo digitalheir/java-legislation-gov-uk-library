@@ -8,14 +8,9 @@
 
 package uk.gov.legislation.namespaces.metadata;
 
+import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -24,31 +19,31 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}DocumentClassification"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Year"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Number" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded">
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}ISBN" minOccurs="0"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}AlternativeNumber" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}DepartmentCode" minOccurs="0"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Made" minOccurs="0"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Laid" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}ComingIntoForce" minOccurs="0"/>
- *           &lt;choice>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Resolution" minOccurs="0"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}RoyalPresence" minOccurs="0"/>
- *           &lt;/choice>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}UnappliedEffects" minOccurs="0"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Citations" minOccurs="0"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}DocumentClassification"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Year"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Number" minOccurs="0"/&gt;
+ *         &lt;choice maxOccurs="unbounded"&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}ISBN" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}AlternativeNumber" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}DepartmentCode" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Made" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Laid" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}ComingIntoForce" minOccurs="0"/&gt;
+ *           &lt;choice&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Resolution" minOccurs="0"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}RoyalPresence" minOccurs="0"/&gt;
+ *           &lt;/choice&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}UnappliedEffects" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/metadata}Citations" minOccurs="0"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -188,7 +183,7 @@ public class SecondaryMetadata {
      */
     public List<Object> getISBNSAndAlternativeNumbersAndDepartmentCodes() {
         if (isbnsAndAlternativeNumbersAndDepartmentCodes == null) {
-            isbnsAndAlternativeNumbersAndDepartmentCodes = new ArrayList<Object>();
+            isbnsAndAlternativeNumbersAndDepartmentCodes = new ArrayList<>();
         }
         return this.isbnsAndAlternativeNumbersAndDepartmentCodes;
     }

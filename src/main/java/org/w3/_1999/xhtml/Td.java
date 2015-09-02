@@ -8,69 +8,19 @@
 
 package org.w3._1999.xhtml;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlMixed;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.w3._1998.math.mathml.Math;
 import org.w3._1999.xsl.format.TableBorderStyleType;
 import uk.co.tso.assets.namespace.error.ErrorType;
-import uk.gov.legislation.namespaces.legislation.Abbreviation;
-import uk.gov.legislation.namespaces.legislation.Acronym;
-import uk.gov.legislation.namespaces.legislation.ChangeType;
+import uk.gov.legislation.namespaces.legislation.*;
 import uk.gov.legislation.namespaces.legislation.Character;
-import uk.gov.legislation.namespaces.legislation.Citation;
-import uk.gov.legislation.namespaces.legislation.CitationListRef;
-import uk.gov.legislation.namespaces.legislation.CitationSubRef;
-import uk.gov.legislation.namespaces.legislation.CommentaryRef;
-import uk.gov.legislation.namespaces.legislation.DecoratedGroup;
-import uk.gov.legislation.namespaces.legislation.Definition;
-import uk.gov.legislation.namespaces.legislation.Emphasis;
-import uk.gov.legislation.namespaces.legislation.ExternalLink;
-import uk.gov.legislation.namespaces.legislation.Figure;
-import uk.gov.legislation.namespaces.legislation.FootnoteRef;
-import uk.gov.legislation.namespaces.legislation.Form;
-import uk.gov.legislation.namespaces.legislation.Formula;
-import uk.gov.legislation.namespaces.legislation.Image;
-import uk.gov.legislation.namespaces.legislation.InlineAmendment;
-import uk.gov.legislation.namespaces.legislation.InlineExtract;
-import uk.gov.legislation.namespaces.legislation.InlineStructure;
-import uk.gov.legislation.namespaces.legislation.InternalLink;
-import uk.gov.legislation.namespaces.legislation.KeyList;
-import uk.gov.legislation.namespaces.legislation.MarginNoteRef;
-import uk.gov.legislation.namespaces.legislation.OrderedList;
-import uk.gov.legislation.namespaces.legislation.P;
-import uk.gov.legislation.namespaces.legislation.P1;
-import uk.gov.legislation.namespaces.legislation.P1Group;
-import uk.gov.legislation.namespaces.legislation.P2;
-import uk.gov.legislation.namespaces.legislation.P2Group;
-import uk.gov.legislation.namespaces.legislation.P3;
-import uk.gov.legislation.namespaces.legislation.P3Group;
-import uk.gov.legislation.namespaces.legislation.P4;
-import uk.gov.legislation.namespaces.legislation.P5;
-import uk.gov.legislation.namespaces.legislation.P6;
-import uk.gov.legislation.namespaces.legislation.P7;
-import uk.gov.legislation.namespaces.legislation.Para;
-import uk.gov.legislation.namespaces.legislation.Proviso;
-import uk.gov.legislation.namespaces.legislation.Repeal;
-import uk.gov.legislation.namespaces.legislation.SmallCaps;
-import uk.gov.legislation.namespaces.legislation.Strong;
-import uk.gov.legislation.namespaces.legislation.Tabular;
-import uk.gov.legislation.namespaces.legislation.Term;
-import uk.gov.legislation.namespaces.legislation.UnorderedList;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -79,21 +29,21 @@ import uk.gov.legislation.namespaces.legislation.UnorderedList;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}TableCell" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableID"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableCellAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableXMLattributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/>
- *       &lt;attribute name="headers" type="{http://www.w3.org/2001/XMLSchema}IDREFS" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}TableCell" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableID"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableCellAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableXMLattributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/&gt;
+ *       &lt;attribute name="headers" type="{http://www.w3.org/2001/XMLSchema}IDREFS" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -296,7 +246,7 @@ public class Td {
      */
     public List<Object> getContent() {
         if (content == null) {
-            content = new ArrayList<Object>();
+            content = new ArrayList<>();
         }
         return this.content;
     }
@@ -325,7 +275,7 @@ public class Td {
      */
     public List<Object> getHeaders() {
         if (headers == null) {
-            headers = new ArrayList<Object>();
+            headers = new ArrayList<>();
         }
         return this.headers;
     }

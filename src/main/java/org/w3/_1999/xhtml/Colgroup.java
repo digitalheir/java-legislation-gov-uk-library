@@ -8,17 +8,12 @@
 
 package org.w3._1999.xhtml;
 
+import org.w3._1999.xsl.format.TableBorderStyleType;
+
+import javax.xml.bind.annotation.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import org.w3._1999.xsl.format.TableBorderStyleType;
 
 
 /**
@@ -27,29 +22,29 @@ import org.w3._1999.xsl.format.TableBorderStyleType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}col" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableAlignmentAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/>
- *       &lt;attribute name="char">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;length value="1"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="span" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" default="1" />
- *       &lt;attribute name="width" type="{http://www.w3.org/1999/xhtml}TableWidthType" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}col" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableAlignmentAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/&gt;
+ *       &lt;attribute name="char"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;length value="1"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="span" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" default="1" /&gt;
+ *       &lt;attribute name="width" type="{http://www.w3.org/1999/xhtml}TableWidthType" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -125,7 +120,7 @@ public class Colgroup {
      */
     public List<Col> getCols() {
         if (cols == null) {
-            cols = new ArrayList<Col>();
+            cols = new ArrayList<>();
         }
         return this.cols;
     }

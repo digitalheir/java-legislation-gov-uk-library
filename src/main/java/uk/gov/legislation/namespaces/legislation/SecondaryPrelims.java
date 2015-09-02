@@ -8,21 +8,13 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -31,53 +23,53 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Correction" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Draft" minOccurs="0"/>
- *         &lt;element name="Number" type="{http://www.legislation.gov.uk/namespaces/legislation}BasicStringStructure"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}SubjectInformation"/>
- *         &lt;element name="Title" type="{http://www.legislation.gov.uk/namespaces/legislation}InlineRestrictedStructure"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Approved" minOccurs="0"/>
- *         &lt;choice minOccurs="0">
- *           &lt;sequence>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDraft" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MadeDate"/>
- *             &lt;choice minOccurs="0">
- *               &lt;sequence>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" maxOccurs="unbounded"/>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce" minOccurs="0"/>
- *               &lt;/sequence>
- *               &lt;sequence>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce"/>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" minOccurs="0"/>
- *               &lt;/sequence>
- *             &lt;/choice>
- *           &lt;/sequence>
- *           &lt;sequence>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MadeDate"/>
- *             &lt;choice minOccurs="0">
- *               &lt;sequence>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" maxOccurs="unbounded"/>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce" minOccurs="0"/>
- *               &lt;/sequence>
- *               &lt;sequence>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce"/>
- *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" minOccurs="0"/>
- *               &lt;/sequence>
- *             &lt;/choice>
- *           &lt;/sequence>
- *         &lt;/choice>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}SecondaryPreamble" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FragmentAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}PelementIDattributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Correction" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Draft" minOccurs="0"/&gt;
+ *         &lt;element name="Number" type="{http://www.legislation.gov.uk/namespaces/legislation}BasicStringStructure"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}SubjectInformation"/&gt;
+ *         &lt;element name="Title" type="{http://www.legislation.gov.uk/namespaces/legislation}InlineRestrictedStructure"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Approved" minOccurs="0"/&gt;
+ *         &lt;choice minOccurs="0"&gt;
+ *           &lt;sequence&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDraft" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MadeDate"/&gt;
+ *             &lt;choice minOccurs="0"&gt;
+ *               &lt;sequence&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" maxOccurs="unbounded"/&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce" minOccurs="0"/&gt;
+ *               &lt;/sequence&gt;
+ *               &lt;sequence&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce"/&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" minOccurs="0"/&gt;
+ *               &lt;/sequence&gt;
+ *             &lt;/choice&gt;
+ *           &lt;/sequence&gt;
+ *           &lt;sequence&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}MadeDate"/&gt;
+ *             &lt;choice minOccurs="0"&gt;
+ *               &lt;sequence&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" maxOccurs="unbounded"/&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce" minOccurs="0"/&gt;
+ *               &lt;/sequence&gt;
+ *               &lt;sequence&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ComingIntoForce"/&gt;
+ *                 &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}LaidDate" minOccurs="0"/&gt;
+ *               &lt;/sequence&gt;
+ *             &lt;/choice&gt;
+ *           &lt;/sequence&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}SecondaryPreamble" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FragmentAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}PelementIDattributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -351,7 +343,7 @@ public class SecondaryPrelims {
      */
     public List<LaidDraft> getLaidDrafts() {
         if (laidDrafts == null) {
-            laidDrafts = new ArrayList<LaidDraft>();
+            laidDrafts = new ArrayList<>();
         }
         return this.laidDrafts;
     }
@@ -405,7 +397,7 @@ public class SecondaryPrelims {
      */
     public List<Object> getLaidDatesAndComingIntoForces() {
         if (laidDatesAndComingIntoForces == null) {
-            laidDatesAndComingIntoForces = new ArrayList<Object>();
+            laidDatesAndComingIntoForces = new ArrayList<>();
         }
         return this.laidDatesAndComingIntoForces;
     }
@@ -834,7 +826,7 @@ public class SecondaryPrelims {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

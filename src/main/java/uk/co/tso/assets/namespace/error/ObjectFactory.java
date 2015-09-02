@@ -56,7 +56,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tso.co.uk/assets/namespace/error", name = "Error")
     public JAXBElement<ErrorType> createError(ErrorType value) {
-        return new JAXBElement<ErrorType>(_Error_QNAME, ErrorType.class, null, value);
+        return new JAXBElement<>(_Error_QNAME, ErrorType.class, null, value);
     }
 
     /**
@@ -65,7 +65,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tso.co.uk/assets/namespace/error", name = "FatalError")
     public JAXBElement<ErrorType> createFatalError(ErrorType value) {
-        return new JAXBElement<ErrorType>(_FatalError_QNAME, ErrorType.class, null, value);
+        return new JAXBElement<>(_FatalError_QNAME, ErrorType.class, null, value);
     }
 
     /**
@@ -74,7 +74,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.tso.co.uk/assets/namespace/error", name = "Warning")
     public JAXBElement<ErrorType> createWarning(ErrorType value) {
-        return new JAXBElement<ErrorType>(_Warning_QNAME, ErrorType.class, null, value);
+        return new JAXBElement<>(_Warning_QNAME, ErrorType.class, null, value);
     }
 
 }

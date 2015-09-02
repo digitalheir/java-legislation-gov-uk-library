@@ -8,22 +8,14 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
+import uk.co.tso.assets.namespace.error.ErrorType;
+
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlMixed;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import uk.co.tso.assets.namespace.error.ErrorType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -32,18 +24,18 @@ import uk.co.tso.assets.namespace.error.ErrorType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded" minOccurs="0">
- *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisBasicRestricted"/>
- *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
- *       &lt;/choice>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/>
- *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}NCName" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisBasicRestricted"/&gt;
+ *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/&gt;
+ *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}NCName" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -152,7 +144,7 @@ public class Term {
      */
     public List<Object> getContent() {
         if (content == null) {
-            content = new ArrayList<Object>();
+            content = new ArrayList<>();
         }
         return this.content;
     }
@@ -277,7 +269,7 @@ public class Term {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }
@@ -289,21 +281,21 @@ public class Term {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice maxOccurs="unbounded" minOccurs="0">
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}UnderlineRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
-     *       &lt;/choice>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}UnderlineRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+     *       &lt;/choice&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -408,7 +400,7 @@ public class Term {
          */
         public List<Object> getContent() {
             if (content == null) {
-                content = new ArrayList<Object>();
+                content = new ArrayList<>();
             }
             return this.content;
         }
@@ -533,7 +525,7 @@ public class Term {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }
@@ -547,21 +539,21 @@ public class Term {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice maxOccurs="unbounded" minOccurs="0">
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
-     *       &lt;/choice>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+     *       &lt;/choice&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -666,7 +658,7 @@ public class Term {
          */
         public List<Object> getContent() {
             if (content == null) {
-                content = new ArrayList<Object>();
+                content = new ArrayList<>();
             }
             return this.content;
         }
@@ -791,7 +783,7 @@ public class Term {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }
@@ -805,21 +797,21 @@ public class Term {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice maxOccurs="unbounded" minOccurs="0">
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}UnderlineRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
-     *       &lt;/choice>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}UnderlineRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+     *       &lt;/choice&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -924,7 +916,7 @@ public class Term {
          */
         public List<Object> getContent() {
             if (content == null) {
-                content = new ArrayList<Object>();
+                content = new ArrayList<>();
             }
             return this.content;
         }
@@ -1049,7 +1041,7 @@ public class Term {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }
@@ -1063,21 +1055,21 @@ public class Term {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice maxOccurs="unbounded" minOccurs="0">
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}UnderlineRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
-     *       &lt;/choice>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}UnderlineRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+     *       &lt;/choice&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -1182,7 +1174,7 @@ public class Term {
          */
         public List<Object> getContent() {
             if (content == null) {
-                content = new ArrayList<Object>();
+                content = new ArrayList<>();
             }
             return this.content;
         }
@@ -1307,7 +1299,7 @@ public class Term {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }
@@ -1321,21 +1313,21 @@ public class Term {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice maxOccurs="unbounded" minOccurs="0">
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
-     *       &lt;/choice>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+     *       &lt;/choice&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -1440,7 +1432,7 @@ public class Term {
          */
         public List<Object> getContent() {
             if (content == null) {
-                content = new ArrayList<Object>();
+                content = new ArrayList<>();
             }
             return this.content;
         }
@@ -1565,7 +1557,7 @@ public class Term {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }
@@ -1579,21 +1571,21 @@ public class Term {
      * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;choice maxOccurs="unbounded" minOccurs="0">
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/>
-     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
-     *       &lt;/choice>
-     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}StrongRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InferiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SuperiorRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}SmallCapsRestricted"/&gt;
+     *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+     *       &lt;/choice&gt;
+     *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -1698,7 +1690,7 @@ public class Term {
          */
         public List<Object> getContent() {
             if (content == null) {
-                content = new ArrayList<Object>();
+                content = new ArrayList<>();
             }
             return this.content;
         }
@@ -1823,7 +1815,7 @@ public class Term {
          */
         public List<Object> getAltVersionRefs() {
             if (altVersionRefs == null) {
-                altVersionRefs = new ArrayList<Object>();
+                altVersionRefs = new ArrayList<>();
             }
             return this.altVersionRefs;
         }

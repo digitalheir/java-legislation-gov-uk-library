@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * Interface for querying Legislation.gov.uk atom feed and individual documents
- * <p/>
+ * <p>
  * Created by maarten on 18-6-15.
  */
 public class ApiInterface {
@@ -93,10 +93,29 @@ public class ApiInterface {
 //        return null;
 //    }
 
+    /**
+     * Downloads and parses a given legislation XML URL. This method will throw an exception if the URL does not refer to
+     * legislation XML, such as <a href="http://legislation.data.gov.uk/ukpga/2007/25/2014-09-01/data.xml">http://legislation.data.gov.uk/ukpga/2007/25/2014-09-01/data.xml</a>.
+     *
+     * @param url URL to legislation XML
+     * @return Parsed object representing XML
+     * @throws IOException
+     * @throws JAXBException
+     */
     public static Legislation parseLegislationDoc(String url) throws IOException, JAXBException {
         return parseLegislationDoc(new Request.Builder().url(url).build());
     }
 
+    /**
+     * Downloads and parses a given legislation XML URL. This method will throw an exception if the URL does not refer to
+     * legislation XML, such as <a href="http://legislation.data.gov.uk/ukpga/2007/25/2014-09-01/data.xml">http://legislation.data.gov.uk/ukpga/2007/25/2014-09-01/data.xml</a>.
+     *
+     * @param request HTTP request to XML document
+     * @return Parsed legislation
+     * @throws IOException
+     * @throws JAXBException
+     * @see #parseLegislationDoc(String)
+     */
     public static Legislation parseLegislationDoc(Request request) throws IOException, JAXBException {
         OkHttpClient httpClient = new OkHttpClient();
         httpClient.setFollowRedirects(false);

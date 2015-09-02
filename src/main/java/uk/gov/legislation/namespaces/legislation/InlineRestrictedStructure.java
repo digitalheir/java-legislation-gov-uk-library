@@ -26,17 +26,17 @@ import java.util.List;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="InlineRestrictedStructure">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded" minOccurs="0">
- *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisBasicRestricted"/>
- *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/>
- *       &lt;/choice>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="InlineRestrictedStructure"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}EmphasisBasicRestricted"/&gt;
+ *         &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}InlineBasicRestricted"/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

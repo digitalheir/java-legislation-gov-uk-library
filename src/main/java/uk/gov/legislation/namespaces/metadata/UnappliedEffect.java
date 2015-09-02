@@ -8,19 +8,13 @@
 
 package uk.gov.legislation.namespaces.metadata;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,37 +23,37 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AffectedProvisions" type="{http://www.legislation.gov.uk/namespaces/metadata}ProvisionsStructure" minOccurs="0"/>
- *         &lt;element name="AffectingProvisions" type="{http://www.legislation.gov.uk/namespaces/metadata}ProvisionsStructure" minOccurs="0"/>
- *         &lt;element name="Commenced" type="{http://www.legislation.gov.uk/namespaces/metadata}ProvisionsStructure" minOccurs="0"/>
- *         &lt;element name="AffectedTitle" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="AffectingTitle" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="Type" use="required" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="TypeNotes" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="Notes" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="Comments" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="AffectingURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="AffectingClass" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" />
- *       &lt;attribute name="AffectingYear" type="{http://www.w3.org/2001/XMLSchema}gYear" />
- *       &lt;attribute name="AffectingNumber" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="AffectingProvisions" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="AffectedURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="AffectedClass" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" />
- *       &lt;attribute name="AffectedYear" type="{http://www.w3.org/2001/XMLSchema}gYear" />
- *       &lt;attribute name="AffectedNumber" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="AffectedProvisions" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="Index" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *       &lt;attribute name="Row" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *       &lt;attribute name="Modified" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *       &lt;attribute name="AppliedModified" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AffectedProvisions" type="{http://www.legislation.gov.uk/namespaces/metadata}ProvisionsStructure" minOccurs="0"/&gt;
+ *         &lt;element name="AffectingProvisions" type="{http://www.legislation.gov.uk/namespaces/metadata}ProvisionsStructure" minOccurs="0"/&gt;
+ *         &lt;element name="Commenced" type="{http://www.legislation.gov.uk/namespaces/metadata}ProvisionsStructure" minOccurs="0"/&gt;
+ *         &lt;element name="AffectedTitle" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="AffectingTitle" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="Type" use="required" type="{http://www.w3.org/2001/XMLSchema}token" /&gt;
+ *       &lt;attribute name="TypeNotes" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="Notes" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="Comments" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="AffectingURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="AffectingClass" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" /&gt;
+ *       &lt;attribute name="AffectingYear" type="{http://www.w3.org/2001/XMLSchema}gYear" /&gt;
+ *       &lt;attribute name="AffectingNumber" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="AffectingProvisions" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="AffectedURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="AffectedClass" type="{http://www.legislation.gov.uk/namespaces/metadata}DocumentMainTypeType" /&gt;
+ *       &lt;attribute name="AffectedYear" type="{http://www.w3.org/2001/XMLSchema}gYear" /&gt;
+ *       &lt;attribute name="AffectedNumber" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="AffectedProvisions" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="Index" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+ *       &lt;attribute name="Row" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+ *       &lt;attribute name="Modified" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *       &lt;attribute name="AppliedModified" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -228,7 +222,7 @@ public class UnappliedEffect {
      */
     public List<String> getAffectedTitles() {
         if (affectedTitles == null) {
-            affectedTitles = new ArrayList<String>();
+            affectedTitles = new ArrayList<>();
         }
         return this.affectedTitles;
     }
@@ -257,7 +251,7 @@ public class UnappliedEffect {
      */
     public List<String> getAffectingTitles() {
         if (affectingTitles == null) {
-            affectingTitles = new ArrayList<String>();
+            affectingTitles = new ArrayList<>();
         }
         return this.affectingTitles;
     }

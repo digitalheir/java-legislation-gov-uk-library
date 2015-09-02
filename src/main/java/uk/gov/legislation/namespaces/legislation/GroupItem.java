@@ -8,18 +8,14 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 import org.w3._1998.math.mathml.Math;
 import org.w3._1999.xhtml.Table;
 import uk.co.tso.assets.namespace.error.ErrorType;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -28,13 +24,13 @@ import uk.co.tso.assets.namespace.error.ErrorType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}TableCell" maxOccurs="unbounded"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}TableCell" maxOccurs="unbounded"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -175,7 +171,7 @@ public class GroupItem {
      */
     public List<Object> getStrongsAndEmphasisesAndInferiors() {
         if (strongsAndEmphasisesAndInferiors == null) {
-            strongsAndEmphasisesAndInferiors = new ArrayList<Object>();
+            strongsAndEmphasisesAndInferiors = new ArrayList<>();
         }
         return this.strongsAndEmphasisesAndInferiors;
     }

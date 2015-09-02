@@ -8,18 +8,14 @@
 
 package uk.gov.legislation.namespaces.metadata;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import uk.gov.legislation.namespaces.legislation.CommentaryType;
 import uk.gov.legislation.namespaces.legislation.Para;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -28,21 +24,21 @@ import uk.gov.legislation.namespaces.legislation.Para;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}ParaRestricted" maxOccurs="unbounded"/>
- *       &lt;attribute name="Ref" use="required">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NCName">
- *             &lt;pattern value="c[0-9]{5,7}"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="Type" use="required" type="{http://www.legislation.gov.uk/namespaces/legislation}CommentaryType" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}ParaRestricted" maxOccurs="unbounded"/&gt;
+ *       &lt;attribute name="Ref" use="required"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}NCName"&gt;
+ *             &lt;pattern value="c[0-9]{5,7}"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="Type" use="required" type="{http://www.legislation.gov.uk/namespaces/legislation}CommentaryType" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -86,7 +82,7 @@ public class Commentary {
      */
     public List<Para> getParas() {
         if (paras == null) {
-            paras = new ArrayList<Para>();
+            paras = new ArrayList<>();
         }
         return this.paras;
     }

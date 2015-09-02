@@ -8,17 +8,10 @@
 
 package org.w3._1998.math.mathml;
 
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -27,14 +20,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="declare.type">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;group ref="{http://www.w3.org/1998/Math/MathML}declare.content" maxOccurs="unbounded"/>
- *       &lt;attGroup ref="{http://www.w3.org/1998/Math/MathML}declare.attlist"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="declare.type"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;group ref="{http://www.w3.org/1998/Math/MathML}declare.content" maxOccurs="unbounded"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1998/Math/MathML}declare.attlist"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -419,7 +412,7 @@ public class Declare {
      */
     public java.util.List<Object> getCnsAndCisAndCsymbols() {
         if (cnsAndCisAndCsymbols == null) {
-            cnsAndCisAndCsymbols = new ArrayList<Object>();
+            cnsAndCisAndCsymbols = new ArrayList<>();
         }
         return this.cnsAndCisAndCsymbols;
     }

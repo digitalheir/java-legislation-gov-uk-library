@@ -8,19 +8,11 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,24 +21,24 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Comment" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded">
- *           &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockBasic"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *       &lt;attribute name="DocumentURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="IdURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Title" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Comment" minOccurs="0"/&gt;
+ *         &lt;choice maxOccurs="unbounded"&gt;
+ *           &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockBasic"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *       &lt;attribute name="DocumentURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *       &lt;attribute name="IdURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -184,7 +176,7 @@ public class ExplanatoryNotes {
      */
     public List<Object> getPSAndOrderedListsAndUnorderedLists() {
         if (psAndOrderedListsAndUnorderedLists == null) {
-            psAndOrderedListsAndUnorderedLists = new ArrayList<Object>();
+            psAndOrderedListsAndUnorderedLists = new ArrayList<>();
         }
         return this.psAndOrderedListsAndUnorderedLists;
     }
@@ -357,7 +349,7 @@ public class ExplanatoryNotes {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

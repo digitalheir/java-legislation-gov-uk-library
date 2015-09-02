@@ -8,21 +8,13 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -31,36 +23,36 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}CommentaryRef" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded">
- *           &lt;choice>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Group" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Part" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Chapter" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Pblock" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1" maxOccurs="unbounded"/>
- *           &lt;/choice>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Tabular"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Figure"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}IncludedDocument"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Include"/>
- *         &lt;/choice>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}SignedSection" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Appendix" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}PelementIDattributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}StructureNumberFormattingAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FragmentAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}CommentaryRef" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;choice maxOccurs="unbounded"&gt;
+ *           &lt;choice&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Group" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Part" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Chapter" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Pblock" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1" maxOccurs="unbounded"/&gt;
+ *           &lt;/choice&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Tabular"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Figure"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}IncludedDocument"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Include"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}SignedSection" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Appendix" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}PelementIDattributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonSubAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}StructureNumberFormattingAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}FragmentAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -183,7 +175,7 @@ public class Body {
      */
     public List<CommentaryRef> getCommentaryReves() {
         if (commentaryReves == null) {
-            commentaryReves = new ArrayList<CommentaryRef>();
+            commentaryReves = new ArrayList<>();
         }
         return this.commentaryReves;
     }
@@ -222,7 +214,7 @@ public class Body {
      */
     public List<Object> getPSAndGroupsAndParts() {
         if (psAndGroupsAndParts == null) {
-            psAndGroupsAndParts = new ArrayList<Object>();
+            psAndGroupsAndParts = new ArrayList<>();
         }
         return this.psAndGroupsAndParts;
     }
@@ -275,7 +267,7 @@ public class Body {
      */
     public List<Appendix> getAppendixes() {
         if (appendixes == null) {
-            appendixes = new ArrayList<Appendix>();
+            appendixes = new ArrayList<>();
         }
         return this.appendixes;
     }
@@ -496,7 +488,7 @@ public class Body {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

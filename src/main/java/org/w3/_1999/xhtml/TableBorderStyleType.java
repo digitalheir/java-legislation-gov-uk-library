@@ -19,18 +19,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="TableBorderStyleType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="inherit"/>
- *     &lt;enumeration value="solid"/>
- *     &lt;enumeration value="dashed"/>
- *     &lt;enumeration value="dotted"/>
- *     &lt;enumeration value="double"/>
- *     &lt;enumeration value="groove"/>
- *     &lt;enumeration value="inset"/>
- *     &lt;enumeration value="outset"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="TableBorderStyleType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="inherit"/&gt;
+ *     &lt;enumeration value="solid"/&gt;
+ *     &lt;enumeration value="dashed"/&gt;
+ *     &lt;enumeration value="dotted"/&gt;
+ *     &lt;enumeration value="double"/&gt;
+ *     &lt;enumeration value="groove"/&gt;
+ *     &lt;enumeration value="inset"/&gt;
+ *     &lt;enumeration value="outset"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -60,10 +60,6 @@ public enum TableBorderStyleType {
         value = v;
     }
 
-    public String value() {
-        return value;
-    }
-
     public static TableBorderStyleType fromValue(String v) {
         for (TableBorderStyleType c: TableBorderStyleType.values()) {
             if (c.value.equals(v)) {
@@ -71,6 +67,10 @@ public enum TableBorderStyleType {
             }
         }
         throw new IllegalArgumentException(v);
+    }
+
+    public String value() {
+        return value;
     }
 
 }

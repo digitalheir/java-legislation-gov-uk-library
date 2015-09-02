@@ -8,11 +8,7 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -21,25 +17,25 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="Name">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="DotPadding"/>
- *             &lt;enumeration value="EmSpace"/>
- *             &lt;enumeration value="EnSpace"/>
- *             &lt;enumeration value="LinePadding"/>
- *             &lt;enumeration value="NonBreakingSpace"/>
- *             &lt;enumeration value="Minus"/>
- *             &lt;enumeration value="ThinSpace"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;attribute name="Name"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="DotPadding"/&gt;
+ *             &lt;enumeration value="EmSpace"/&gt;
+ *             &lt;enumeration value="EnSpace"/&gt;
+ *             &lt;enumeration value="LinePadding"/&gt;
+ *             &lt;enumeration value="NonBreakingSpace"/&gt;
+ *             &lt;enumeration value="Minus"/&gt;
+ *             &lt;enumeration value="ThinSpace"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

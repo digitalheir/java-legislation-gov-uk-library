@@ -8,19 +8,12 @@
 
 package org.w3._2005.atom;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,27 +22,27 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded" minOccurs="0">
- *         &lt;element ref="{http://www.w3.org/2005/Atom}author"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}category"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}contributor"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}generator"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}icon"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}id"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}link"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}logo"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}rights"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}subtitle"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}title"/>
- *         &lt;element ref="{http://www.w3.org/2005/Atom}updated"/>
- *       &lt;/choice>
- *       &lt;attGroup ref="{http://www.w3.org/2005/Atom}atomCommonAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}author"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}category"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}contributor"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}generator"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}icon"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}id"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}link"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}logo"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}rights"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}subtitle"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}title"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2005/Atom}updated"/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/2005/Atom}atomCommonAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -119,7 +112,7 @@ public class Source {
      */
     public List<Object> getAuthorsAndCategoriesAndContributors() {
         if (authorsAndCategoriesAndContributors == null) {
-            authorsAndCategoriesAndContributors = new ArrayList<Object>();
+            authorsAndCategoriesAndContributors = new ArrayList<>();
         }
         return this.authorsAndCategoriesAndContributors;
     }

@@ -8,19 +8,13 @@
 
 package org.w3._2005.atom;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAnyElement;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlMixed;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import org.w3c.dom.Element;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.w3c.dom.Element;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,30 +23,30 @@ import org.w3c.dom.Element;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;group ref="{http://www.w3.org/2005/Atom}anyElement" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/choice>
- *       &lt;attGroup ref="{http://www.w3.org/2005/Atom}atomCommonAttributes"/>
- *       &lt;attribute name="type" default="text">
- *         &lt;simpleType>
- *           &lt;union memberTypes=" {http://www.w3.org/2005/Atom}atomMediaType">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token">
- *                 &lt;enumeration value="text"/>
- *                 &lt;enumeration value="html"/>
- *                 &lt;enumeration value="xhtml"/>
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/union>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *       &lt;attribute name="src" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice&gt;
+ *         &lt;group ref="{http://www.w3.org/2005/Atom}anyElement" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/choice&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/2005/Atom}atomCommonAttributes"/&gt;
+ *       &lt;attribute name="type" default="text"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;union memberTypes=" {http://www.w3.org/2005/Atom}atomMediaType"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
+ *                 &lt;enumeration value="text"/&gt;
+ *                 &lt;enumeration value="html"/&gt;
+ *                 &lt;enumeration value="xhtml"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/union&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *       &lt;attribute name="src" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -106,7 +100,7 @@ public class Content {
      */
     public List<Object> getContent() {
         if (content == null) {
-            content = new ArrayList<Object>();
+            content = new ArrayList<>();
         }
         return this.content;
     }

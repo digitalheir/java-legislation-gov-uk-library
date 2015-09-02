@@ -8,34 +8,13 @@
 
 package org.purl.dc.elements._1;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlMixed;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.bind.annotation.XmlType;
+import org.purl.dc.terms.*;
+
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.purl.dc.terms.Box;
-import org.purl.dc.terms.DCMIType;
-import org.purl.dc.terms.DDC;
-import org.purl.dc.terms.IMT;
-import org.purl.dc.terms.ISO3166;
-import org.purl.dc.terms.ISO6392;
-import org.purl.dc.terms.LCC;
-import org.purl.dc.terms.LCSH;
-import org.purl.dc.terms.MESH;
-import org.purl.dc.terms.Period;
-import org.purl.dc.terms.Point;
-import org.purl.dc.terms.RFC1766;
-import org.purl.dc.terms.RFC3066;
-import org.purl.dc.terms.TGN;
-import org.purl.dc.terms.UDC;
-import org.purl.dc.terms.URI;
-import org.purl.dc.terms.W3CDTF;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -56,16 +35,16 @@ import org.purl.dc.terms.W3CDTF;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SimpleLiteral">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;any processContents='lax' maxOccurs="0" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute ref="{http://www.w3.org/XML/1998/namespace}lang"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SimpleLiteral"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;any processContents='lax' maxOccurs="0" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute ref="{http://www.w3.org/XML/1998/namespace}lang"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -136,7 +115,7 @@ public class SimpleLiteral {
      */
     public List<String> getContent() {
         if (content == null) {
-            content = new ArrayList<String>();
+            content = new ArrayList<>();
         }
         return this.content;
     }

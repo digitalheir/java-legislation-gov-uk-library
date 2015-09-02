@@ -1,6 +1,6 @@
 # Legislation.gov.uk library
 
-A wrapper around the
+A Java interface to Legislation.gov.uk.
 
 ## Usage
 To parse a feed and get the table of contents for the first entry

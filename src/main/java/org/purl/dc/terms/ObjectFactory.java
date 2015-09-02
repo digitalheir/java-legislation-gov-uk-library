@@ -8,11 +8,12 @@
 
 package org.purl.dc.terms;
 
+import org.purl.dc.elements._1.AbstractAny;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-import org.purl.dc.elements._1.AbstractAny;
 
 
 /**
@@ -230,7 +231,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "license", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "rights")
     public JAXBElement<AbstractAny> createLicense(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_License_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_License_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -239,7 +240,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "conformsTo", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createConformsTo(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_ConformsTo_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_ConformsTo_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -248,7 +249,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "tableOfContents", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "description")
     public JAXBElement<AbstractAny> createTableOfContents(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_TableOfContents_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_TableOfContents_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -257,7 +258,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "dateCopyrighted", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createDateCopyrighted(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_DateCopyrighted_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_DateCopyrighted_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -266,7 +267,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "accrualPolicy", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createAccrualPolicy(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_AccrualPolicy_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_AccrualPolicy_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -275,7 +276,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "accrualMethod", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createAccrualMethod(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_AccrualMethod_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_AccrualMethod_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -284,7 +285,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "medium", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "format")
     public JAXBElement<AbstractAny> createMedium(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Medium_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Medium_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -293,7 +294,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "spatial", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "coverage")
     public JAXBElement<AbstractAny> createSpatial(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Spatial_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Spatial_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -302,7 +303,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "dateSubmitted", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createDateSubmitted(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_DateSubmitted_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_DateSubmitted_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -311,7 +312,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "references", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createReferences(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_References_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_References_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -320,7 +321,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "accrualPeriodicity", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createAccrualPeriodicity(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_AccrualPeriodicity_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_AccrualPeriodicity_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -329,7 +330,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "created", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createCreated(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Created_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Created_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -338,7 +339,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "hasVersion", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createHasVersion(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_HasVersion_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_HasVersion_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -347,7 +348,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "mediator", substitutionHeadNamespace = "http://purl.org/dc/terms/", substitutionHeadName = "audience")
     public JAXBElement<AbstractAny> createMediator(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Mediator_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Mediator_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -356,7 +357,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "provenance", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createProvenance(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Provenance_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Provenance_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -365,7 +366,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "dateAccepted", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createDateAccepted(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_DateAccepted_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_DateAccepted_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -374,7 +375,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "available", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createAvailable(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Available_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Available_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -383,7 +384,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "isRequiredBy", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createIsRequiredBy(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_IsRequiredBy_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_IsRequiredBy_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -392,7 +393,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "bibliographicCitation", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "identifier")
     public JAXBElement<AbstractAny> createBibliographicCitation(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_BibliographicCitation_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_BibliographicCitation_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -401,7 +402,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "extent", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "format")
     public JAXBElement<AbstractAny> createExtent(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Extent_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Extent_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -410,7 +411,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "isFormatOf", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createIsFormatOf(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_IsFormatOf_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_IsFormatOf_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -419,7 +420,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "valid", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createValid(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Valid_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Valid_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -428,7 +429,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "isReferencedBy", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createIsReferencedBy(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_IsReferencedBy_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_IsReferencedBy_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -437,7 +438,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "isVersionOf", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createIsVersionOf(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_IsVersionOf_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_IsVersionOf_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -446,7 +447,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "accessRights", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "rights")
     public JAXBElement<AbstractAny> createAccessRights(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_AccessRights_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_AccessRights_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -455,7 +456,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "temporal", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "coverage")
     public JAXBElement<AbstractAny> createTemporal(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Temporal_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Temporal_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -464,7 +465,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "hasPart", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createHasPart(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_HasPart_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_HasPart_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -473,7 +474,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "abstract", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "description")
     public JAXBElement<AbstractAny> createAbstract(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Abstract_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Abstract_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -482,7 +483,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "audience", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createAudience(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Audience_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Audience_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -491,7 +492,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "hasFormat", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createHasFormat(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_HasFormat_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_HasFormat_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -500,7 +501,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "educationLevel", substitutionHeadNamespace = "http://purl.org/dc/terms/", substitutionHeadName = "audience")
     public JAXBElement<AbstractAny> createEducationLevel(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_EducationLevel_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_EducationLevel_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -509,7 +510,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "rightsHolder", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createRightsHolder(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_RightsHolder_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_RightsHolder_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -518,7 +519,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "isReplacedBy", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createIsReplacedBy(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_IsReplacedBy_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_IsReplacedBy_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -527,7 +528,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "isPartOf", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createIsPartOf(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_IsPartOf_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_IsPartOf_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -536,7 +537,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "alternative", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "title")
     public JAXBElement<AbstractAny> createAlternative(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Alternative_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Alternative_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -545,7 +546,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "instructionalMethod", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "any")
     public JAXBElement<AbstractAny> createInstructionalMethod(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_InstructionalMethod_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_InstructionalMethod_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -554,7 +555,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "requires", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createRequires(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Requires_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Requires_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -563,7 +564,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "modified", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createModified(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Modified_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Modified_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -572,7 +573,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "replaces", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "relation")
     public JAXBElement<AbstractAny> createReplaces(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Replaces_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Replaces_QNAME, AbstractAny.class, null, value);
     }
 
     /**
@@ -581,7 +582,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://purl.org/dc/terms/", name = "issued", substitutionHeadNamespace = "http://purl.org/dc/elements/1.1/", substitutionHeadName = "date")
     public JAXBElement<AbstractAny> createIssued(AbstractAny value) {
-        return new JAXBElement<AbstractAny>(_Issued_QNAME, AbstractAny.class, null, value);
+        return new JAXBElement<>(_Issued_QNAME, AbstractAny.class, null, value);
     }
 
 }

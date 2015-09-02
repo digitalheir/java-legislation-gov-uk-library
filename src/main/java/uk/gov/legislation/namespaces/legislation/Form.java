@@ -8,19 +8,11 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,55 +21,55 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Number" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}TitleBlock" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Reference" minOccurs="0"/>
- *         &lt;choice>
- *           &lt;choice maxOccurs="unbounded">
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Part"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Chapter"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Pblock"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}PsubBlock"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P3"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P4"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P5"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1para"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2para"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P3para"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P4para"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P5para"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2group"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P3group"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Schedules"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Schedule"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockAmendment"/>
- *             &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockBasic"/>
- *           &lt;/choice>
- *           &lt;sequence>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}IncludedDocument" maxOccurs="unbounded"/>
- *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}FootnoteRef" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;/sequence>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *       &lt;attribute name="Orientation">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="portrait"/>
- *             &lt;enumeration value="landscape"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Number" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}TitleBlock" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Reference" minOccurs="0"/&gt;
+ *         &lt;choice&gt;
+ *           &lt;choice maxOccurs="unbounded"&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Part"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Chapter"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Pblock"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}PsubBlock"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P3"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P4"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P5"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1para"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2para"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P3para"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P4para"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P5para"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P1group"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P2group"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}P3group"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Schedules"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}Schedule"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockAmendment"/&gt;
+ *             &lt;group ref="{http://www.legislation.gov.uk/namespaces/legislation}BlockBasic"/&gt;
+ *           &lt;/choice&gt;
+ *           &lt;sequence&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}IncludedDocument" maxOccurs="unbounded"/&gt;
+ *             &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}FootnoteRef" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *           &lt;/sequence&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *       &lt;attribute name="Orientation"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="portrait"/&gt;
+ *             &lt;enumeration value="landscape"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -252,7 +244,7 @@ public class Form {
      */
     public List<IncludedDocument> getIncludedDocuments() {
         if (includedDocuments == null) {
-            includedDocuments = new ArrayList<IncludedDocument>();
+            includedDocuments = new ArrayList<>();
         }
         return this.includedDocuments;
     }
@@ -281,7 +273,7 @@ public class Form {
      */
     public List<FootnoteRef> getFootnoteReves() {
         if (footnoteReves == null) {
-            footnoteReves = new ArrayList<FootnoteRef>();
+            footnoteReves = new ArrayList<>();
         }
         return this.footnoteReves;
     }
@@ -338,7 +330,7 @@ public class Form {
      */
     public List<Object> getPartsAndChaptersAndPblocks() {
         if (partsAndChaptersAndPblocks == null) {
-            partsAndChaptersAndPblocks = new ArrayList<Object>();
+            partsAndChaptersAndPblocks = new ArrayList<>();
         }
         return this.partsAndChaptersAndPblocks;
     }
@@ -487,7 +479,7 @@ public class Form {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

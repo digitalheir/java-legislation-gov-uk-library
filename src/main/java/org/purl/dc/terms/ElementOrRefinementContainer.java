@@ -8,14 +8,15 @@
 
 package org.purl.dc.terms;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.purl.dc.elements._1.AbstractAny;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
-import org.purl.dc.elements._1.AbstractAny;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -29,15 +30,15 @@ import org.purl.dc.elements._1.AbstractAny;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="elementOrRefinementContainer">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;group ref="{http://purl.org/dc/terms/}elementsAndRefinementsGroup"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="elementOrRefinementContainer"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice&gt;
+ *         &lt;group ref="{http://purl.org/dc/terms/}elementsAndRefinementsGroup"/&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -131,7 +132,7 @@ public class ElementOrRefinementContainer {
      */
     public List<JAXBElement<AbstractAny>> getAnies() {
         if (anies == null) {
-            anies = new ArrayList<JAXBElement<AbstractAny>>();
+            anies = new ArrayList<>();
         }
         return this.anies;
     }

@@ -438,7 +438,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Citation", scope = ProvisionsStructure.class)
     public JAXBElement<ProvisionsStructure.Citation> createProvisionsStructureCitation(ProvisionsStructure.Citation value) {
-        return new JAXBElement<ProvisionsStructure.Citation>(_ProvisionsStructureCitation_QNAME, ProvisionsStructure.Citation.class, ProvisionsStructure.class, value);
+        return new JAXBElement<>(_ProvisionsStructureCitation_QNAME, ProvisionsStructure.Citation.class, ProvisionsStructure.class, value);
     }
 
 }

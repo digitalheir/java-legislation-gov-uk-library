@@ -8,21 +8,13 @@
 
 package uk.gov.legislation.namespaces.legislation;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElements;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.datatype.XMLGregorianCalendar;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -31,25 +23,25 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsNumber" minOccurs="0"/>
- *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsTitle" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded" minOccurs="0">
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsGroup"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPart"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsChapter"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPblock"/>
- *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsItem"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/>
- *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsAttributes"/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsNumber" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsTitle" minOccurs="0"/&gt;
+ *         &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsGroup"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPart"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsChapter"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsPblock"/&gt;
+ *           &lt;element ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsItem"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}CommonAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.legislation.gov.uk/namespaces/legislation}ContentsAttributes"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -215,7 +207,7 @@ public class ContentsAppendix {
      */
     public List<Object> getContentsGroupsAndContentsPartsAndContentsChapters() {
         if (contentsGroupsAndContentsPartsAndContentsChapters == null) {
-            contentsGroupsAndContentsPartsAndContentsChapters = new ArrayList<Object>();
+            contentsGroupsAndContentsPartsAndContentsChapters = new ArrayList<>();
         }
         return this.contentsGroupsAndContentsPartsAndContentsChapters;
     }
@@ -340,7 +332,7 @@ public class ContentsAppendix {
      */
     public List<Object> getAltVersionRefs() {
         if (altVersionRefs == null) {
-            altVersionRefs = new ArrayList<Object>();
+            altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
     }

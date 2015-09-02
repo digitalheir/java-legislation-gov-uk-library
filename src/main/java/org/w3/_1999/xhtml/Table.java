@@ -8,20 +8,14 @@
 
 package org.w3._1999.xhtml;
 
+import org.w3._1999.xsl.format.TableBorderStyleType;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlID;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.w3._1999.xsl.format.TableBorderStyleType;
 
 
 /**
@@ -30,31 +24,31 @@ import org.w3._1999.xsl.format.TableBorderStyleType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}caption" minOccurs="0"/>
- *         &lt;choice minOccurs="0">
- *           &lt;element ref="{http://www.w3.org/1999/xhtml}colgroup" maxOccurs="unbounded"/>
- *           &lt;element ref="{http://www.w3.org/1999/xhtml}col" maxOccurs="unbounded"/>
- *         &lt;/choice>
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}thead" minOccurs="0"/>
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}tfoot" minOccurs="0"/>
- *         &lt;element ref="{http://www.w3.org/1999/xhtml}tbody" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableXMLattributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/>
- *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableID"/>
- *       &lt;attribute name="cols" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="summary" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="width" type="{http://www.w3.org/1999/xhtml}TableWidthType" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}caption" minOccurs="0"/&gt;
+ *         &lt;choice minOccurs="0"&gt;
+ *           &lt;element ref="{http://www.w3.org/1999/xhtml}colgroup" maxOccurs="unbounded"/&gt;
+ *           &lt;element ref="{http://www.w3.org/1999/xhtml}col" maxOccurs="unbounded"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}thead" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}tfoot" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.w3.org/1999/xhtml}tbody" maxOccurs="unbounded"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableXMLattributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderLeftAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBorderTopAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/XSL/Format}TableBackgroundColorAttributes"/&gt;
+ *       &lt;attGroup ref="{http://www.w3.org/1999/xhtml}TableID"/&gt;
+ *       &lt;attribute name="cols" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="summary" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="width" type="{http://www.w3.org/1999/xhtml}TableWidthType" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -176,7 +170,7 @@ public class Table {
      */
     public List<Col> getColList() {
         if (colList == null) {
-            colList = new ArrayList<Col>();
+            colList = new ArrayList<>();
         }
         return this.colList;
     }
@@ -205,7 +199,7 @@ public class Table {
      */
     public List<Colgroup> getColgroups() {
         if (colgroups == null) {
-            colgroups = new ArrayList<Colgroup>();
+            colgroups = new ArrayList<>();
         }
         return this.colgroups;
     }
@@ -282,7 +276,7 @@ public class Table {
      */
     public List<Tbody> getTbodies() {
         if (tbodies == null) {
-            tbodies = new ArrayList<Tbody>();
+            tbodies = new ArrayList<>();
         }
         return this.tbodies;
     }

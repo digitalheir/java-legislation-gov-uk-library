@@ -177,7 +177,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "atomXHTMLTextConstruct")
     public JAXBElement<AtomXHTMLTextConstruct> createAtomXHTMLTextConstruct(AtomXHTMLTextConstruct value) {
-        return new JAXBElement<AtomXHTMLTextConstruct>(_AtomXHTMLTextConstruct_QNAME, AtomXHTMLTextConstruct.class, null, value);
+        return new JAXBElement<>(_AtomXHTMLTextConstruct_QNAME, AtomXHTMLTextConstruct.class, null, value);
     }
 
     /**
@@ -186,7 +186,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "title")
     public JAXBElement<AtomTextConstruct> createTitle(AtomTextConstruct value) {
-        return new JAXBElement<AtomTextConstruct>(_Title_QNAME, AtomTextConstruct.class, null, value);
+        return new JAXBElement<>(_Title_QNAME, AtomTextConstruct.class, null, value);
     }
 
     /**
@@ -195,7 +195,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "published")
     public JAXBElement<AtomDateConstruct> createPublished(AtomDateConstruct value) {
-        return new JAXBElement<AtomDateConstruct>(_Published_QNAME, AtomDateConstruct.class, null, value);
+        return new JAXBElement<>(_Published_QNAME, AtomDateConstruct.class, null, value);
     }
 
     /**
@@ -204,7 +204,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "contributor")
     public JAXBElement<AtomPersonConstruct> createContributor(AtomPersonConstruct value) {
-        return new JAXBElement<AtomPersonConstruct>(_Contributor_QNAME, AtomPersonConstruct.class, null, value);
+        return new JAXBElement<>(_Contributor_QNAME, AtomPersonConstruct.class, null, value);
     }
 
     /**
@@ -213,7 +213,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "summary")
     public JAXBElement<AtomTextConstruct> createSummary(AtomTextConstruct value) {
-        return new JAXBElement<AtomTextConstruct>(_Summary_QNAME, AtomTextConstruct.class, null, value);
+        return new JAXBElement<>(_Summary_QNAME, AtomTextConstruct.class, null, value);
     }
 
     /**
@@ -222,7 +222,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "rights")
     public JAXBElement<AtomTextConstruct> createRights(AtomTextConstruct value) {
-        return new JAXBElement<AtomTextConstruct>(_Rights_QNAME, AtomTextConstruct.class, null, value);
+        return new JAXBElement<>(_Rights_QNAME, AtomTextConstruct.class, null, value);
     }
 
     /**
@@ -231,7 +231,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "subtitle")
     public JAXBElement<AtomTextConstruct> createSubtitle(AtomTextConstruct value) {
-        return new JAXBElement<AtomTextConstruct>(_Subtitle_QNAME, AtomTextConstruct.class, null, value);
+        return new JAXBElement<>(_Subtitle_QNAME, AtomTextConstruct.class, null, value);
     }
 
     /**
@@ -240,7 +240,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "author")
     public JAXBElement<AtomPersonConstruct> createAuthor(AtomPersonConstruct value) {
-        return new JAXBElement<AtomPersonConstruct>(_Author_QNAME, AtomPersonConstruct.class, null, value);
+        return new JAXBElement<>(_Author_QNAME, AtomPersonConstruct.class, null, value);
     }
 
     /**
@@ -249,7 +249,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "name")
     public JAXBElement<String> createName(String value) {
-        return new JAXBElement<String>(_Name_QNAME, String.class, null, value);
+        return new JAXBElement<>(_Name_QNAME, String.class, null, value);
     }
 
     /**
@@ -258,7 +258,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "email")
     public JAXBElement<String> createEmail(String value) {
-        return new JAXBElement<String>(_Email_QNAME, String.class, null, value);
+        return new JAXBElement<>(_Email_QNAME, String.class, null, value);
     }
 
     /**
@@ -267,7 +267,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "uri")
     public JAXBElement<String> createUri(String value) {
-        return new JAXBElement<String>(_Uri_QNAME, String.class, null, value);
+        return new JAXBElement<>(_Uri_QNAME, String.class, null, value);
     }
 
     /**
@@ -276,7 +276,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "updated")
     public JAXBElement<AtomDateConstruct> createUpdated(AtomDateConstruct value) {
-        return new JAXBElement<AtomDateConstruct>(_Updated_QNAME, AtomDateConstruct.class, null, value);
+        return new JAXBElement<>(_Updated_QNAME, AtomDateConstruct.class, null, value);
     }
 
 }
