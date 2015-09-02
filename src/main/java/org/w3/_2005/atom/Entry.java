@@ -9,11 +9,17 @@
 package org.w3._2005.atom;
 
 
-import org.leibnizcenter.uk.legislation.UkUriObject;
+import org.leibnizcenter.uk.legislation.LegislationGovUkInterface;
+import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
+import org.xml.sax.SAXException;
+import uk.gov.legislation.namespaces.legislation.Legislation;
 
+import javax.xml.bind.JAXBException;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -73,22 +79,19 @@ public class Entry {
 //    })
 //    protected List<Object> authorsAndCategoriesAndContents;
 
-    // Start custom definition (overriding generated codes)
-    @XmlElement(required = true)
-    public String id;
-
-    /**
-     * Document title
-     */
-    @XmlElement(required = true)
-    public String title;
-
     /**
      * Collection of Link types
      */
     @XmlElement(required = true, name = "link")
     public final Collection<Link> links = new HashSet<>();
-
+    // Start custom definition (overriding generated codes)
+    @XmlElement(required = true)
+    public String id;
+    /**
+     * Document title
+     */
+    @XmlElement(required = true)
+    public String title;
     /**
      * DateTime on which the document was last updated (i.e., not necessarily through a formal amendment)
      */
@@ -102,102 +105,6 @@ public class Entry {
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "DocumentMainType")
     public String documentMainType;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Collection<Link> getLinks() {
-        return links;
-    }
-
-    public String getUpdated() {
-        return updated;
-    }
-
-    public void setUpdated(String updated) {
-        this.updated = updated;
-    }
-
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
-    public String getPublished() {
-        return published;
-    }
-
-    public void setPublished(String published) {
-        this.published = published;
-    }
-
-    public String getDocumentMainType() {
-        return documentMainType;
-    }
-
-    public void setDocumentMainType(String documentMainType) {
-        this.documentMainType = documentMainType;
-    }
-
-    public String getYear() {
-        return year;
-    }
-
-    public void setYear(String year) {
-        this.year = year;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public String getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(String creationDate) {
-        this.creationDate = creationDate;
-    }
-
-    // End custom definition (overriding generated codes)
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
-    public TopLevelUri getUriObject() {
-        String backupLink = null;
-        for (Link link : links) {
-            backupLink = link.href;
-            if ("self".equals(link.rel)) {
-                break;
-            }
-        }
-        return new TopLevelUri(backupLink);
-    }
     /**
      * Year as it appears in the representation URI
      */
@@ -454,7 +361,7 @@ public class Entry {
         this.isbn = isbn;
     }
 
-    public UkUriObject getUriObject() {
+    public TopLevelUri getUriObject() {
         String backupLink = null;
         for (Link link : links) {
             backupLink = link.href;
@@ -462,6 +369,6 @@ public class Entry {
                 break;
             }
         }
-        return new UkUriObject(backupLink);
+        return new TopLevelUri(backupLink);
     }
 }
