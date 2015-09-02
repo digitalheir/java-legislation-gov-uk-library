@@ -9,17 +9,11 @@
 package org.w3._2005.atom;
 
 
-import org.leibnizcenter.uk.legislation.LegislationGovUkInterface;
-import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
-import org.xml.sax.SAXException;
-import uk.gov.legislation.namespaces.legislation.Legislation;
+import org.leibnizcenter.uk.legislation.UkUriObject;
 
-import javax.xml.bind.JAXBException;
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -79,13 +73,25 @@ public class Entry {
 //    })
 //    protected List<Object> authorsAndCategoriesAndContents;
 
-    @XmlElement(required = true, name = "link")
-    public final Collection<Link> links = new HashSet<>();
     // Start custom definition (overriding generated codes)
     @XmlElement(required = true)
     public String id;
+
+    /**
+     * Document title
+     */
     @XmlElement(required = true)
     public String title;
+
+    /**
+     * Collection of Link types
+     */
+    @XmlElement(required = true, name = "link")
+    public final Collection<Link> links = new HashSet<>();
+
+    /**
+     * DateTime on which the document was last updated (i.e., not necessarily through a formal amendment)
+     */
     @XmlElement(required = true)
     public String updated;
     @XmlElement(required = true)
@@ -95,21 +101,6 @@ public class Entry {
 
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "DocumentMainType")
     public String documentMainType;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Year")
-    public String year;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Number")
-    public String number;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "CreationDate")
-    public String creationDate;
-    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "isbn")
-    public String isbn;
-    @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")
-    @XmlSchemaType(name = "anyURI")
-    protected String base;
-    @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlSchemaType(name = "language")
-    protected String lang;
 
     public String getId() {
         return id;
@@ -207,7 +198,40 @@ public class Entry {
         }
         return new TopLevelUri(backupLink);
     }
+    /**
+     * Year as it appears in the representation URI
+     */
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Year")
+    public String year;
+    /**
+     * Number as it appears in the representation URI
+     */
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Number")
+    public String number;
+    /**
+     * Date on which this law was created. Maybe always the same date as <code>published</code>?
+     */
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "CreationDate")
+    public String creationDate;
+    /**
+     * ISBN number for this law
+     */
+    @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "isbn")
+    public String isbn;
 
+    // End custom definition (overriding generated codes)
+
+
+    @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlSchemaType(name = "anyURI")
+    protected String base;
+    @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
+    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+    @XmlSchemaType(name = "language")
+    protected String lang;
+
+    // Ignore generated code:
+    //
 //    /**
 //     * Gets the value of the authorsAndCategoriesAndContents property.
 //     * <p/>
@@ -294,7 +318,7 @@ public class Entry {
         return getLinksForRel("alternate");
     }
 
-    public List<Link> getLinksForRel(String rel) {
+    public List<Link> getLinksForRel(String rel){
         List<Link> links = new ArrayList<>(getLinks().size() / 2);
         for (Link l : getLinks()) {
             if (rel.equals(l.getRel()) && l.getHreflang() != null) {
@@ -344,5 +368,100 @@ public class Entry {
             contents.add(leg);
         }
         return contents;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Collection<Link> getLinks() {
+        return links;
+    }
+
+    public String getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(String updated) {
+        this.updated = updated;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getPublished() {
+        return published;
+    }
+
+    public void setPublished(String published) {
+        this.published = published;
+    }
+
+    public String getDocumentMainType() {
+        return documentMainType;
+    }
+
+    public void setDocumentMainType(String documentMainType) {
+        this.documentMainType = documentMainType;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public UkUriObject getUriObject() {
+        String backupLink = null;
+        for (Link link : links) {
+            backupLink = link.href;
+            if ("self".equals(link.rel)) {
+                break;
+            }
+        }
+        return new UkUriObject(backupLink);
     }
 }

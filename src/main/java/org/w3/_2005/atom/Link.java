@@ -20,9 +20,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -38,35 +38,56 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 @XmlRootElement(name = "link")
 public class Link
-    extends UndefinedContent
-{
+        extends UndefinedContent {
 
+    /**
+     * URL to manifestation
+     */
     @XmlAttribute(name = "href", required = true)
     @XmlSchemaType(name = "anySimpleType")
     protected String href;
+    /**
+     * Type of link, for example <code>alternate</code> for different versions of the same law, or <code>http://purl.org/dc/terms/tableOfContents</code> for the table of contents.
+     */
     @XmlAttribute(name = "rel")
     @XmlSchemaType(name = "anySimpleType")
     protected String rel;
+    /**
+     * Documents type, for example <code>application/xml</code>
+     */
     @XmlAttribute(name = "type")
     protected String type;
+    /**
+     * Language of document that this link refers to. For example <code>cy</code>. English by default (i.e., if not set).
+     */
     @XmlAttribute(name = "hreflang")
     protected String hreflang;
+    /**
+     * Title of linked document, for example when in another language
+     */
     @XmlAttribute(name = "title")
     @XmlSchemaType(name = "anySimpleType")
     protected String title;
+    /**
+     * Doesn't seem to be used
+     */
     @XmlAttribute(name = "length")
     @XmlSchemaType(name = "anySimpleType")
     protected String length;
+    /**
+     * Doesn't seem to be used
+     */
     @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")
     @XmlSchemaType(name = "anyURI")
     protected String base;
+    /**
+     * Doesn't seem to be used
+     */
     @XmlAttribute(name = "lang", namespace = "http://www.w3.org/XML/1998/namespace")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "language")
@@ -74,11 +95,9 @@ public class Link
 
     /**
      * Gets the value of the href property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getHref() {
         return href;
@@ -86,11 +105,9 @@ public class Link
 
     /**
      * Sets the value of the href property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setHref(String value) {
         this.href = value;
@@ -98,11 +115,9 @@ public class Link
 
     /**
      * Gets the value of the rel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getRel() {
         return rel;
@@ -110,11 +125,9 @@ public class Link
 
     /**
      * Sets the value of the rel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setRel(String value) {
         this.rel = value;
@@ -122,11 +135,9 @@ public class Link
 
     /**
      * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getType() {
         return type;
@@ -134,11 +145,9 @@ public class Link
 
     /**
      * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setType(String value) {
         this.type = value;
@@ -146,11 +155,9 @@ public class Link
 
     /**
      * Gets the value of the hreflang property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getHreflang() {
         return hreflang;
@@ -158,11 +165,9 @@ public class Link
 
     /**
      * Sets the value of the hreflang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setHreflang(String value) {
         this.hreflang = value;
@@ -170,11 +175,9 @@ public class Link
 
     /**
      * Gets the value of the title property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTitle() {
         return title;
@@ -182,11 +185,9 @@ public class Link
 
     /**
      * Sets the value of the title property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTitle(String value) {
         this.title = value;
@@ -194,11 +195,9 @@ public class Link
 
     /**
      * Gets the value of the length property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLength() {
         return length;
@@ -206,11 +205,9 @@ public class Link
 
     /**
      * Sets the value of the length property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLength(String value) {
         this.length = value;
@@ -218,11 +215,9 @@ public class Link
 
     /**
      * Gets the value of the base property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBase() {
         return base;
@@ -230,11 +225,9 @@ public class Link
 
     /**
      * Sets the value of the base property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBase(String value) {
         this.base = value;
@@ -242,11 +235,9 @@ public class Link
 
     /**
      * Gets the value of the lang property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getLang() {
         return lang;
@@ -254,11 +245,9 @@ public class Link
 
     /**
      * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setLang(String value) {
         this.lang = value;
