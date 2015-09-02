@@ -1,4 +1,6 @@
 # Legislation.gov.uk library
+[![Build Status](https://travis-ci.org/digitalheir/java-legislation-gov-uk-library.svg?branch=master)](https://travis-ci.org/digitalheir/java-legislation-gov-uk-library)
+
 
 A Java interface to Legislation.gov.uk.
 
