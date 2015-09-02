@@ -21,19 +21,19 @@ import java.util.List;
  * <p/>
  * Created by maarten on 18-6-15.
  */
-public class LegislationGovUkInterface {
+public class ApiInterface {
     /**
      * Do not instantiate
      */
-    private LegislationGovUkInterface() {
+    private ApiInterface() {
     }
 
     /**
      * @param builder A fully initialized request builder
      * @return The feed resulting from this request
-     * @see UkLawSearchRequestBuilder
+     * @see SearchRequestBuilder
      */
-    public static Feed getSearchFeed(UkLawSearchRequestBuilder builder) throws IOException, ParserConfigurationException, SAXException, JAXBException {
+    public static Feed getSearchFeed(SearchRequestBuilder builder) throws IOException, ParserConfigurationException, SAXException, JAXBException {
         return getSearchFeed(builder.build());
     }
 

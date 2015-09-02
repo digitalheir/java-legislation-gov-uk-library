@@ -9,7 +9,7 @@
 package org.w3._2005.atom;
 
 
-import org.leibnizcenter.uk.legislation.LegislationGovUkInterface;
+import org.leibnizcenter.uk.legislation.ApiInterface;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.xml.sax.SAXException;
 import uk.gov.legislation.namespaces.legislation.Legislation;
@@ -246,7 +246,7 @@ public class Entry {
         for (Link link : getTableOfContentsLinks()) {
             String lang = link.getHreflang() == null ? "en" : link.getHreflang(); //Default language is English
             if ("en".equals(lang)) {
-                return LegislationGovUkInterface.parseLegislationDoc(link.getHref() + "/data.xml");
+                return ApiInterface.parseLegislationDoc(link.getHref() + "/data.xml");
             }
         }
         return null;
@@ -262,7 +262,7 @@ public class Entry {
     public Legislation getWelshTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         for (Link link : getTableOfContentsLinks()) {
             if ("cy".equals(link.getHreflang())) {
-                return LegislationGovUkInterface.parseLegislationDoc(link.getHref() + "/data.xml");
+                return ApiInterface.parseLegislationDoc(link.getHref() + "/data.xml");
             }
         }
         return null;
@@ -271,7 +271,7 @@ public class Entry {
     public List<Legislation> getAllTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         List<Legislation> contents = new ArrayList<>(getTableOfContentsLinks().size());
         for (Link l : getTableOfContentsLinks()) {
-            Legislation leg = LegislationGovUkInterface.parseLegislationDoc(l.getHref() + "/data.xml");
+            Legislation leg = ApiInterface.parseLegislationDoc(l.getHref() + "/data.xml");
             contents.add(leg);
         }
         return contents;

@@ -20,8 +20,8 @@ public class Sample {
     public static void main(String[] args) {
         try {
             // Get search feed
-            Feed feed = LegislationGovUkInterface.getSearchFeed(
-                    new UkLawSearchRequestBuilder().setStartNumber("4").setEndYear("2015").build()
+            Feed feed = ApiInterface.getSearchFeed(
+                    new SearchRequestBuilder().setStartNumber("4").setEndYear("2015").build()
             );
             for (Entry e : feed.getEntries()) {
                 System.out.println("Title: " + e.getTitle());
@@ -29,7 +29,7 @@ public class Sample {
 
             // Get single entry and ToC
             TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/anaw/2015/4");
-            Entry e = LegislationGovUkInterface.getSingleEntryFromFeed(uri);
+            Entry e = ApiInterface.getSingleEntryFromFeed(uri);
 
             for (Legislation tableOfContentsDocument : e.getAllTableOfContents()) {
                 Contents contents = tableOfContentsDocument.getContents();

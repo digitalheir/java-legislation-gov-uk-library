@@ -9,11 +9,11 @@ import com.squareup.okhttp.Request;
  * <p/>
  * Created by Maarten on 24-1-2015.
  */
-public class UkLawSearchRequestBuilder {
+public class SearchRequestBuilder {
     private HttpUrl.Builder mBuilder;
     private int mPage = 1;
 
-    public UkLawSearchRequestBuilder() {
+    public SearchRequestBuilder() {
         mBuilder = new HttpUrl.Builder()
                 .scheme("http")
                 .host("www.legislation.gov.uk")
@@ -21,40 +21,40 @@ public class UkLawSearchRequestBuilder {
                 .addPathSegment("data.feed");
     }
 
-    public UkLawSearchRequestBuilder setTitle(String title) {
+    public SearchRequestBuilder setTitle(String title) {
         return addQueryParameter("title", title);
     }
 
-    public UkLawSearchRequestBuilder addQueryParameter(String key, String value) {
+    public SearchRequestBuilder addQueryParameter(String key, String value) {
         mBuilder.addQueryParameter(key, value);
         return this;
     }
 
-    public UkLawSearchRequestBuilder setType(String type) {
+    public SearchRequestBuilder setType(String type) {
         return addQueryParameter("type", type);
     }
 
-    public UkLawSearchRequestBuilder setStartYear(String startYear) {
+    public SearchRequestBuilder setStartYear(String startYear) {
         return addQueryParameter("start-year", startYear);
     }
 
-    public UkLawSearchRequestBuilder setEndYear(String endYear) {
+    public SearchRequestBuilder setEndYear(String endYear) {
         return addQueryParameter("end-year", endYear);
     }
 
-    public UkLawSearchRequestBuilder setStartNumber(String startNumber) {
+    public SearchRequestBuilder setStartNumber(String startNumber) {
         return addQueryParameter("start-number", startNumber);
     }
 
-    public UkLawSearchRequestBuilder setEndNumber(String endNumber) {
+    public SearchRequestBuilder setEndNumber(String endNumber) {
         return addQueryParameter("end-number", endNumber);
     }
 
-    public UkLawSearchRequestBuilder setVersion(String version) {
+    public SearchRequestBuilder setVersion(String version) {
         return addQueryParameter("version", version);
     }
 
-    public UkLawSearchRequestBuilder setPage(int page) {
+    public SearchRequestBuilder setPage(int page) {
         mPage = page;
         return this;
     }

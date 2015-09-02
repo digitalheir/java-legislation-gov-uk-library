@@ -1,6 +1,6 @@
 import org.junit.Test;
-import org.leibnizcenter.uk.legislation.LegislationGovUkInterface;
-import org.leibnizcenter.uk.legislation.UkLawSearchRequestBuilder;
+import org.leibnizcenter.uk.legislation.ApiInterface;
+import org.leibnizcenter.uk.legislation.SearchRequestBuilder;
 import org.w3._2005.atom.Entry;
 import org.w3._2005.atom.Feed;
 import org.xml.sax.SAXException;
@@ -28,10 +28,10 @@ public class LegislationFeed {
         try {
 
             for (int page = 1; page <= 10; page++) {
-                UkLawSearchRequestBuilder b = new UkLawSearchRequestBuilder();
+                SearchRequestBuilder b = new SearchRequestBuilder();
                 System.out.println("Opening page " + page);
                 b.setPage(page);
-                Feed listing = LegislationGovUkInterface.getSearchFeed(b);
+                Feed listing = ApiInterface.getSearchFeed(b);
                 assertEquals("Result size must be 20", listing.getEntries().size(), 20);
 
                 for (Entry e : listing.getEntries()) {
@@ -50,9 +50,9 @@ public class LegislationFeed {
     @Test
     public void parsePageOutOfScope() {
         try {
-            UkLawSearchRequestBuilder b = new UkLawSearchRequestBuilder();
+            SearchRequestBuilder b = new SearchRequestBuilder();
             b.setPage(Integer.MAX_VALUE);
-            Feed listing = LegislationGovUkInterface.getSearchFeed(b);
+            Feed listing = ApiInterface.getSearchFeed(b);
             assertEquals("Result entries must be 0", listing.getEntries().size(), 0);
         } catch (IOException | ParserConfigurationException | JAXBException | SAXException e) {
             e.printStackTrace();
