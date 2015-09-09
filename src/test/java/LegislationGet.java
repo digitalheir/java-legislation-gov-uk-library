@@ -23,9 +23,6 @@ import static org.junit.Assert.assertEquals;
 
 public class LegislationGet {
 
-    /**
-     * Sample to list the first 10 pages of legislation
-     */
     @Test
     public void parseMetadata() {
         try {
@@ -55,6 +52,7 @@ public class LegislationGet {
 //        assertEquals("??", e.getTableOfContentsLinks(), 20);
 //        assertEquals("??", e.getBase(), 20);
 //        assertEquals("??", e.getDocumentMainType(), 20);
+        System.out.println(e.getDocumentMainType());
     }
 
 

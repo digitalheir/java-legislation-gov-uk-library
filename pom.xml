@@ -6,7 +6,7 @@
 
     <groupId>org.leibnizcenter</groupId>
     <artifactId>legislation-gov-uk</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <licenses>
@@ -105,6 +105,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>

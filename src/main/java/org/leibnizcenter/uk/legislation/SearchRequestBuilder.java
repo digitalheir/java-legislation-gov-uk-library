@@ -6,7 +6,7 @@ import com.squareup.okhttp.Request;
 
 /**
  * <p>
- * Create request to fetch UK law, for example http://www.legislation.gov.uk/all/data.feed?page=2
+ * Create request to fetch UK law, for example http://www.legislation.gov.uk/search/data.feed?start-year=1850&end-year=1850&type=ukpga&page=1
  * <p>
  * Created by Maarten on 24-1-2015.
  */
@@ -18,7 +18,7 @@ public class SearchRequestBuilder {
         mBuilder = new HttpUrl.Builder()
                 .scheme("http")
                 .host("www.legislation.gov.uk")
-                .addPathSegment("all")
+                .addPathSegment("search")
                 .addPathSegment("data.feed");
     }
 
@@ -62,6 +62,7 @@ public class SearchRequestBuilder {
 
     public HttpUrl buildUrl() {
         mBuilder.addQueryParameter("page", mPage + "");
+        //System.out.println(mBuilder.build());
         return mBuilder.build();
     }
 

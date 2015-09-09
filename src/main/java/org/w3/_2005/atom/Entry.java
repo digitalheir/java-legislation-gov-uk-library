@@ -13,6 +13,8 @@ import org.leibnizcenter.uk.legislation.ApiInterface;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.xml.sax.SAXException;
 import uk.gov.legislation.namespaces.legislation.Legislation;
+import uk.gov.legislation.namespaces.metadata.*;
+import uk.gov.legislation.namespaces.metadata.Number;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.annotation.*;
@@ -103,28 +105,28 @@ public class Entry {
     public String published;
 
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "DocumentMainType")
-    public String documentMainType;
+    public DocumentMainType documentMainType;
 
     /**
      * Year as it appears in the representation URI
      */
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Year")
-    public String year;
+    public Year year;
     /**
      * Number as it appears in the representation URI
      */
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "Number")
-    public String number;
+    public uk.gov.legislation.namespaces.metadata.Number number;
     /**
      * Date on which this law was created. Maybe always the same date as {@code published}?
      */
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "CreationDate")
-    public String creationDate;
+    public uk.gov.legislation.namespaces.metadata.CreationDate creationDate;
     /**
      * ISBN number for this law
      */
     @XmlElement(required = true, namespace = "http://www.legislation.gov.uk/namespaces/metadata", name = "isbn")
-    public String isbn;
+    public ISBN isbn;
 
     // End custom definition (overriding generated codes)
 
@@ -221,14 +223,68 @@ public class Entry {
         return getLinksForRel("http://purl.org/dc/terms/tableOfContents");
     }
 
+    public List<Link> getHtmlSnippets() {
+        List<Link> links = new ArrayList<>(getLinks().size());
+        for (Link l : getLinks()) {
+            if ("alternate".equals(l.getRel())
+                    && "application/xhtml+xml".equals(l.getType())) {
+                links.add(l);
+            }
+        }
+        return links;
+    }
+
+    /**
+     * @return Link to English HTML, null if not found
+     */
+    public Link getEnglishHtmlSnippet() {
+        for (Link l : getLinks()) {
+            if ("alternate".equals(l.getRel())
+                    && "application/xhtml+xml".equals(l.getType())
+                    && (
+                    l.getHreflang() == null
+                            ||
+                            "en".equals(l.getHreflang())
+                            ||
+                            l.getHreflang().trim().length() == 0)
+                    ) {
+                return l;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @return Link to Welsh HTML, null if not found
+     */
+    public Link getWelshHtmlSnippet() {
+        for (Link l : getLinks()) {
+            if ("alternate".equals(l.getRel())
+                    && "application/xhtml+xml".equals(l.getType())
+                    && "cy".equals(l.getHreflang())
+                    ) {
+                return l;
+            }
+        }
+        return null;
+    }
+
+
+    /**
+     * @return Links with the "alternate" attribute
+     */
     public List<Link> getAlternateLinks() {
         return getLinksForRel("alternate");
     }
 
-    public List<Link> getLinksForRel(String rel){
-        List<Link> links = new ArrayList<>(getLinks().size() / 2);
+    /**
+     * @param rel "rel" attribute to query links for. (E.g.; @code{<link rel="alternate" type="application/xml" href="http://legislation.data.gov.uk/nia/2015/5/2015-06-24/data.xml" title="XML"/>})
+     * @return List of links which have the given "rel" attribute
+     */
+    public List<Link> getLinksForRel(String rel) {
+        List<Link> links = new ArrayList<>(getLinks().size());
         for (Link l : getLinks()) {
-            if (rel.equals(l.getRel()) && l.getHreflang() != null) {
+            if (rel.equals(l.getRel())) {
                 links.add(l);
             }
         }
@@ -321,43 +377,43 @@ public class Entry {
         this.published = published;
     }
 
-    public String getDocumentMainType() {
+    public DocumentMainType getDocumentMainType() {
         return documentMainType;
     }
 
-    public void setDocumentMainType(String documentMainType) {
+    public void setDocumentMainType(DocumentMainType documentMainType) {
         this.documentMainType = documentMainType;
     }
 
-    public String getYear() {
+    public Year getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(Year year) {
         this.year = year;
     }
 
-    public String getNumber() {
+    public uk.gov.legislation.namespaces.metadata.Number getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(Number number) {
         this.number = number;
     }
 
-    public String getCreationDate() {
+    public CreationDate getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(String creationDate) {
+    public void setCreationDate(CreationDate creationDate) {
         this.creationDate = creationDate;
     }
 
-    public String getIsbn() {
+    public ISBN getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(String isbn) {
+    public void setIsbn(ISBN isbn) {
         this.isbn = isbn;
     }
 
@@ -372,6 +428,32 @@ public class Entry {
                 break;
             }
         }
-        return new TopLevelUri(backupLink);
+        return new TopLevelUri(backupLink, getYear().asInt(), getNumber().asInt());
+    }
+
+    public static class TagWithValueAttribute {
+        @XmlAttribute(name = "Value")
+        public String value;
+
+        public TagWithValueAttribute() {
+
+        }
+
+        public TagWithValueAttribute(String c) {
+            value = c;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        public void setValue(String value) {
+            this.value = value;
+        }
+
+        @Override
+        public String toString() {
+            return value;
+        }
     }
 }

@@ -60,4 +60,7 @@ public class Year {
         this.value = value;
     }
 
+    public int asInt(){
+        return Integer.parseInt(value);
+    }
 }

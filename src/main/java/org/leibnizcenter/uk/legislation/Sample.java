@@ -28,7 +28,7 @@ public class Sample {
             }
 
             // Get single entry and ToC
-            TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/anaw/2015/4");
+            TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/anaw/2015/4",2015,4);
             Entry e = ApiInterface.getSingleEntryFromFeed(uri);
 
             for (Legislation tableOfContentsDocument : e.getAllTableOfContents()) {

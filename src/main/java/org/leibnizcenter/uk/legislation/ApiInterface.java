@@ -43,7 +43,7 @@ public class ApiInterface {
      */
     public static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException {
         OkHttpClient httpClient = new OkHttpClient();
-        httpClient.setFollowRedirects(false);
+        httpClient.setFollowRedirects(true);
         Response response = httpClient.newCall(request).execute();
         if (response.isSuccessful()) {
             JAXBContext jaxbContext = JAXBContext.newInstance(Feed.class);
@@ -55,9 +55,16 @@ public class ApiInterface {
     }
 
     /**
-     * We use the atom feed to get metadata for single laws, because '{uri}/data.xml' lists links to HTML
+     * <p>
+     *     Generates Entry from a URL such as
+     * </p>
+     *
+     * <p>NOTE: We use the atom feed to get metadata for single laws, because '{uri}/data.xml' lists links to HTML
      * manifestations that do not exist in actuality. For example;
-     * <a href="http://www.legislation.gov.uk/uksi/1986/1628/made/data.xml">uksi/1986/1628</a>.
+     * <a href="http://www.legislation.gov.uk/uksi/1986/1628/made/data.xml">uksi/1986/1628</a>.</p>
+     *
+     * @param uri Representation URI for law
+     * @return Feed entry about the given law
      */
     public static Entry getSingleEntryFromFeed(TopLevelUri uri) throws ParserConfigurationException, SAXException, IOException, JAXBException {
         List<Entry> feed = getSearchFeed(new Request.Builder().url(uri.feedURL).build()).getEntries();
