@@ -5,7 +5,24 @@
 A Java interface to Legislation.gov.uk.
 
 ## Usage
-To parse a feed and get the table of contents for the first entry
+Download [the latest JAR](https://github.com/digitalheir/java-legislation-gov-uk-library/releases/latest) or grab from Maven:
+
+```xml
+<dependencies>
+        <dependency>
+            <groupId>org.leibnizcenter</groupId>
+            <artifactId>legislation-gov-uk</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+</dependencies>
+```
+
+or Gradle:
+```groovy
+compile 'org.leibnizcenter:legislation-gov-uk:1.1.0'
+```
+
+To parse a feed and get the table of contents for the first entry:
 
 ```java
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
