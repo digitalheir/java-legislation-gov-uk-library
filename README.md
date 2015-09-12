@@ -22,6 +22,8 @@ or Gradle:
 compile 'org.leibnizcenter:legislation-gov-uk:1.1.0'
 ```
 
+Javadoc available at http://phil.uu.nl/~trompper/legislation-gov-uk-1.1.0-javadoc/
+
 To parse a feed and get the table of contents for the first entry:
 
 ```java
@@ -63,3 +65,5 @@ public class Sample {
 ## More
 For more information about the API, see http://www.legislation.gov.uk/developer or [a
 report about legislation.gov.uk](http://leibniz-internship-report.herokuapp.com/eu-legal-data-survey/uk#section-legislation-gov-uk).
+
+Inquiries go to m.f.a.trompper@uva.nl.
