@@ -4,6 +4,9 @@
 
 A Java interface to Legislation.gov.uk.
 
+## JavaDoc
+JavaDoc is available at http://phil.uu.nl/~trompper/legislation-gov-uk-1.1.0-javadoc/
+
 ## Usage
 Download [the latest JAR](https://github.com/digitalheir/java-legislation-gov-uk-library/releases/latest) or grab from Maven:
 
@@ -21,8 +24,6 @@ or Gradle:
 ```groovy
 compile 'org.leibnizcenter:legislation-gov-uk:1.1.0'
 ```
-
-Javadoc available at http://phil.uu.nl/~trompper/legislation-gov-uk-1.1.0-javadoc/
 
 To parse a feed and get the table of contents for the first entry:
 
