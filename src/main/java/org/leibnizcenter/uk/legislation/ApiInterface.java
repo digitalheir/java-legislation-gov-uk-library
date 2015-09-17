@@ -50,7 +50,7 @@ public class ApiInterface {
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             return (Feed) jaxbUnmarshaller.unmarshal(response.body().byteStream());
         } else {
-            throw new FeedException("HTTP request not 200: "+response.code());
+            throw new FeedException("HTTP request not OK: "+response.code()+"\nURL: "+request.url());
         }
     }
 

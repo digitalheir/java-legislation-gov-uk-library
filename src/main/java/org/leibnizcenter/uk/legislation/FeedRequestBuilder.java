@@ -3,6 +3,9 @@ package org.leibnizcenter.uk.legislation;
 import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.Request;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 /**
  * <p>
@@ -11,20 +14,18 @@ import com.squareup.okhttp.Request;
  * Created by Maarten on 24-1-2015.
  */
 public class FeedRequestBuilder {
-    private HttpUrl.Builder mBuilder;
+    private final Map<String, String> mQueryParams;
     private int mPage = 1;
     private String type = "all";
-    private String year=null;
-    private String number=null;
+    private String year = null;
+    private String number = null;
 
     public FeedRequestBuilder() {
-        mBuilder = new HttpUrl.Builder()
-                .scheme("http")
-                .host("www.legislation.gov.uk");
+        mQueryParams = new HashMap<>();
     }
 
-    public FeedRequestBuilder addQueryParameter(String key, String value) {
-        mBuilder.addQueryParameter(key, value);
+    public FeedRequestBuilder setQueryParameter(String key, String value) {
+        mQueryParams.put(key, value);
         return this;
     }
 
@@ -32,17 +33,17 @@ public class FeedRequestBuilder {
         setYear(year + "");
     }
 
-    public void setNumber(int number) {
-        setNumber(number + "");
-    }
+//    public void setNumber(int number) {
+//        setNumber(number + "");
+//    }
 
     public void setYear(String year) {
         this.year = year;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
-    }
+//    public void setNumber(String number) {
+//        this.number = number;
+//    }
 
     public void setType(String type) {
         this.type = type;
@@ -54,17 +55,23 @@ public class FeedRequestBuilder {
     }
 
     public HttpUrl buildUrl() {
-        mBuilder.addPathSegment(type);
+        HttpUrl.Builder builder = new HttpUrl.Builder()
+                .scheme("http")
+                .host("www.legislation.gov.uk");
+        builder.addPathSegment(type);
         if (year != null) {
-            mBuilder.addPathSegment(year);
+            builder.addPathSegment(year);
             if (number != null) {
-                mBuilder.addPathSegment(number);
+                builder.addPathSegment(number);
             }
         }
-        mBuilder.addPathSegment("data.feed")
-                .addQueryParameter("page", mPage + "");
+        for (String key : mQueryParams.keySet()) {
+            builder.addQueryParameter(key, mQueryParams.get(key));
+        }
+        builder.addPathSegment("data.feed")
+                .setQueryParameter("page", mPage + "");
         //System.out.println(mBuilder.build());
-        return mBuilder.build();
+        return builder.build();
     }
 
     public Request build() {
