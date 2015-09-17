@@ -26,7 +26,7 @@ public class SingleDocTest {
     @Test
     public void parseMetadata() {
         try {
-            TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/anaw/2015/4");
+            TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/anaw/2015/4",2015,4);
             Entry e = ApiInterface.getSingleEntryFromFeed(uri);
             assertMetadataElements(e);
 
@@ -35,7 +35,7 @@ public class SingleDocTest {
             for (Legislation toc : tocs) {
                 traverseToc(toc.getContents());
             }
-        } catch (ParserConfigurationException | JAXBException | IOException | SAXException e1) {
+        } catch (ApiInterface.FeedException |ParserConfigurationException | JAXBException | IOException | SAXException e1) {
             throw new Error(e1);
         }
     }
@@ -66,7 +66,7 @@ public class SingleDocTest {
             b.setPage(Integer.MAX_VALUE);
             Feed listing = ApiInterface.getSearchFeed(b);
             assertEquals("Result entries must be 0", listing.getEntries().size(), 0);
-        } catch (IOException | ParserConfigurationException | JAXBException | SAXException e) {
+        } catch (ApiInterface.FeedException |IOException | ParserConfigurationException | JAXBException | SAXException e) {
             e.printStackTrace();
         }
     }

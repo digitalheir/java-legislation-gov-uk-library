@@ -33,7 +33,7 @@ public class ApiInterface {
      * @return The feed resulting from this request
      * @see SearchRequestBuilder
      */
-    public static Feed getSearchFeed(SearchRequestBuilder builder) throws IOException, ParserConfigurationException, SAXException, JAXBException {
+    public static Feed getSearchFeed(SearchRequestBuilder builder) throws IOException, ParserConfigurationException, SAXException, JAXBException, FeedException {
         return getSearchFeed(builder.build());
     }
 
@@ -41,7 +41,7 @@ public class ApiInterface {
      * @param request The HTTP request for the feed, initialized with a correct URL
      * @return The feed resulting from this request
      */
-    public static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException {
+    public static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException, FeedException {
         OkHttpClient httpClient = new OkHttpClient();
         httpClient.setFollowRedirects(true);
         Response response = httpClient.newCall(request).execute();
@@ -50,7 +50,7 @@ public class ApiInterface {
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             return (Feed) jaxbUnmarshaller.unmarshal(response.body().byteStream());
         } else {
-            return new Feed();
+            throw new FeedException("HTTP request not 200: "+response.code());
         }
     }
 
@@ -66,7 +66,7 @@ public class ApiInterface {
      * @param uri Representation URI for law
      * @return Feed entry about the given law
      */
-    public static Entry getSingleEntryFromFeed(TopLevelUri uri) throws ParserConfigurationException, SAXException, IOException, JAXBException {
+    public static Entry getSingleEntryFromFeed(TopLevelUri uri) throws ParserConfigurationException, SAXException, IOException, JAXBException, FeedException {
         List<Entry> feed = getSearchFeed(new Request.Builder().url(uri.feedURL).build()).getEntries();
 
         if (feed.size() != 1) {
@@ -134,6 +134,12 @@ public class ApiInterface {
             return (Legislation) jaxbUnmarshaller.unmarshal(response.body().byteStream());
         } else {
             return null;
+        }
+    }
+
+    public static class FeedException extends Exception {
+        public FeedException(String s) {
+            super(s);
         }
     }
 

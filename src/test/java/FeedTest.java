@@ -24,17 +24,51 @@ import static org.junit.Assert.assertTrue;
 
 public class FeedTest {
 
-// TODO feed including ukpga/Vict/13-14/98
 
+    @Test
+    public void parseUkpga() {
+        try {
+            FeedRequestBuilder b = new FeedRequestBuilder();
+            System.out.println(">> Opening page ukpga/1850/data.feed");
+            b.setType("ukpga");
+            Feed listing = ApiInterface.getSearchFeed(b.build());
+            assertThingsAboutUkpga(listing);
+            b.setYear(2014);
+            listing = ApiInterface.getSearchFeed(b.build());
+            assertThingsAboutUkpga2014(listing);
+
+            b.setNumber(2);
+            listing = ApiInterface.getSearchFeed(b.build());
+            assertThingsAboutUkpga20142(listing);
+
+        } catch (ApiInterface.FeedException |IOException | JAXBException | SAXException | ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void assertThingsAboutUkpga20142(Feed listing) {
+        //TODO
+    }
+
+    private void assertThingsAboutUkpga2014(Feed listing) {
+        //TODO
+    }
+
+    private void assertThingsAboutUkpga(Feed listing) {
+        //TODO
+    }
+
+    /**
+     * feed including ukpga/Vict/13-14/98
+     */
     @Test
     public void parse1850Query() {
         try {
-            SearchRequestBuilder b = new SearchRequestBuilder();
+            FeedRequestBuilder b = new FeedRequestBuilder();
             System.out.println(">> Opening page ukpga/1850/data.feed");
-            b.setStartYear(1850 + "");
-            b.setEndYear(1850 + "");
+            b.setYear(1850);
             b.setType("ukpga");
-            Feed listing = ApiInterface.getSearchFeed(b);
+            Feed listing = ApiInterface.getSearchFeed(b.build());
             //assertEquals("Result size must be 20", listing.getEntries().size(), 20);
 
             boolean hasPluratiesActs = false;
@@ -45,13 +79,13 @@ public class FeedTest {
                 }
             }
             assertTrue(hasPluratiesActs);
-        } catch (IOException | ParserConfigurationException | SAXException | JAXBException e) {
+        } catch (ApiInterface.FeedException | IOException | ParserConfigurationException | SAXException | JAXBException e) {
             throw new Error(e);
         }
     }
 
     private void assertMetadataAboutPluratiesAct(Entry e) {
-        assertTrue(e.links.size()>=8);
+        assertTrue(e.links.size() >= 8);
         assertEquals(e.published, "1850-08-14T00:00:00+01:00");
         assertEquals(e.documentMainType.getValue().value(), "UnitedKingdomPublicGeneralAct");
         assertEquals(e.getYear().asInt(), 1850);
@@ -63,14 +97,14 @@ public class FeedTest {
         }
 
         TopLevelUri uri = e.getUriObject();
-        System.out.println(">> "+uri.feedURL);
+        System.out.println(">> " + uri.feedURL);
     }
 
     /**
      * Sample to list the first 10 pages of legislation
      */
     @Test
-    public void parseFirstTenPages() {
+    public void parseFirstTenPagesOfAll() {
         try {
             for (int page = 1; page <= 0; page++) {
                 FeedRequestBuilder b = new FeedRequestBuilder();
@@ -83,7 +117,7 @@ public class FeedTest {
                     assertTrue(e.id != null);
                 }
             }
-        } catch (IOException | ParserConfigurationException | SAXException | JAXBException e) {
+        } catch (ApiInterface.FeedException|IOException | ParserConfigurationException | SAXException | JAXBException e) {
             throw new Error(e);
         }
     }
@@ -96,10 +130,13 @@ public class FeedTest {
         try {
             SearchRequestBuilder b = new SearchRequestBuilder();
             b.setPage(Integer.MAX_VALUE);
-            Feed listing = ApiInterface.getSearchFeed(b);
-            assertEquals("Result entries must be 0", listing.getEntries().size(), 0);
+
+            ApiInterface.getSearchFeed(b);
+
+            assertEquals("Result must lead to exception", true, false);
         } catch (IOException | ParserConfigurationException | JAXBException | SAXException e) {
             e.printStackTrace();
+        } catch (ApiInterface.FeedException ignored){
         }
     }
 }

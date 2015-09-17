@@ -38,7 +38,7 @@ public class Sample {
                     System.out.println("> " + tocElement);
                 }
             }
-        } catch (ParserConfigurationException | JAXBException | IOException | SAXException e1) {
+        } catch (ParserConfigurationException | JAXBException | IOException | SAXException | ApiInterface.FeedException e1) {
             e1.printStackTrace();
         }
     }
