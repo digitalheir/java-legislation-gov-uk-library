@@ -36,8 +36,8 @@ public class TopLevelUri {
         Matcher m = uriMatcher.matcher(representationUri);
         if (m.find()) {
             type = m.group(2);
-            year = Integer.parseInt(m.group(2));
-            number = Integer.parseInt(m.group(3));
+            year = Integer.parseInt(m.group(3));
+            number = Integer.parseInt(m.group(4));
 
             relativeUrl = TopLevelUri.getRelativeIdFromURI(representationUri);
             idUri = "http://www.legislation.gov.uk/" + relativeUrl;

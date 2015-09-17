@@ -22,7 +22,7 @@ import static org.junit.Assert.assertTrue;
  * Created by maarten on 5-8-15.
  */
 
-public class LegislationFeed {
+public class FeedTest {
 
 // TODO feed including ukpga/Vict/13-14/98
 
@@ -30,7 +30,7 @@ public class LegislationFeed {
     public void parse1850Query() {
         try {
             SearchRequestBuilder b = new SearchRequestBuilder();
-            System.out.println("Opening page ukpga/1850/data.feed");
+            System.out.println(">> Opening page ukpga/1850/data.feed");
             b.setStartYear(1850 + "");
             b.setEndYear(1850 + "");
             b.setType("ukpga");
@@ -63,7 +63,7 @@ public class LegislationFeed {
         }
 
         TopLevelUri uri = e.getUriObject();
-        System.out.println(uri.feedURL);
+        System.out.println(">> "+uri.feedURL);
     }
 
     /**
@@ -74,7 +74,7 @@ public class LegislationFeed {
         try {
             for (int page = 1; page <= 0; page++) {
                 FeedRequestBuilder b = new FeedRequestBuilder();
-                System.out.println("Opening page " + page);
+                System.out.println(">> Opening page " + page);
                 b.setPage(page);
                 Feed listing = ApiInterface.getSearchFeed(b.build());
                 assertEquals("Result size must be 20", listing.getEntries().size(), 20);

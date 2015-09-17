@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
  * Created by maarten on 31-8-15.
  */
 
-public class LegislationGet {
+public class SingleDocTest {
 
     @Test
     public void parseMetadata() {
