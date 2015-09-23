@@ -34,7 +34,7 @@ public class TableOfContentsTest {
             Entry e = ApiInterface.getSingleEntryFromFeed(uri);
             assertMetadataElements(e);
 
-            Map<String, Legislation> tocs = e.getTableOfContentsLanguageMap();
+            Map<String, Legislation> tocs = e.getTableOfContentsByLanguage();
 
             for (Map.Entry<String, Legislation> p : tocs.entrySet()) {
                 Legislation toc = p.getValue();

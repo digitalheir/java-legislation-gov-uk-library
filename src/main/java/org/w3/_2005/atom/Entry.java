@@ -220,6 +220,7 @@ public class Entry {
         return getLinksForRel("http://purl.org/dc/terms/tableOfContents");
     }
 
+
     /**
      * Returns a map from language codes to ToC {@link Link} objects.
      *
@@ -228,9 +229,16 @@ public class Entry {
     public Map<String, Link> getTableOfContentsLinksMap() {
         Map<String, Link> links = new HashMap<>(getTableOfContentsLinks().size());
         for (Link l : getLinksForRel("http://purl.org/dc/terms/tableOfContents")) {
-            links.put(l.getNormalizedHrefLang(), l);
+            putButThrowErrorWhenAlreadyFilled(links, l.getNormalizedHrefLang(), l);
         }
         return links;
+    }
+
+    private void putButThrowErrorWhenAlreadyFilled(Map<String, Link> contents, String key, Link leg) {
+        if (contents.get(key) != null) {
+            throw new IllegalStateException("Map should not have a value yet for '" + key + "'");
+        }
+        contents.put(key, leg);
     }
 
     public List<Link> getHtmlSnippets() {
@@ -244,6 +252,17 @@ public class Entry {
         return links;
     }
 
+    public Map<String, Link> getHtmlSnippetsLinksByLanguage() {
+        Map<String, Link> links = new HashMap<>(getLinks().size());
+        for (Link l : getLinks()) {
+            if ("alternate".equals(l.getRel())
+                    && "application/xhtml+xml".equals(l.getType())) {
+                putButThrowErrorWhenAlreadyFilled(links, l.getNormalizedHrefLang(), l);
+            }
+        }
+        return links;
+    }
+
     /**
      * @return Link to English HTML, null if not found
      */
@@ -251,13 +270,7 @@ public class Entry {
         for (Link l : getLinks()) {
             if ("alternate".equals(l.getRel())
                     && "application/xhtml+xml".equals(l.getType())
-                    && (
-                    l.getHreflang() == null
-                            ||
-                            "en".equals(l.getHreflang())
-                            ||
-                            l.getHreflang().trim().length() == 0)
-                    ) {
+                    && "en".equals(l.getNormalizedHrefLang())) {
                 return l;
             }
         }
@@ -335,7 +348,7 @@ public class Entry {
     }
 
     /**
-     * See {@link #getTableOfContentsLanguageMap()}
+     * See {@link #getTableOfContentsByLanguage()}
      *
      * @return List of ToC documents
      */
@@ -354,13 +367,20 @@ public class Entry {
      *
      * @return Map from language codes to ToC documents
      */
-    public Map<String, Legislation> getTableOfContentsLanguageMap() throws ParserConfigurationException, JAXBException, SAXException, IOException {
+    public Map<String, Legislation> getTableOfContentsByLanguage() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         Map<String, Legislation> contents = new HashMap<>(getTableOfContentsLinks().size());
         for (Link l : getTableOfContentsLinks()) {
             Legislation leg = ApiInterface.parseLegislationDoc(l.getHref() + "/data.xml");
-            contents.put(l.getNormalizedHrefLang(), leg);
+            putButThrowErrorWhenAlreadyFilled(contents, l.getNormalizedHrefLang(), leg);
         }
         return contents;
+    }
+
+    private void putButThrowErrorWhenAlreadyFilled(Map<String, Legislation> contents, String key, Legislation leg) {
+        if (contents.get(key) != null) {
+            throw new IllegalStateException("Map should not have a value yet for '" + key + "'");
+        }
+        contents.put(key, leg);
     }
 
     public String getId() {

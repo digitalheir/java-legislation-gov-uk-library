@@ -5,6 +5,7 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.w3._2005.atom.Entry;
@@ -191,11 +192,29 @@ public class ApiInterface {
     }
 
     public static Element scrapeHtmlContent(HttpUrl url) throws IOException {
+        return parseHtml(url).getElementById("viewLegContents"); //This div contains the HTML snippet we're looking for
+    }
+
+    public static Document parseHtml(String url) throws IOException {
+        return parseHtml(HttpUrl.get(URI.create(url)));
+    }
+
+    public static Document parseHtml(HttpUrl url) throws IOException {
         OkHttpClient httpClient = new OkHttpClient();
         httpClient.setFollowRedirects(true);
         Response res = httpClient.newCall(new Request.Builder().url(url).build()).execute();
-        return Jsoup.parse(res.body().byteStream(), "utf-8", "http://www.legislation.gov.uk/")
-                .getElementById("viewLegContents"); //This div contains the HTML snippet we're looking for
+        return Jsoup.parse(res.body().byteStream(), "utf-8", "http://www.legislation.gov.uk/");
+    }
+
+    public static String downloadString(String url) throws IOException {
+        return downloadString(HttpUrl.get(URI.create(url)));
+    }
+
+    public static String downloadString(HttpUrl url) throws IOException {
+        OkHttpClient httpClient = new OkHttpClient();
+        httpClient.setFollowRedirects(true);
+        Response res = httpClient.newCall(new Request.Builder().url(url).build()).execute();
+        return res.body().string();
     }
 
 //    public static LegislationDataXmlParser.Metadata getMetadata(InputStream response) throws IOException, SAXException, ParserConfigurationException {
