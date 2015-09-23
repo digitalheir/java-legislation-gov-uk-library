@@ -159,6 +159,15 @@ public class Link
     }
 
     /**
+     * Like {@link #getHreflang()}, but returns @{code "en"} for null and empty values of hreflang
+     *
+     * @return normalized language
+     */
+    public String getNormalizedHrefLang() {
+        return (hreflang == null || hreflang.length() <= 0) ? "en" : hreflang; //Default language is English
+    }
+
+    /**
      * Sets the value of the hreflang property.
      *
      * @param value allowed object is

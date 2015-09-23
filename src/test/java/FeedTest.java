@@ -164,14 +164,14 @@ public class FeedTest {
 
     @Test
     public void testUkpga2015() {
-        FeedRequestBuilder fBuilder = new FeedRequestBuilder().setPage(0).setType("ukpga").setYear("2015");
-
         int page = 0;
+        FeedRequestBuilder fBuilder = new FeedRequestBuilder().setPage(page).setType("ukpga").setYear("2015");
+
         Feed feed = null;
         do {
             try {
-                fBuilder.setPage(page);
                 page++;
+                fBuilder.setPage(page);
                 feed = ApiInterface.getFeed(fBuilder);
 
             } catch (ParserConfigurationException | JAXBException | SAXException | IOException | ApiInterface.FeedException e) {
@@ -179,24 +179,24 @@ public class FeedTest {
             }
         } while (feed != null && feed.getPage() < feed.getMorePages());
 
-        assertTrue(page >= 3);
+        assertTrue(page >= 2);
 
         page = 0;
         SearchRequestBuilder sBuilder = new SearchRequestBuilder()
-                .setPage(0)
+                .setPage(page)
                 .setType("ukpga")
                 .setEndYear("2015")
                 .setStartYear("2015");
         do {
             try {
-                sBuilder.setPage(page);
                 page++;
+                sBuilder.setPage(page);
                 feed = ApiInterface.getFeed(sBuilder);
             } catch (ParserConfigurationException | JAXBException | SAXException | IOException | ApiInterface.FeedException e) {
                 throw new Error(e);
             }
         } while (feed != null && feed.getPage() < feed.getMorePages());
-        assertTrue(page >= 3);
+        assertTrue(page >= 2);
     }
 
 

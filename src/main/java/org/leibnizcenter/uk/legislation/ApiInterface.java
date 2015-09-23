@@ -4,6 +4,8 @@ import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Element;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.w3._2005.atom.Entry;
 import org.w3._2005.atom.Feed;
@@ -15,6 +17,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.URI;
 import java.net.URL;
 import java.util.List;
 
@@ -183,6 +186,17 @@ public class ApiInterface {
         }
     }
 
+    public static Element scrapeHtmlContent(String url) throws IOException {
+        return scrapeHtmlContent(HttpUrl.get(URI.create(url)));
+    }
+
+    public static Element scrapeHtmlContent(HttpUrl url) throws IOException {
+        OkHttpClient httpClient = new OkHttpClient();
+        httpClient.setFollowRedirects(true);
+        Response res = httpClient.newCall(new Request.Builder().url(url).build()).execute();
+        return Jsoup.parse(res.body().byteStream(), "utf-8", "http://www.legislation.gov.uk/")
+                .getElementById("viewLegContents"); //This div contains the HTML snippet we're looking for
+    }
 
 //    public static LegislationDataXmlParser.Metadata getMetadata(InputStream response) throws IOException, SAXException, ParserConfigurationException {
 //        LegislationDataXmlParser p = new LegislationDataXmlParser();

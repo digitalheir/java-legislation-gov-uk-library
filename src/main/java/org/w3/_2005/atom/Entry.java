@@ -22,10 +22,7 @@ import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 
 /**
@@ -223,6 +220,19 @@ public class Entry {
         return getLinksForRel("http://purl.org/dc/terms/tableOfContents");
     }
 
+    /**
+     * Returns a map from language codes to ToC {@link Link} objects.
+     *
+     * @return map from language codes to ToC links
+     */
+    public Map<String, Link> getTableOfContentsLinksMap() {
+        Map<String, Link> links = new HashMap<>(getTableOfContentsLinks().size());
+        for (Link l : getLinksForRel("http://purl.org/dc/terms/tableOfContents")) {
+            links.put(l.getNormalizedHrefLang(), l);
+        }
+        return links;
+    }
+
     public List<Link> getHtmlSnippets() {
         List<Link> links = new ArrayList<>(getLinks().size());
         for (Link l : getLinks()) {
@@ -300,7 +310,7 @@ public class Entry {
      */
     public Legislation getEnglishTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         for (Link link : getTableOfContentsLinks()) {
-            String lang = link.getHreflang() == null ? "en" : link.getHreflang(); //Default language is English
+            String lang = link.getNormalizedHrefLang(); //Default language is English
             if ("en".equals(lang)) {
                 return ApiInterface.parseLegislationDoc(link.getHref() + "/data.xml");
             }
@@ -324,11 +334,31 @@ public class Entry {
         return null;
     }
 
+    /**
+     * See {@link #getTableOfContentsLanguageMap()}
+     *
+     * @return List of ToC documents
+     */
+    @Deprecated
     public List<Legislation> getAllTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         List<Legislation> contents = new ArrayList<>(getTableOfContentsLinks().size());
         for (Link l : getTableOfContentsLinks()) {
             Legislation leg = ApiInterface.parseLegislationDoc(l.getHref() + "/data.xml");
             contents.add(leg);
+        }
+        return contents;
+    }
+
+    /**
+     * Returns a map with language codes for keys and {@link Legislation} objects (representing ToC documents) as values
+     *
+     * @return Map from language codes to ToC documents
+     */
+    public Map<String, Legislation> getTableOfContentsLanguageMap() throws ParserConfigurationException, JAXBException, SAXException, IOException {
+        Map<String, Legislation> contents = new HashMap<>(getTableOfContentsLinks().size());
+        for (Link l : getTableOfContentsLinks()) {
+            Legislation leg = ApiInterface.parseLegislationDoc(l.getHref() + "/data.xml");
+            contents.put(l.getNormalizedHrefLang(), leg);
         }
         return contents;
     }

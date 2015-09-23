@@ -9,7 +9,7 @@ import uk.gov.legislation.namespaces.legislation.Legislation;
 import javax.xml.bind.JAXBException;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -34,10 +34,11 @@ public class TableOfContentsTest {
             Entry e = ApiInterface.getSingleEntryFromFeed(uri);
             assertMetadataElements(e);
 
-            List<Legislation> tocs = e.getAllTableOfContents();
+            Map<String, Legislation> tocs = e.getTableOfContentsLanguageMap();
 
-            for (Legislation toc : tocs) {
-                int totalChildren = traverseToc(toc.getContents());
+            for (Map.Entry<String, Legislation> p : tocs.entrySet()) {
+                Legislation toc = p.getValue();
+                int totalChildren = traverseToc(toc.getContents(), false);
                 assertTrue("Document must contain 150 or more elements", totalChildren >= 150);
             }
         } catch (ApiInterface.FeedException | ParserConfigurationException | JAXBException | IOException | SAXException e1) {
@@ -45,10 +46,24 @@ public class TableOfContentsTest {
         }
     }
 
-    private int traverseToc(TableOfContentsElement contents) {
+    private int traverseToc(TableOfContentsElement contents, boolean scrapedHtmlYet) {
         int total = 0;
         for (TableOfContentsElement child : contents.getToCChildren()) {
-            total += traverseToc(child);
+            if (child.getIdURI() == null || child.getIdURI().length() <= 0 ||
+                    child.getDocumentURI() == null || child.getDocumentURI().length() <= 0
+                    ) {
+                throw new Error("Element URI or document URL was null or empty");
+            }
+
+            if (!scrapedHtmlYet) {
+                try {
+                    ApiInterface.scrapeHtmlContent(child.getToCChildren().get(0).getDocumentURI());
+//                System.out.println(e.toString());
+                } catch (IOException e) {
+                    throw new Error(e);
+                }
+            }
+            total += traverseToc(child, true);
         }
 //        if(contents.getToCChildren().size()<=0){
 //            System.out.println(contents);
