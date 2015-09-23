@@ -545,4 +545,8 @@ public class ContentsTitle
         this.numberOfProvisions = value;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

@@ -20,7 +20,10 @@ public interface TableOfContentsElement {
     class Helper {
         public static List<TableOfContentsElement> castToTableOfContentsElement(List<Object> objList) {
             List<TableOfContentsElement> l = new ArrayList<>(objList.size());
-            Collections.copy(objList, l);
+            for(Object o:objList){
+                l.add((TableOfContentsElement) o);
+            }
+
             return l;
         }
     }

@@ -272,4 +272,9 @@ public class InlineRestrictedStructure {
         }
         return this.altVersionRefs;
     }
+
+    @Override
+    public String toString() {
+        return content.toString();
+    }
 }
