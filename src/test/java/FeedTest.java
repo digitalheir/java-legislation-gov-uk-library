@@ -124,6 +124,24 @@ public class FeedTest {
         }
     }
 
+    /**
+     * Sample to list a page in the feed yields no results
+     */
+    @Test
+    public void parsePageOutOfScope() {
+        try {
+            SearchRequestBuilder b = new SearchRequestBuilder();
+            b.setPage(999999999);
+            try {
+                Feed listing = ApiInterface.getSearchFeed(b);
+                assertEquals("Result entries must be 0", listing.getEntries().size(), 0);
+            } catch (ApiInterface.FeedException ignored) {
+
+            }
+        } catch (IOException | ParserConfigurationException | JAXBException | SAXException e) {
+            throw new Error(e);
+        }
+    }
 //    /**
 //     * Sample to list a page in the feed yields no results
 //     */
