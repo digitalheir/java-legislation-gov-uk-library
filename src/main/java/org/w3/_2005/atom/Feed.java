@@ -51,10 +51,13 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
         "authorsAndCategoriesAndContributors",
+        "page",
+        "morePages",
         "entries"
 })
 @XmlRootElement(name = "feed")
 public class Feed {
+
 
     @XmlElementRefs({
             @XmlElementRef(name = "title", namespace = "http://www.w3.org/2005/Atom", type = JAXBElement.class, required = false),
@@ -71,6 +74,36 @@ public class Feed {
             @XmlElementRef(name = "id", namespace = "http://www.w3.org/2005/Atom", type = Id.class, required = false)
     })
     protected List<Object> authorsAndCategoriesAndContributors;
+
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
+    public int getTotalPageCount() {
+        return getMorePages()+1;
+    }
+
+    public int getMorePages() {
+        return morePages;
+    }
+
+    public void setMorePages(int morePages) {
+        this.morePages = morePages;
+    }
+
+    // Custom
+    //
+    @XmlElement(name = "page", namespace = "http://www.legislation.gov.uk/namespaces/legislation")
+    protected int page;
+    @XmlElement(name = "morePages", namespace = "http://www.legislation.gov.uk/namespaces/legislation")
+    protected int morePages;
+    //
+    // End custom
+
     @XmlElement(name = "entry")
     protected List<Entry> entries;
     @XmlAttribute(name = "base", namespace = "http://www.w3.org/XML/1998/namespace")

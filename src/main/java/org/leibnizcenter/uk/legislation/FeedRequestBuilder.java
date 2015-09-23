@@ -29,24 +29,27 @@ public class FeedRequestBuilder {
         return this;
     }
 
-    public void setYear(int year) {
+    public FeedRequestBuilder setYear(int year) {
         setYear(year + "");
+        return this;
     }
 
 //    public void setNumber(int number) {
 //        setNumber(number + "");
 //    }
 
-    public void setYear(String year) {
+    public FeedRequestBuilder setYear(String year) {
         this.year = year;
+        return this;
     }
 
 //    public void setNumber(String number) {
 //        this.number = number;
 //    }
 
-    public void setType(String type) {
+    public FeedRequestBuilder setType(String type) {
         this.type = type;
+        return this;
     }
 
     public FeedRequestBuilder setPage(int page) {

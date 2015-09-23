@@ -1,5 +1,6 @@
 package org.leibnizcenter.uk.legislation;
 
+import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
@@ -14,6 +15,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
 /**
@@ -41,24 +43,49 @@ public class ApiInterface {
      * @param request The HTTP request for the feed, initialized with a correct URL
      * @return The feed resulting from this request
      */
-    public static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException, FeedException {
+    public static Feed getFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException, FeedException {
         OkHttpClient httpClient = new OkHttpClient();
-        httpClient.setFollowRedirects(true);
+        httpClient.setFollowRedirects(false);
         Response response = httpClient.newCall(request).execute();
         if (response.isSuccessful()) {
             JAXBContext jaxbContext = JAXBContext.newInstance(Feed.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             return (Feed) jaxbUnmarshaller.unmarshal(response.body().byteStream());
         } else {
-            throw new FeedException("HTTP request not OK: "+response.code()+"\nURL: "+request.url());
+            if (response.code() == 301) {
+                //Follow redirect
+                String relativeUrl = response.header("Location");
+                Request r = new Request.Builder().url(
+//                        new HttpUrl.Builder()
+//                                .scheme("http")
+//                                .host("www.legislation.gov.uk")
+//                                .addEncodedPathSegment(relativeUrl)
+//                                .build()
+                        HttpUrl.get(new URL(
+                                        request.url(), relativeUrl
+                                )
+                        )
+                ).build();
+                return getFeed(r);
+            } else {
+                throw new FeedException("HTTP request not OK: " + response.code() + "\nURL: " + request.url());
+            }
         }
     }
 
     /**
+     * @param request The HTTP request for the feed, initialized with a correct URL
+     * @return The feed resulting from this request
+     */
+    public static Feed getSearchFeed(Request request) throws IOException, ParserConfigurationException, SAXException, JAXBException, FeedException {
+        return getFeed(request);
+    }
+
+    /**
      * <p>
-     *     Generates Entry from a URL such as
+     * Generates Entry from a URL such as
      * </p>
-     *
+     * <p>
      * <p>NOTE: We use the atom feed to get metadata for single laws, because '{uri}/data.xml' lists links to HTML
      * manifestations that do not exist in actuality. For example;
      * <a href="http://www.legislation.gov.uk/uksi/1986/1628/made/data.xml">uksi/1986/1628</a>.</p>
@@ -135,6 +162,19 @@ public class ApiInterface {
         } else {
             return null;
         }
+    }
+
+    /**
+     * @param builder A fully initialized request builder
+     * @return The feed resulting from this request
+     * @see SearchRequestBuilder
+     */
+    public static Feed getFeed(FeedRequestBuilder builder) throws ParserConfigurationException, JAXBException, FeedException, SAXException, IOException {
+        return getSearchFeed(builder.build());
+    }
+
+    public static Feed getFeed(SearchRequestBuilder sBuilder) throws ParserConfigurationException, JAXBException, FeedException, SAXException, IOException {
+        return getSearchFeed(sBuilder);
     }
 
     public static class FeedException extends Exception {

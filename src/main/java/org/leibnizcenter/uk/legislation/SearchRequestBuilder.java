@@ -20,14 +20,17 @@ public class SearchRequestBuilder {
                 .host("www.legislation.gov.uk")
                 .addPathSegment("search")
                 .addPathSegment("data.feed");
+            //mQueryParams = new HashMap<>();
     }
 
     public SearchRequestBuilder setTitle(String title) {
         return addQueryParameter("title", title);
     }
 
+
+
     public SearchRequestBuilder addQueryParameter(String key, String value) {
-        mBuilder.addQueryParameter(key, value);
+        mBuilder.setQueryParameter(key, value);
         return this;
     }
 
@@ -61,7 +64,7 @@ public class SearchRequestBuilder {
     }
 
     public HttpUrl buildUrl() {
-        mBuilder.addQueryParameter("page", mPage + "");
+        mBuilder.setQueryParameter("page", mPage + "");
         //System.out.println(mBuilder.build());
         return mBuilder.build();
     }
