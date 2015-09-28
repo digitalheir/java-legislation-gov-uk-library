@@ -101,6 +101,11 @@ public class Contents implements TableOfContentsElement {
         return contentsTitle;
     }
 
+    @Override
+    public InlineRestrictedStructure getContentsNumber() {
+        return null;
+    }
+
     /**
      * Sets the value of the contentsTitle property.
      *

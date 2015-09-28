@@ -1,5 +1,8 @@
 package org.leibnizcenter.uk.legislation;
 
+import uk.gov.legislation.namespaces.legislation.ContentsTitle;
+import uk.gov.legislation.namespaces.legislation.InlineRestrictedStructure;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +45,10 @@ public interface TableOfContentsElement {
      * {@link String }
      */
     String getDocumentURI();
+
+    ContentsTitle getContentsTitle();
+
+    InlineRestrictedStructure getContentsNumber();
 
     /**
      * @return List of child elements that can be seen as entities in a table of contents

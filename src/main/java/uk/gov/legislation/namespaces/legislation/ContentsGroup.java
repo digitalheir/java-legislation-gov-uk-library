@@ -252,6 +252,11 @@ public class ContentsGroup implements TableOfContentsElement {
         return documentURI;
     }
 
+    @Override
+    public ContentsTitle getContentsTitle() {
+        return null;
+    }
+
     /**
      * Sets the value of the documentURI property.
      * 
