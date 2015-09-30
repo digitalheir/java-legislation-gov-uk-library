@@ -10,14 +10,19 @@ import org.jsoup.nodes.Element;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.w3._2005.atom.Entry;
 import org.w3._2005.atom.Feed;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+import uk.co.tso.assets.namespace.error.ErrorType;
+import uk.gov.legislation.namespaces.legislation.Contents;
 import uk.gov.legislation.namespaces.legislation.Legislation;
+import uk.gov.legislation.namespaces.metadata.Metadata;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.io.StringReader;
 import java.net.URI;
 import java.net.URL;
 import java.util.List;
@@ -159,12 +164,28 @@ public class ApiInterface {
         httpClient.setFollowRedirects(false);
         Response response = httpClient.newCall(request).execute();
 
-        if (response.isSuccessful()) {
-            JAXBContext jaxbContext = JAXBContext.newInstance(Legislation.class);
+        if (response.code() == 200) {
+            JAXBContext jaxbContext = JAXBContext.newInstance(
+                    org.w3._1998.math.mathml.ObjectFactory.class,
+                    org.w3._1999.xhtml.ObjectFactory.class,
+                    org.w3._1999.xsl.format.ObjectFactory.class,
+                    org.w3._2005.atom.ObjectFactory.class,
+                    org.purl.dc.elements._1.ObjectFactory.class,
+                    org.purl.dc.terms.ObjectFactory.class,
+                    uk.co.tso.assets.namespace.error.ObjectFactory.class,
+                    uk.gov.legislation.namespaces.legislation.ObjectFactory.class,
+                    uk.gov.legislation.namespaces.metadata.ObjectFactory.class,
+                    ErrorType.class,
+                    Metadata.class,
+                    Legislation.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            return (Legislation) jaxbUnmarshaller.unmarshal(response.body().byteStream());
+            String str = response.body().string();
+            if (str.length() <= 0) {
+                throw new IllegalStateException("Server should respond with XML");
+            }
+            return (Legislation) jaxbUnmarshaller.unmarshal(new InputSource(new StringReader(str)));
         } else {
-            return null;
+            throw new IllegalStateException("Server responded with HTTP code " + response.code());
         }
     }
 
@@ -179,6 +200,50 @@ public class ApiInterface {
 
     public static Feed getFeed(SearchRequestBuilder sBuilder) throws ParserConfigurationException, JAXBException, FeedException, SAXException, IOException {
         return getSearchFeed(sBuilder);
+    }
+
+    public static boolean hasSameIndexStructure(TableOfContentsElement toc1, TableOfContentsElement toc2) {
+        List<TableOfContentsElement> toc1Contents = toc1.getToCChildren();
+        List<TableOfContentsElement> toc2Contents = toc2.getToCChildren();
+
+        if (toc1Contents.size() != toc2Contents.size()) {
+            return false;
+        } else {
+            for (int i = 0; i < toc1Contents.size(); i++) {
+                TableOfContentsElement el1 = toc1Contents.get(i);
+                TableOfContentsElement el2 = toc2Contents.get(i);
+
+                if (!hasSameIndexStructure(el1, el2)) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    public static boolean hasSameIdStructure(TableOfContentsElement toc1, TableOfContentsElement toc2) {
+        List<TableOfContentsElement> toc1Contents = toc1.getToCChildren();
+        List<TableOfContentsElement> toc2Contents = toc2.getToCChildren();
+
+        if (
+                toc1Contents.size() != toc2Contents.size()
+                        ||
+                        (!(toc1 instanceof Contents) && !(toc2 instanceof Contents) && !toc1.getIdURI().equals(toc2.getIdURI()))
+                ) {
+            return false;
+        } else {
+            for (int i = 0; i < toc1Contents.size(); i++) {
+                TableOfContentsElement el1 = toc1Contents.get(i);
+                TableOfContentsElement el2 = toc2Contents.get(i);
+
+                if (!hasSameIdStructure(el1, el2)) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
     public static class FeedException extends Exception {
