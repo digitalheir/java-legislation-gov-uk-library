@@ -150,6 +150,13 @@ public class ApiInterface {
         return parseLegislationDoc(new Request.Builder().url(url).build());
     }
 
+    public static String getString(String url) throws IOException {
+        OkHttpClient httpClient = new OkHttpClient();
+        httpClient.setFollowRedirects(false);
+        Response response = httpClient.newCall(new Request.Builder().url(url).build()).execute();
+        return response.body().string();
+    }
+
     /**
      * Downloads and parses a given legislation XML URL. This method will throw an exception if the URL does not refer to
      * legislation XML, such as <a href="http://legislation.data.gov.uk/ukpga/2007/25/2014-09-01/data.xml">http://legislation.data.gov.uk/ukpga/2007/25/2014-09-01/data.xml</a>.

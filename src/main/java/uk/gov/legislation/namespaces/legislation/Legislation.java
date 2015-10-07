@@ -838,5 +838,4 @@ public class Legislation {
         }
         return this.altVersionRefs;
     }
-
 }
