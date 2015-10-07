@@ -18,7 +18,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Sample class
- * <p>
+ * <p>en
  * Created by maarten on 5-8-15.
  */
 

@@ -9,6 +9,7 @@
 package org.w3._2005.atom;
 
 
+import com.google.common.base.Preconditions;
 import org.leibnizcenter.uk.legislation.ApiInterface;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.xml.sax.SAXException;
@@ -229,16 +230,11 @@ public class Entry {
     public Map<String, Link> getTableOfContentsLinksMap() {
         Map<String, Link> links = new HashMap<>(getTableOfContentsLinks().size());
         for (Link l : getLinksForRel("http://purl.org/dc/terms/tableOfContents")) {
-            putButThrowErrorWhenAlreadyFilled(links, l.getNormalizedHrefLang(), l);
+            String key = l.getNormalizedHrefLang();
+            Preconditions.checkState(links.get(key) == null);
+            links.put(key, l);
         }
         return links;
-    }
-
-    private void putButThrowErrorWhenAlreadyFilled(Map<String, Link> contents, String key, Link leg) {
-        if (contents.get(key) != null) {
-            throw new IllegalStateException("Map should not have a value yet for '" + key + "'");
-        }
-        contents.put(key, leg);
     }
 
     public List<Link> getHtmlSnippets() {
@@ -252,12 +248,28 @@ public class Entry {
         return links;
     }
 
+    public Map<String, Legislation> getLegislationByLanguage() throws IOException, JAXBException {
+        Map<String, Legislation> ls = new HashMap<>(getLinks().size());
+        for (Link l : getLinks()) {
+            if ("alternate".equals(l.getRel())
+                    && "application/xml".equals(l.getType())) {
+                Legislation leg = ApiInterface.parseLegislationDoc(l.getHref());
+                String key = l.getNormalizedHrefLang();
+                Preconditions.checkState(ls.get(key) == null);
+                ls.put(key, leg);
+            }
+        }
+        return ls;
+    }
+
     public Map<String, Link> getHtmlSnippetsLinksByLanguage() {
         Map<String, Link> links = new HashMap<>(getLinks().size());
         for (Link l : getLinks()) {
             if ("alternate".equals(l.getRel())
                     && "application/xhtml+xml".equals(l.getType())) {
-                putButThrowErrorWhenAlreadyFilled(links, l.getNormalizedHrefLang(), l);
+                String key = l.getNormalizedHrefLang();
+                Preconditions.checkState(links.get(key) == null);
+                links.put(key, l);
             }
         }
         return links;

@@ -4,6 +4,7 @@ import com.squareup.okhttp.HttpUrl;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -185,7 +186,8 @@ public class ApiInterface {
             }
             return (Legislation) jaxbUnmarshaller.unmarshal(new InputSource(new StringReader(str)));
         } else {
-            throw new IllegalStateException("Server responded with HTTP code " + response.code());
+            throw new HttpStatusException("Server responded with HTTP code " + response.code() + " instead of 200",
+                    response.code(), request.url().toString());
         }
     }
 
@@ -246,12 +248,6 @@ public class ApiInterface {
         return true;
     }
 
-    public static class FeedException extends Exception {
-        public FeedException(String s) {
-            super(s);
-        }
-    }
-
     public static Element scrapeHtmlContent(String url) throws IOException {
         return scrapeHtmlContent(HttpUrl.get(URI.create(url)));
     }
@@ -280,6 +276,12 @@ public class ApiInterface {
         httpClient.setFollowRedirects(true);
         Response res = httpClient.newCall(new Request.Builder().url(url).build()).execute();
         return res.body().string();
+    }
+
+    public static class FeedException extends Exception {
+        public FeedException(String s) {
+            super(s);
+        }
     }
 
 //    public static LegislationDataXmlParser.Metadata getMetadata(InputStream response) throws IOException, SAXException, ParserConfigurationException {
