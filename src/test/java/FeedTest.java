@@ -18,7 +18,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Sample class
- * <p>
+ * <p>en
  * Created by maarten on 5-8-15.
  */
 
@@ -133,6 +133,82 @@ public class FeedTest {
             throw new Error(e);
         }
     }
+
+    /**
+     * Sample to list a page in the feed yields no results
+     */
+    @Test
+    public void parseSearchPageOutOfScope() {
+        try {
+            SearchRequestBuilder b = new SearchRequestBuilder();
+            b.setPage(999999999);
+            try {
+                Feed listing = ApiInterface.getSearchFeed(b);
+                assertEquals("Result entries must be 0", listing.getEntries().size(), 0);
+            } catch (ApiInterface.FeedException ignored) {
+
+            }
+        } catch (IOException | ParserConfigurationException | JAXBException | SAXException e) {
+            throw new Error(e);
+        }
+    }
+
+    /**
+     * Sample to list a page in the feed yields no results
+     */
+    @Test
+    public void parseFeedPageOutOfScope() {
+        try {
+            FeedRequestBuilder b = new FeedRequestBuilder();
+            b.setPage(999999999);
+            try {
+                Feed listing = ApiInterface.getFeed(b);
+                assertEquals("Result entries must be 0", listing.getEntries().size(), 0);
+            } catch (ApiInterface.FeedException ignored) {
+
+            }
+        } catch (IOException | ParserConfigurationException | JAXBException | SAXException e) {
+            throw new Error(e);
+        }
+    }
+
+    @Test
+    public void testUkpga2015() {
+        int page = 0;
+        FeedRequestBuilder fBuilder = new FeedRequestBuilder().setPage(page).setType("ukpga").setYear("2015");
+
+        Feed feed = null;
+        do {
+            try {
+                page++;
+                fBuilder.setPage(page);
+                feed = ApiInterface.getFeed(fBuilder);
+
+            } catch (ParserConfigurationException | JAXBException | SAXException | IOException | ApiInterface.FeedException e) {
+                throw new Error(e);
+            }
+        } while (feed != null && feed.getPage() < feed.getMorePages());
+
+        assertTrue(page >= 2);
+
+        page = 0;
+        SearchRequestBuilder sBuilder = new SearchRequestBuilder()
+                .setPage(page)
+                .setType("ukpga")
+                .setEndYear("2015")
+                .setStartYear("2015");
+        do {
+            try {
+                page++;
+                sBuilder.setPage(page);
+                feed = ApiInterface.getFeed(sBuilder);
+            } catch (ParserConfigurationException | JAXBException | SAXException | IOException | ApiInterface.FeedException e) {
+                throw new Error(e);
+            }
+        } while (feed != null && feed.getPage() < feed.getMorePages());
+        assertTrue(page >= 2);
+    }
+
 
 //    /**
 //     * Sample to list a page in the feed yields no results

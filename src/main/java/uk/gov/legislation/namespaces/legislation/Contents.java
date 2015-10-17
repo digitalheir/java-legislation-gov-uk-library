@@ -55,8 +55,6 @@ import java.util.List;
 })
 @XmlRootElement(name = "Contents")
 public class Contents implements TableOfContentsElement {
-
-
     @XmlElement(name = "ContentsTitle")
     protected ContentsTitle contentsTitle;
     @XmlElements({
@@ -101,6 +99,11 @@ public class Contents implements TableOfContentsElement {
      */
     public ContentsTitle getContentsTitle() {
         return contentsTitle;
+    }
+
+    @Override
+    public InlineRestrictedStructure getContentsNumber() {
+        return null;
     }
 
     /**
@@ -336,6 +339,26 @@ public class Contents implements TableOfContentsElement {
             altVersionRefs = new ArrayList<>();
         }
         return this.altVersionRefs;
+    }
+
+    @Override
+    public String getIdURI() {
+        return null;
+    }
+
+    @Override
+    public String getContentRef() {
+        return null;
+    }
+
+    @Override
+    public String getRestrictExtent() {
+        return null;
+    }
+
+    @Override
+    public String getDocumentURI() {
+        return null;
     }
 
     /**

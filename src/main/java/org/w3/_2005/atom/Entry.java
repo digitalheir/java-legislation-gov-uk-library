@@ -9,6 +9,12 @@
 package org.w3._2005.atom;
 
 
+import com.google.common.base.Function;
+import com.google.common.base.Preconditions;
+import com.google.common.base.Predicate;
+import com.google.common.collect.Collections2;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.leibnizcenter.uk.legislation.ApiInterface;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
 import org.xml.sax.SAXException;
@@ -22,10 +28,8 @@ import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
+import java.net.URL;
+import java.util.*;
 
 
 /**
@@ -223,12 +227,51 @@ public class Entry {
         return getLinksForRel("http://purl.org/dc/terms/tableOfContents");
     }
 
+
+    /**
+     * Returns a map from language codes to ToC {@link Link} objects.
+     *
+     * @return map from language codes to ToC links
+     */
+    public Map<String, Link> getTableOfContentsLinksMap() {
+        Map<String, Link> links = new HashMap<>(getTableOfContentsLinks().size());
+        for (Link l : getLinksForRel("http://purl.org/dc/terms/tableOfContents")) {
+            String key = l.getNormalizedHrefLang();
+            Preconditions.checkState(links.get(key) == null);
+            links.put(key, l);
+        }
+        return links;
+    }
+
+
+    /**
+     * @see #getAlternateHtmLinks()
+     */
+    @Deprecated
     public List<Link> getHtmlSnippets() {
-        List<Link> links = new ArrayList<>(getLinks().size());
+        return new ArrayList<>(getAlternateHtmLinks());
+    }
+
+
+    public Map<String, Legislation> getLegislationByLanguage() throws IOException, JAXBException {
+        Map<String, Legislation> ls = new HashMap<>(getLinks().size());
+        for (Link l : getAlternateXmlLinks()) {
+            Legislation leg = ApiInterface.parseLegislationDoc(l.getHref());
+            String key = l.getNormalizedHrefLang();
+            Preconditions.checkState(ls.get(key) == null);
+            ls.put(key, leg);
+        }
+        return ls;
+    }
+
+    public Map<String, Link> getHtmlSnippetsLinksByLanguage() {
+        Map<String, Link> links = new HashMap<>(getLinks().size());
         for (Link l : getLinks()) {
             if ("alternate".equals(l.getRel())
                     && "application/xhtml+xml".equals(l.getType())) {
-                links.add(l);
+                String key = l.getNormalizedHrefLang();
+                Preconditions.checkState(links.get(key) == null);
+                links.put(key, l);
             }
         }
         return links;
@@ -241,13 +284,7 @@ public class Entry {
         for (Link l : getLinks()) {
             if ("alternate".equals(l.getRel())
                     && "application/xhtml+xml".equals(l.getType())
-                    && (
-                    l.getHreflang() == null
-                            ||
-                            "en".equals(l.getHreflang())
-                            ||
-                            l.getHreflang().trim().length() == 0)
-                    ) {
+                    && "en".equals(l.getNormalizedHrefLang())) {
                 return l;
             }
         }
@@ -300,7 +337,7 @@ public class Entry {
      */
     public Legislation getEnglishTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         for (Link link : getTableOfContentsLinks()) {
-            String lang = link.getHreflang() == null ? "en" : link.getHreflang(); //Default language is English
+            String lang = link.getNormalizedHrefLang(); //Default language is English
             if ("en".equals(lang)) {
                 return ApiInterface.parseLegislationDoc(link.getHref() + "/data.xml");
             }
@@ -324,6 +361,12 @@ public class Entry {
         return null;
     }
 
+    /**
+     * See {@link #getTableOfContentsByLanguage()}
+     *
+     * @return List of ToC documents
+     */
+    @Deprecated
     public List<Legislation> getAllTableOfContents() throws ParserConfigurationException, JAXBException, SAXException, IOException {
         List<Legislation> contents = new ArrayList<>(getTableOfContentsLinks().size());
         for (Link l : getTableOfContentsLinks()) {
@@ -331,6 +374,27 @@ public class Entry {
             contents.add(leg);
         }
         return contents;
+    }
+
+    /**
+     * Returns a map with language codes for keys and {@link Legislation} objects (representing ToC documents) as values
+     *
+     * @return Map from language codes to ToC documents
+     */
+    public Map<String, Legislation> getTableOfContentsByLanguage() throws ParserConfigurationException, JAXBException, SAXException, IOException {
+        Map<String, Legislation> contents = new HashMap<>(getTableOfContentsLinks().size());
+        for (Link l : getTableOfContentsLinks()) {
+            Legislation leg = ApiInterface.parseLegislationDoc(l.getHref() + "/data.xml");
+            putButThrowErrorWhenAlreadyFilled(contents, l.getNormalizedHrefLang(), leg);
+        }
+        return contents;
+    }
+
+    private void putButThrowErrorWhenAlreadyFilled(Map<String, Legislation> contents, String key, Legislation leg) {
+        if (contents.get(key) != null) {
+            throw new IllegalStateException("Map should not have a value yet for '" + key + "'");
+        }
+        contents.put(key, leg);
     }
 
     public String getId() {
@@ -429,6 +493,67 @@ public class Entry {
             }
         }
         return new TopLevelUri(backupLink, getYear().asInt(), getNumber().asInt());
+    }
+
+    /**
+     * Different from {@link #getAlternateHtmlLinks()} in that this one provides {@code data.html} instead of {@code data.htm}
+     */
+    public Collection<Link> getAlternateHtmLinks() {
+        return getLinksForPredicate(new Predicate<Link>() {
+            @Override
+            public boolean apply(Link l) {
+                return ("alternate".equals(l.getRel())
+                        && "application/xhtml+xml".equals(l.getType()));
+            }
+        });
+    }
+
+    /**
+     * Different from {@link #getAlternateHtmLinks()} in that this one provides {@code data.htm} instead of {@code data.html}
+     */
+    public Collection<Link> getAlternateHtmlLinks() {
+        Predicate<Link> htmLinks = new Predicate<Link>() {
+            @Override
+            public boolean apply(Link l) {
+                return ("alternate".equals(l.getRel())
+                        && "application/xhtml+xml".equals(l.getType()));
+            }
+        };
+        return Collections2.transform(getLinksForPredicate(htmLinks), new Function<Link, Link>() {
+            @Override
+            public Link apply(Link link) {
+                Preconditions.checkState(link.getHref().endsWith("htm"));
+                Link l = link.copy();
+                l.setHref(l.getHref() + "l");
+                return l;
+            }
+        });
+    }
+
+    public Map<String, Document> getLanguageToHtmlMap() throws IOException {
+        Collection<Link> links = getAlternateHtmlLinks();
+        Map<String, Document> m = new HashMap<>(links.size());
+        for (Link l : links) {
+            String key = l.getNormalizedHrefLang();
+            Preconditions.checkState(!m.containsKey(key));
+            Document doc = Jsoup.parse(new URL(l.getHref()), 60 * 1000);
+            m.put(key, doc);
+        }
+        return m;
+    }
+
+    public Collection<Link> getAlternateXmlLinks() {
+        return getLinksForPredicate(new Predicate<Link>() {
+            @Override
+            public boolean apply(Link l) {
+                return "alternate".equals(l.getRel())
+                        && "application/xml".equals(l.getType());
+            }
+        });
+    }
+
+    public Collection<Link> getLinksForPredicate(Predicate<Link> p) {
+        return Collections2.filter(getLinks(), p);
     }
 
     public static class TagWithValueAttribute {

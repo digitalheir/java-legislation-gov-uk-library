@@ -51,4 +51,9 @@ public class CreationDate {
     public Date asDate() throws ParseException {
         return FORMAT.parse(date);
     }
+
+    @Override
+    public String toString() {
+        return date;
+    }
 }

@@ -1,7 +1,9 @@
 package org.leibnizcenter.uk.legislation;
 
+import uk.gov.legislation.namespaces.legislation.ContentsTitle;
+import uk.gov.legislation.namespaces.legislation.InlineRestrictedStructure;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -12,6 +14,42 @@ import java.util.List;
  */
 public interface TableOfContentsElement {
 
+
+    /**
+     * Gets the value of the idURI property.
+     *
+     * @return possible object is {@link String }
+     */
+    String getIdURI();
+
+    /**
+     * Gets the value of the contentRef property.
+     *
+     * @return possible object is
+     * {@link String }
+     */
+    String getContentRef();
+
+    /**
+     * Gets the value of the restrictExtent property.
+     *
+     * @return possible object is
+     * {@link String }
+     */
+    String getRestrictExtent();
+
+    /**
+     * Gets the value of the documentURI property.
+     *
+     * @return possible object is
+     * {@link String }
+     */
+    String getDocumentURI();
+
+    ContentsTitle getContentsTitle();
+
+    InlineRestrictedStructure getContentsNumber();
+
     /**
      * @return List of child elements that can be seen as entities in a table of contents
      */
@@ -20,7 +58,10 @@ public interface TableOfContentsElement {
     class Helper {
         public static List<TableOfContentsElement> castToTableOfContentsElement(List<Object> objList) {
             List<TableOfContentsElement> l = new ArrayList<>(objList.size());
-            Collections.copy(objList, l);
+            for (Object o : objList) {
+                l.add((TableOfContentsElement) o);
+            }
+
             return l;
         }
     }

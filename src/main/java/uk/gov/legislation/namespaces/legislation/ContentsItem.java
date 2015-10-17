@@ -663,4 +663,11 @@ public class ContentsItem implements TableOfContentsElement {
     public List<TableOfContentsElement> getToCChildren() {
         return contentsSubItems == null ? new ArrayList<TableOfContentsElement>(0) : new ArrayList<TableOfContentsElement>(contentsSubItems);
     }
+
+    @Override
+    public String toString() {
+        return
+                contentsNumber == null ? "" : contentsNumber.toString() + ": " +
+                        contentsTitle.toString();
+    }
 }

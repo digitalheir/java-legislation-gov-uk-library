@@ -39,6 +39,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlRootElement(name = "link")
 public class Link
         extends UndefinedContent {
+    public Link() {
+    }
 
     /**
      * URL to manifestation
@@ -159,6 +161,15 @@ public class Link
     }
 
     /**
+     * Like {@link #getHreflang()}, but returns @{code "en"} for null and empty values of hreflang
+     *
+     * @return normalized language
+     */
+    public String getNormalizedHrefLang() {
+        return (hreflang == null || hreflang.length() <= 0) ? "en" : hreflang; //Default language is English
+    }
+
+    /**
      * Sets the value of the hreflang property.
      *
      * @param value allowed object is
@@ -238,6 +249,17 @@ public class Link
         return lang;
     }
 
+    public Link(String href, String rel, String type, String hreflang, String title, String length, String base, String lang) {
+        this.href = href;
+        this.rel = rel;
+        this.type = type;
+        this.hreflang = hreflang;
+        this.title = title;
+        this.length = length;
+        this.base = base;
+        this.lang = lang;
+    }
+
     /**
      * Sets the value of the lang property.
      *
@@ -248,4 +270,19 @@ public class Link
         this.lang = value;
     }
 
+    /**
+     * @return A new Link object set with exactly the same strings
+     */
+    public Link copy() {
+        return new Link(
+                href,
+                rel,
+                type,
+                hreflang,
+                title,
+                length,
+                base,
+                lang
+        );
+    }
 }
