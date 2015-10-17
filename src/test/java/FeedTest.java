@@ -24,6 +24,16 @@ import static org.junit.Assert.assertTrue;
 
 public class FeedTest {
 
+    @Test
+    public void parse() {
+//        try {
+            FeedRequestBuilder b = new FeedRequestBuilder();
+            b.setYear(2014);
+            assertTrue(b.buildUrl().toString().contains("/all"));
+//        } catch (ApiInterface.FeedException | IOException | JAXBException | SAXException | ParserConfigurationException e) {
+//            e.printStackTrace();
+//        }
+    }
 
     @Test
     public void parseUkpga() {

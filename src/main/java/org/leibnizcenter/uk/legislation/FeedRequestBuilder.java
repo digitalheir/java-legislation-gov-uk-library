@@ -16,7 +16,7 @@ import java.util.Map;
 public class FeedRequestBuilder {
     private final Map<String, String> mQueryParams;
     private int mPage = 1;
-    private String type = "all";
+    private String type = null;
     private String year = null;
     private String number = null;
 
@@ -58,13 +58,18 @@ public class FeedRequestBuilder {
         HttpUrl.Builder builder = new HttpUrl.Builder()
                 .scheme("http")
                 .host("www.legislation.gov.uk");
-        builder.addPathSegment(type);
-        if (year != null) {
-            builder.addPathSegment(year);
-            if (number != null) {
-                builder.addPathSegment(number);
+        if (type != null) {
+            builder.addPathSegment(type);
+            if (year != null) {
+                builder.addPathSegment(year);
+                if (number != null) {
+                    builder.addPathSegment(number);
+                }
             }
+        } else {
+            builder.addPathSegment("all");
         }
+
         for (String key : mQueryParams.keySet()) {
             builder.addQueryParameter(key, mQueryParams.get(key));
         }
