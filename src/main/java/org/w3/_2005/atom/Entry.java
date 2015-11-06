@@ -13,7 +13,6 @@ import com.google.common.base.Function;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.leibnizcenter.uk.legislation.ApiInterface;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
@@ -28,7 +27,6 @@ import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.net.URL;
 import java.util.*;
 
 
@@ -536,7 +534,7 @@ public class Entry {
         for (Link l : links) {
             String key = l.getNormalizedHrefLang();
             Preconditions.checkState(!m.containsKey(key));
-            Document doc = Jsoup.parse(new URL(l.getHref()), 60 * 1000);
+            Document doc = ApiInterface.parseHtml(l.getHref());
             m.put(key, doc);
         }
         return m;

@@ -1,3 +1,6 @@
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+import org.junit.Assert;
 import org.junit.Test;
 import org.leibnizcenter.uk.legislation.ApiInterface;
 import org.leibnizcenter.uk.legislation.uri.TopLevelUri;
@@ -19,6 +22,22 @@ import static org.junit.Assert.assertTrue;
  * Created by maarten on 28-9-15.
  */
 public class LegislationContentsTest {
+
+    @Test
+    public void testUkpga2015_15() throws ParserConfigurationException, JAXBException, ApiInterface.FeedException, SAXException, IOException {
+        TopLevelUri uri = new TopLevelUri("http://www.legislation.gov.uk/id/ukpga/2015/15", 2015, 15);
+
+        Entry entry = ApiInterface.getSingleEntryFromFeed(uri);
+        Map<String, Document> langMap = entry.getLanguageToHtmlMap();
+
+        Assert.assertTrue(langMap.size() > 0);
+        Document doc = langMap.get("en");
+
+        String className = "body";
+        Elements nodez = doc.body().select("body > article > ." + className);
+
+        Assert.assertEquals(1, nodez.size());
+    }
 
     @Test
     public void testDoubleToC() {
