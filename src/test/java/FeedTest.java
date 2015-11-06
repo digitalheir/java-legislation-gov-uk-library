@@ -98,7 +98,7 @@ public class FeedTest {
 
     private void assertMetadataAboutPluratiesAct(Entry e) {
         assertTrue(e.links.size() >= 8);
-        assertEquals(e.published, "1850-08-14T00:00:00+01:00");
+        assertEquals(e.published, "1850-08-14T00:00:00Z");
         assertEquals(e.documentMainType.getValue().value(), "UnitedKingdomPublicGeneralAct");
         assertEquals(e.getYear().asInt(), 1850);
         assertEquals(e.getNumber().asInt(), 98);
