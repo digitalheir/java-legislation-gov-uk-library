@@ -15,14 +15,14 @@ Download [the latest JAR](https://github.com/digitalheir/java-legislation-gov-uk
         <dependency>
             <groupId>org.leibnizcenter</groupId>
             <artifactId>legislation-gov-uk</artifactId>
-            <version>1.4.2</version>
+            <version>1.5.0</version>
         </dependency>
 </dependencies>
 ```
 
 or Gradle:
 ```groovy
-compile 'org.leibnizcenter:legislation-gov-uk:1.4.2'
+compile 'org.leibnizcenter:legislation-gov-uk:1.5.0'
 ```
 
 To parse a feed and get the table of contents for the first entry:
