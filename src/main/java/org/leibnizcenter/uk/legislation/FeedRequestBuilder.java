@@ -18,7 +18,7 @@ public class FeedRequestBuilder {
     private int mPage = 1;
     private String type = null;
     private String year = null;
-    private String number = null;
+    private int[] numberRange = null;
 
     public FeedRequestBuilder() {
         mQueryParams = new HashMap<>();
@@ -34,9 +34,10 @@ public class FeedRequestBuilder {
         return this;
     }
 
-//    public void setNumber(int number) {
-//        setNumber(number + "");
-//    }
+    public FeedRequestBuilder setNumberRange(int start, int end) {
+        numberRange = new int[]{start, end};
+        return this;
+    }
 
     public FeedRequestBuilder setYear(String year) {
         this.year = year;
@@ -65,8 +66,8 @@ public class FeedRequestBuilder {
             builder.addPathSegment(type);
             if (year != null) {
                 builder.addPathSegment(year);
-                if (number != null) {
-                    builder.addPathSegment(number);
+                if (numberRange != null) {
+                    builder.addPathSegment(numberRange[0] + "-" + numberRange[1]);
                 }
             }
         } else {

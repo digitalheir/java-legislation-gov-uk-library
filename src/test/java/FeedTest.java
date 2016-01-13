@@ -48,10 +48,12 @@ public class FeedTest {
             listing = ApiInterface.getSearchFeed(b.build());
             assertThingsAboutUkpga2014(listing);
 
-//            b.setNumber(2);
-//            System.out.println(">> Opening page "+b.buildUrl());
-//            listing = ApiInterface.getSearchFeed(b.build());
-//            assertThingsAboutUkpga20142(listing);
+            b.setNumberRange(0,5);
+            System.out.println(">> Opening page "+b.buildUrl());
+            listing = ApiInterface.getSearchFeed(b.build());
+            assertEquals("Result size must be 5", listing.getEntries().size(), 5);
+
+            //assertThingsAboutUkpga20142(listing);
 
         } catch (ApiInterface.FeedException | IOException | JAXBException | SAXException | ParserConfigurationException e) {
             e.printStackTrace();
@@ -81,7 +83,6 @@ public class FeedTest {
             b.setYear(1850);
             b.setType("ukpga");
             Feed listing = ApiInterface.getSearchFeed(b.build());
-            //assertEquals("Result size must be 20", listing.getEntries().size(), 20);
 
             boolean hasPluratiesActs = false;
             for (Entry e : listing.getEntries()) {
